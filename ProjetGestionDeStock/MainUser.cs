@@ -54,5 +54,10 @@ namespace ProjetGestionDeStock
         {
 
         }
+
+        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
