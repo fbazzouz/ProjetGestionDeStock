@@ -85,7 +85,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainCaissier.resx" />
+    <EmbeddedResource Include="MainAdmin.resx">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -146,6 +148,13 @@
     <None Include="Resources\Show Property_104px.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Add Shopping Cart_96px.png" />
+    <None Include="Resources\Add User Female_100px.png" />
+    <None Include="Resources\Clear Shopping Cart_96px.png" />
+    <None Include="Resources\Combo Chart_96px.png" />
+    <None Include="Resources\Small Business_96px.png" />
+    <None Include="Resources\Update User_96px.png" />
+    <None Include="Resources\Update_96px.png" />
     <Content Include="stockbd.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

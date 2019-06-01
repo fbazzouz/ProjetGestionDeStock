@@ -63,6 +63,26 @@ namespace ProjetGestionDeStock.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_Shopping_Cart_96px {
+            get {
+                object obj = ResourceManager.GetObject("Add Shopping Cart_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_User_Female_100px {
+            get {
+                object obj = ResourceManager.GetObject("Add User Female_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap berkman_library_banner {
             get {
                 object obj = ResourceManager.GetObject("berkman_library_banner", resourceCulture);
@@ -106,6 +126,26 @@ namespace ProjetGestionDeStock.Properties {
         internal static System.Drawing.Bitmap Borrow_Book_100px {
             get {
                 object obj = ResourceManager.GetObject("Borrow_Book_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clear_Shopping_Cart_96px {
+            get {
+                object obj = ResourceManager.GetObject("Clear Shopping Cart_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Combo_Chart_96px {
+            get {
+                object obj = ResourceManager.GetObject("Combo Chart_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +206,36 @@ namespace ProjetGestionDeStock.Properties {
         internal static System.Drawing.Bitmap Show_Property_104px {
             get {
                 object obj = ResourceManager.GetObject("Show_Property_104px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Small_Business_96px {
+            get {
+                object obj = ResourceManager.GetObject("Small Business_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Update_96px {
+            get {
+                object obj = ResourceManager.GetObject("Update_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Update_User_96px {
+            get {
+                object obj = ResourceManager.GetObject("Update User_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
