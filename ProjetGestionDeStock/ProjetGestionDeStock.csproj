@@ -65,15 +65,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainUser.cs">
+    <Compile Include="MainAgent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainUser.Designer.cs">
-      <DependentUpon>MainUser.cs</DependentUpon>
+    <Compile Include="MainAgent.Designer.cs">
+      <DependentUpon>MainAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainAdmin.Designer.cs">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainCaissier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainCaissier.Designer.cs">
+      <DependentUpon>MainCaissier.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainUser.resx" />
+    <EmbeddedResource Include="MainCaissier.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
