@@ -85,6 +85,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainAgent.resx">
+      <DependentUpon>MainAgent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainCaissier.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
