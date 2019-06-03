@@ -81,6 +81,7 @@
     <Compile Include="Authentification.Designer.cs">
       <DependentUpon>Authentification.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseOperations.cs" />
     <Compile Include="MainAgent.cs">
       <SubType>Form</SubType>
     </Compile>

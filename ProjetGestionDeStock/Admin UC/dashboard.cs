@@ -15,6 +15,13 @@ namespace ProjetGestionDeStock.Admin_UC
         public dashboard()
         {
             InitializeComponent();
+           DataTable dta = DatabaseOperations.produitsVendu();
+           DG_lastproduit.DataSource = dta;
+        }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
