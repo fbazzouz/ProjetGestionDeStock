@@ -40,9 +40,9 @@
             this.bunifuCustomLabel9 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new ns1.BunifuCustomLabel();
             this.bunifuCircleProgressbar2 = new ns1.BunifuCircleProgressbar();
-            this.bunifuCustomLabel8 = new ns1.BunifuCustomLabel();
+            this.produitsVendu = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new ns1.BunifuCustomLabel();
-            this.bunifuCircleProgressbar1 = new ns1.BunifuCircleProgressbar();
+            this.circleVendu = new ns1.BunifuCircleProgressbar();
             this.DG_lastproduit = new ns1.BunifuCustomDataGrid();
             this.reference = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marque = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -152,16 +152,16 @@
             this.bunifuCircleProgressbar2.TabIndex = 24;
             this.bunifuCircleProgressbar2.Value = 64;
             // 
-            // bunifuCustomLabel8
+            // produitsVendu
             // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(216, 93);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(133, 32);
-            this.bunifuCustomLabel8.TabIndex = 23;
-            this.bunifuCustomLabel8.Text = "36,663Dh";
+            this.produitsVendu.AutoSize = true;
+            this.produitsVendu.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.produitsVendu.ForeColor = System.Drawing.Color.Silver;
+            this.produitsVendu.Location = new System.Drawing.Point(216, 93);
+            this.produitsVendu.Name = "produitsVendu";
+            this.produitsVendu.Size = new System.Drawing.Size(133, 32);
+            this.produitsVendu.TabIndex = 23;
+            this.produitsVendu.Text = "36,663Dh";
             // 
             // bunifuCustomLabel7
             // 
@@ -174,27 +174,27 @@
             this.bunifuCustomLabel7.TabIndex = 22;
             this.bunifuCustomLabel7.Text = "Produits Vendu";
             // 
-            // bunifuCircleProgressbar1
+            // circleVendu
             // 
-            this.bunifuCircleProgressbar1.animated = false;
-            this.bunifuCircleProgressbar1.animationIterval = 5;
-            this.bunifuCircleProgressbar1.animationSpeed = 300;
-            this.bunifuCircleProgressbar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.bunifuCircleProgressbar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCircleProgressbar1.BackgroundImage")));
-            this.bunifuCircleProgressbar1.Font = new System.Drawing.Font("Century Gothic", 18.25F);
-            this.bunifuCircleProgressbar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.bunifuCircleProgressbar1.LabelVisible = true;
-            this.bunifuCircleProgressbar1.LineProgressThickness = 8;
-            this.bunifuCircleProgressbar1.LineThickness = 2;
-            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(97, 64);
-            this.bunifuCircleProgressbar1.Margin = new System.Windows.Forms.Padding(8);
-            this.bunifuCircleProgressbar1.MaxValue = 100;
-            this.bunifuCircleProgressbar1.Name = "bunifuCircleProgressbar1";
-            this.bunifuCircleProgressbar1.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(119)))), ((int)(((byte)(128)))));
-            this.bunifuCircleProgressbar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.bunifuCircleProgressbar1.Size = new System.Drawing.Size(114, 114);
-            this.bunifuCircleProgressbar1.TabIndex = 21;
-            this.bunifuCircleProgressbar1.Value = 80;
+            this.circleVendu.animated = false;
+            this.circleVendu.animationIterval = 5;
+            this.circleVendu.animationSpeed = 300;
+            this.circleVendu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.circleVendu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circleVendu.BackgroundImage")));
+            this.circleVendu.Font = new System.Drawing.Font("Century Gothic", 18.25F);
+            this.circleVendu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.circleVendu.LabelVisible = true;
+            this.circleVendu.LineProgressThickness = 8;
+            this.circleVendu.LineThickness = 2;
+            this.circleVendu.Location = new System.Drawing.Point(97, 64);
+            this.circleVendu.Margin = new System.Windows.Forms.Padding(8);
+            this.circleVendu.MaxValue = 100;
+            this.circleVendu.Name = "circleVendu";
+            this.circleVendu.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(119)))), ((int)(((byte)(128)))));
+            this.circleVendu.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.circleVendu.Size = new System.Drawing.Size(114, 114);
+            this.circleVendu.TabIndex = 21;
+            this.circleVendu.Value = 90;
             // 
             // DG_lastproduit
             // 
@@ -302,9 +302,9 @@
             this.Controls.Add(this.bunifuCustomLabel9);
             this.Controls.Add(this.bunifuCustomLabel10);
             this.Controls.Add(this.bunifuCircleProgressbar2);
-            this.Controls.Add(this.bunifuCustomLabel8);
+            this.Controls.Add(this.produitsVendu);
             this.Controls.Add(this.bunifuCustomLabel7);
-            this.Controls.Add(this.bunifuCircleProgressbar1);
+            this.Controls.Add(this.circleVendu);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Name = "dashboard";
             this.Size = new System.Drawing.Size(878, 507);
@@ -324,9 +324,9 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel9;
         private ns1.BunifuCustomLabel bunifuCustomLabel10;
         private ns1.BunifuCircleProgressbar bunifuCircleProgressbar2;
-        private ns1.BunifuCustomLabel bunifuCustomLabel8;
+        private ns1.BunifuCustomLabel produitsVendu;
         private ns1.BunifuCustomLabel bunifuCustomLabel7;
-        private ns1.BunifuCircleProgressbar bunifuCircleProgressbar1;
+        private ns1.BunifuCircleProgressbar circleVendu;
         private ns1.BunifuCustomDataGrid DG_lastproduit;
         private ns1.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.DataGridViewTextBoxColumn reference;

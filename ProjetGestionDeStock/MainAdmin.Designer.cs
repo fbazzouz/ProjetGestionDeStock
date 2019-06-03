@@ -43,7 +43,6 @@
             this.bunifuFlatButton3 = new ns1.BunifuFlatButton();
             this.bunifuFlatButton2 = new ns1.BunifuFlatButton();
             this.bunifuFlatButton1 = new ns1.BunifuFlatButton();
-            this.PB_logo = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.Panel();
             this.LogoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Main = new System.Windows.Forms.Panel();
@@ -51,9 +50,9 @@
             this.PanelAnimator2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
             this.dashboard1 = new ProjetGestionDeStock.Admin_UC.dashboard();
+            this.Lb_admin = new ns1.BunifuCustomLabel();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Slider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_logo)).BeginInit();
             this.Main.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +64,7 @@
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.PanelMenu.Controls.Add(this.Lb_admin);
             this.PanelMenu.Controls.Add(this.bunifuFlatButton7);
             this.PanelMenu.Controls.Add(this.bunifuFlatButton5);
             this.PanelMenu.Controls.Add(this.bunifuFlatButton6);
@@ -73,7 +73,6 @@
             this.PanelMenu.Controls.Add(this.bunifuFlatButton3);
             this.PanelMenu.Controls.Add(this.bunifuFlatButton2);
             this.PanelMenu.Controls.Add(this.bunifuFlatButton1);
-            this.PanelMenu.Controls.Add(this.PB_logo);
             this.LogoAnimator.SetDecoration(this.PanelMenu, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator.SetDecoration(this.PanelMenu, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator2.SetDecoration(this.PanelMenu, BunifuAnimatorNS.DecorationType.None);
@@ -374,19 +373,6 @@
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.WhiteSmoke;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // PB_logo
-            // 
-            this.PanelAnimator2.SetDecoration(this.PB_logo, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.PB_logo, BunifuAnimatorNS.DecorationType.None);
-            this.LogoAnimator.SetDecoration(this.PB_logo, BunifuAnimatorNS.DecorationType.None);
-            this.PB_logo.Location = new System.Drawing.Point(3, 6);
-            this.PB_logo.Name = "PB_logo";
-            this.PB_logo.Size = new System.Drawing.Size(187, 102);
-            this.PB_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_logo.TabIndex = 0;
-            this.PB_logo.TabStop = false;
-            this.PB_logo.Visible = false;
-            // 
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
@@ -495,6 +481,20 @@
             this.dashboard1.Size = new System.Drawing.Size(917, 610);
             this.dashboard1.TabIndex = 0;
             // 
+            // Lb_admin
+            // 
+            this.Lb_admin.AutoSize = true;
+            this.PanelAnimator2.SetDecoration(this.Lb_admin, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.Lb_admin, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimator.SetDecoration(this.Lb_admin, BunifuAnimatorNS.DecorationType.None);
+            this.Lb_admin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lb_admin.ForeColor = System.Drawing.Color.Silver;
+            this.Lb_admin.Location = new System.Drawing.Point(34, 61);
+            this.Lb_admin.Name = "Lb_admin";
+            this.Lb_admin.Size = new System.Drawing.Size(144, 23);
+            this.Lb_admin.TabIndex = 10;
+            this.Lb_admin.Text = "Administrateur";
+            // 
             // MainAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,8 +511,8 @@
             this.Name = "MainAdmin";
             this.Text = "Form1";
             this.PanelMenu.ResumeLayout(false);
+            this.PanelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Slider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_logo)).EndInit();
             this.Main.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -523,7 +523,6 @@
         private ns1.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel PanelMenu;
         private System.Windows.Forms.Panel Header;
-        private System.Windows.Forms.PictureBox PB_logo;
         private ns1.BunifuImageButton Slider;
         private ns1.BunifuFlatButton bunifuFlatButton2;
         private ns1.BunifuFlatButton bunifuFlatButton1;
@@ -538,6 +537,7 @@
         private ns1.BunifuFlatButton bunifuFlatButton7;
         private ns1.BunifuFlatButton bunifuFlatButton5;
         private Admin_UC.dashboard dashboard1;
+        private ns1.BunifuCustomLabel Lb_admin;
     }
 }
 

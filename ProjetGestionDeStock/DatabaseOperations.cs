@@ -23,7 +23,10 @@ namespace ProjetGestionDeStock
             return con;
 
         }
-
+        public static void closeCon()
+        {
+            con.Close();
+        }
         //------------------------ Lister les produits vendu ----------------------------
 
         public static DataTable produitsVendu()
@@ -39,7 +42,55 @@ namespace ProjetGestionDeStock
             con.Close();
             return dt;
         }
-     
+        //------------------------ Totale Produits dispo ----------------------------
+
+        public static int totatDisponible()
+        {
+            int total=0;
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select prix,quantite_stk from produit";
+            cmd.Connection = getcon();
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                total += int.Parse(sdr[0].ToString())*int.Parse(sdr[1].ToString());
+            }
+            con.Close();
+            return total;
+        }
+        //------------------------Total des produits vendu ----------------------------
+
+        public static int totatVendre()
+        {
+            int total = 0;
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select prix,quantite from produit p,facture_produit fp where p.id_produit=fp.id_produit";
+            cmd.Connection = getcon();
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                total += int.Parse(sdr[0].ToString()) * int.Parse(sdr[1].ToString());
+            }
+            con.Close();
+            return total;
+        }
+        // ------------------ login verification --------------------
+        public static SqlDataReader LoginIsCorrect(string login,string mdp)
+        {
+            string query = "select role,Nom,Prenom from personnel where mdp=@mdp and login=@login";
+            SqlCommand cmd = new SqlCommand(query,getcon());
+            cmd.Parameters.AddWithValue("@mdp", mdp);
+            cmd.Parameters.AddWithValue("@login", login);
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            
+            return sdr;
+        }
+
 
 
     }
