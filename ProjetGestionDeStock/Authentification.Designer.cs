@@ -62,14 +62,15 @@
             this.Tb_login.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Tb_login.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.Tb_login.ForeColor = System.Drawing.Color.White;
-            this.Tb_login.HintForeColor = System.Drawing.Color.Empty;
-            this.Tb_login.HintText = "";
+            this.Tb_login.HintForeColor = System.Drawing.Color.Gainsboro;
+            this.Tb_login.HintText = "Your Login";
             this.Tb_login.isPassword = false;
             this.Tb_login.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Tb_login.LineIdleColor = System.Drawing.Color.White;
             this.Tb_login.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Tb_login.LineThickness = 3;
             this.Tb_login.Location = new System.Drawing.Point(314, 198);
+            this.Tb_login.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_login.Name = "Tb_login";
             this.Tb_login.Size = new System.Drawing.Size(242, 46);
             this.Tb_login.TabIndex = 7;
@@ -81,17 +82,19 @@
             this.Tb_mdp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Tb_mdp.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.Tb_mdp.ForeColor = System.Drawing.Color.White;
-            this.Tb_mdp.HintForeColor = System.Drawing.Color.Empty;
-            this.Tb_mdp.HintText = "";
-            this.Tb_mdp.isPassword = false;
+            this.Tb_mdp.HintForeColor = System.Drawing.Color.Gainsboro;
+            this.Tb_mdp.HintText = "Your Password";
+            this.Tb_mdp.isPassword = true;
             this.Tb_mdp.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Tb_mdp.LineIdleColor = System.Drawing.Color.White;
             this.Tb_mdp.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Tb_mdp.LineThickness = 3;
             this.Tb_mdp.Location = new System.Drawing.Point(314, 261);
+            this.Tb_mdp.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_mdp.Name = "Tb_mdp";
             this.Tb_mdp.Size = new System.Drawing.Size(242, 46);
             this.Tb_mdp.TabIndex = 15;
+            this.Tb_mdp.Text = "Your Login";
             this.Tb_mdp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel1
@@ -125,7 +128,7 @@
             this.Connecter.IdleForecolor = System.Drawing.Color.White;
             this.Connecter.IdleLineColor = System.Drawing.Color.White;
             this.Connecter.Location = new System.Drawing.Point(322, 336);
-            this.Connecter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Connecter.Margin = new System.Windows.Forms.Padding(4);
             this.Connecter.Name = "Connecter";
             this.Connecter.Size = new System.Drawing.Size(179, 53);
             this.Connecter.TabIndex = 14;
@@ -137,7 +140,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(256, 261);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(55, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,7 +152,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(257, 193);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(51, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -170,7 +173,7 @@
             this.Controls.Add(this.Tb_login);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Authentification";
             this.Text = "Authentification";
             this.Load += new System.EventHandler(this.Authentification_Load);
