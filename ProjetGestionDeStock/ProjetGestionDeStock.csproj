@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin UC\ajouterPerso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin UC\ajouterPerso.Designer.cs">
+      <DependentUpon>ajouterPerso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin UC\dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="Admin UC\AjouterCategorie.resx">
       <DependentUpon>AjouterCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin UC\ajouterPerso.resx">
+      <DependentUpon>ajouterPerso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin UC\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
@@ -210,8 +219,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="stockbd_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>stockbd.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -25,7 +25,7 @@ namespace ProjetGestionDeStock.Admin_UC
         }
         public AjouterCategorie()
         {
-            InitializeComponent();
+          InitializeComponent();
             DataTable dta = DatabaseOperations.Categories();
             DG_Categories.DataSource = dta;
         }
