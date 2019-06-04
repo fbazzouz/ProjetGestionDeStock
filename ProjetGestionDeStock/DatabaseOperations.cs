@@ -12,7 +12,8 @@ namespace ProjetGestionDeStock
     class DatabaseOperations
     {
         
-        public static SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = |DataDirectory|\stockbd.mdf;Integrated Security = True");
+        public static SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = |DataDirectory|stockbd.mdf;Integrated Security = True
+");
         //------------------------ opeeen conncetion ----------------------------
         private static SqlConnection getcon()
         {
@@ -77,6 +78,21 @@ namespace ProjetGestionDeStock
             }
             con.Close();
             return total;
+        }
+        //----------------------- Faible stock ----------------------------
+
+        public static DataTable faibleStock(int seuil)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select reference,marque,quantite_stk,prix,Nom from produit p,categorie c where p.id_categorie=c.id and quantite_stk < "+seuil;
+            cmd.Connection = getcon();
+            SqlDataReader sdr;
+            DataTable dt = new DataTable();
+            sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+            return dt;
         }
         // ------------------ login verification --------------------
         public static SqlDataReader LoginIsCorrect(string login,string mdp)
