@@ -16,9 +16,10 @@ namespace ProjetGestionDeStock
     {
        
 
-        public MainAdmin()
+        public MainAdmin(string Nom,string Prenom)
         {
             InitializeComponent();
+            Lb_admin.Text = Nom + " " + Prenom;
         }
 
         private void Slider_Click(object sender, EventArgs e)
@@ -28,11 +29,11 @@ namespace ProjetGestionDeStock
                 PanelMenu.Visible = false;
                 PanelMenu.Width = 230;
                 PanelAnimator2.ShowSync(PanelMenu);
-                LogoAnimator.ShowSync(PB_logo);
+                LogoAnimator.ShowSync(Lb_admin);
             }
             else
             {
-                LogoAnimator.HideSync(PB_logo);
+                LogoAnimator.HideSync(Lb_admin);
                 PanelMenu.Visible = false;
                 PanelMenu.Width = 50;
                 PanelAnimator.ShowSync(PanelMenu);
@@ -58,6 +59,32 @@ namespace ProjetGestionDeStock
         private void bunifuFlatButton6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuFlatButton3_Click_1(object sender, EventArgs e) //Ajouterunecategorie
+        {
+            if(!Main.Controls.Contains(Admin_UC.AjouterCategorie.Instance))
+            {
+                Main.Controls.Add(Admin_UC.AjouterCategorie.Instance);
+                Admin_UC.AjouterCategorie.Instance.Dock = DockStyle.Fill;
+                Admin_UC.AjouterCategorie.Instance.BringToFront();
+            }
+            else
+                Admin_UC.AjouterCategorie.Instance.BringToFront();
+
+        }
+
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+            dashboard2.Show();
+            ajouterCategorie1.Hide();
+        }
+
+        private void bunifuFlatButton3_Click_2(object sender, EventArgs e)
+        {
+            ajouterCategorie1.Show();
+            dashboard2.Hide();
+            
         }
     }
 }
