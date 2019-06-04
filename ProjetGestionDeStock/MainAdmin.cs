@@ -61,6 +61,17 @@ namespace ProjetGestionDeStock
 
         }
 
+        private void bunifuFlatButton3_Click_1(object sender, EventArgs e) //Ajouterunecategorie
+        {
+            if(!Main.Controls.Contains(Admin_UC.AjouterCategorie.Instance))
+            {
+                Main.Controls.Add(Admin_UC.AjouterCategorie.Instance);
+                Admin_UC.AjouterCategorie.Instance.Dock = DockStyle.Fill;
+                Admin_UC.AjouterCategorie.Instance.BringToFront();
+            }
+            else
+                Admin_UC.AjouterCategorie.Instance.BringToFront();
 
+        }
     }
 }

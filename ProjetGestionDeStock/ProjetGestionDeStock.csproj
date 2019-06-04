@@ -75,6 +75,12 @@
     <Compile Include="Admin UC\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin UC\AjouterCategorie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin UC\AjouterCategorie.Designer.cs">
+      <DependentUpon>AjouterCategorie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Authentification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stockbdDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stockbdDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin UC\AjouterCategorie.resx">
+      <DependentUpon>AjouterCategorie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin UC\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +144,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="stockbdDataSet1.xsc">
+      <DependentUpon>stockbdDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="stockbdDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stockbdDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stockbdDataSet1.xss">
+      <DependentUpon>stockbdDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
