@@ -90,7 +90,31 @@ namespace ProjetGestionDeStock
             
             return sdr;
         }
+        //------------------------ Ajouter une categorie ----------------------------
+        public static void AjouterNewCategorie(string NewCategorie)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into categorie (Nom) values('"+NewCategorie+"')";
+            cmd.Connection = getcon();
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+        //------------------------ Lister les categories ----------------------------
 
+        public static DataTable Categories()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select Id,Nom from categorie";
+            cmd.Connection = getcon();
+            SqlDataReader sdr;
+            DataTable dt = new DataTable();
+            sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+            return dt;
+        }
 
 
     }
