@@ -73,5 +73,18 @@ namespace ProjetGestionDeStock
                 Admin_UC.AjouterCategorie.Instance.BringToFront();
 
         }
+
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+            dashboard2.Show();
+            ajouterCategorie1.Hide();
+        }
+
+        private void bunifuFlatButton3_Click_2(object sender, EventArgs e)
+        {
+            ajouterCategorie1.Show();
+            dashboard2.Hide();
+            
+        }
     }
 }

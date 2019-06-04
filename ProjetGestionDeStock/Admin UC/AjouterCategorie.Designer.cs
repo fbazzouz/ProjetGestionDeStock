@@ -32,21 +32,22 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AjouterCategorie));
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.DG_Categories = new ns1.BunifuCustomDataGrid();
-            this.stockbdDataSet = new ProjetGestionDeStock.stockbdDataSet();
             this.categorieBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stockbdDataSet = new ProjetGestionDeStock.stockbdDataSet();
             this.categorieTableAdapter = new ProjetGestionDeStock.stockbdDataSetTableAdapters.categorieTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
             this.TF_NewCategorie = new ns1.BunifuMaterialTextbox();
             this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
             this.BTN_AjouterCategorie = new ns1.BunifuThinButton2();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Categories)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stockbdDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stockbdDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel2
@@ -54,10 +55,9 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(32, 33);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(24, 27);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(179, 19);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(148, 17);
             this.bunifuCustomLabel2.TabIndex = 3;
             this.bunifuCustomLabel2.Text = "AJOUTER CATEGORIE";
             // 
@@ -101,33 +101,99 @@
             this.DG_Categories.EnableHeadersVisualStyles = false;
             this.DG_Categories.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.DG_Categories.HeaderForeColor = System.Drawing.Color.White;
-            this.DG_Categories.Location = new System.Drawing.Point(27, 433);
-            this.DG_Categories.Margin = new System.Windows.Forms.Padding(4);
+            this.DG_Categories.Location = new System.Drawing.Point(128, 352);
             this.DG_Categories.Name = "DG_Categories";
             this.DG_Categories.ReadOnly = true;
             this.DG_Categories.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DG_Categories.RowHeadersVisible = false;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.DG_Categories.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DG_Categories.RowTemplate.DividerHeight = 1;
             this.DG_Categories.RowTemplate.Height = 40;
             this.DG_Categories.RowTemplate.ReadOnly = true;
             this.DG_Categories.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.DG_Categories.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DG_Categories.Size = new System.Drawing.Size(1116, 266);
+            this.DG_Categories.Size = new System.Drawing.Size(610, 216);
             this.DG_Categories.TabIndex = 32;
-            // 
-            // stockbdDataSet
-            // 
-            this.stockbdDataSet.DataSetName = "stockbdDataSet";
-            this.stockbdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // categorieBindingSource
             // 
             this.categorieBindingSource.DataMember = "categorie";
             this.categorieBindingSource.DataSource = this.stockbdDataSet;
             // 
+            // stockbdDataSet
+            // 
+            this.stockbdDataSet.DataSetName = "stockbdDataSet";
+            this.stockbdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // categorieTableAdapter
             // 
             this.categorieTableAdapter.ClearBeforeFill = true;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(222, 141);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(158, 17);
+            this.bunifuCustomLabel1.TabIndex = 33;
+            this.bunifuCustomLabel1.Text = "Nom de la catogerie :";
+            // 
+            // TF_NewCategorie
+            // 
+            this.TF_NewCategorie.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TF_NewCategorie.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TF_NewCategorie.ForeColor = System.Drawing.Color.White;
+            this.TF_NewCategorie.HintForeColor = System.Drawing.Color.White;
+            this.TF_NewCategorie.HintText = "";
+            this.TF_NewCategorie.isPassword = false;
+            this.TF_NewCategorie.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.TF_NewCategorie.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.TF_NewCategorie.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.TF_NewCategorie.LineThickness = 3;
+            this.TF_NewCategorie.Location = new System.Drawing.Point(385, 128);
+            this.TF_NewCategorie.Name = "TF_NewCategorie";
+            this.TF_NewCategorie.Size = new System.Drawing.Size(236, 36);
+            this.TF_NewCategorie.TabIndex = 34;
+            this.TF_NewCategorie.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.Silver;
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(320, 206);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(241, 17);
+            this.bunifuCustomLabel3.TabIndex = 35;
+            this.bunifuCustomLabel3.Text = "* Id sera généré automatiquement";
+            // 
+            // BTN_AjouterCategorie
+            // 
+            this.BTN_AjouterCategorie.ActiveBorderThickness = 1;
+            this.BTN_AjouterCategorie.ActiveCornerRadius = 20;
+            this.BTN_AjouterCategorie.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.BTN_AjouterCategorie.ActiveForecolor = System.Drawing.Color.White;
+            this.BTN_AjouterCategorie.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.BTN_AjouterCategorie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.BTN_AjouterCategorie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_AjouterCategorie.BackgroundImage")));
+            this.BTN_AjouterCategorie.ButtonText = "Ajouter";
+            this.BTN_AjouterCategorie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_AjouterCategorie.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_AjouterCategorie.ForeColor = System.Drawing.Color.White;
+            this.BTN_AjouterCategorie.IdleBorderThickness = 1;
+            this.BTN_AjouterCategorie.IdleCornerRadius = 20;
+            this.BTN_AjouterCategorie.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.BTN_AjouterCategorie.IdleForecolor = System.Drawing.Color.White;
+            this.BTN_AjouterCategorie.IdleLineColor = System.Drawing.Color.White;
+            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(622, 249);
+            this.BTN_AjouterCategorie.Name = "BTN_AjouterCategorie";
+            this.BTN_AjouterCategorie.Size = new System.Drawing.Size(171, 52);
+            this.BTN_AjouterCategorie.TabIndex = 36;
+            this.BTN_AjouterCategorie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BTN_AjouterCategorie.Click += new System.EventHandler(this.BTN_AjouterCategorie_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -139,82 +205,13 @@
             // nomDataGridViewTextBoxColumn
             // 
             this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
-            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom du categorie";
             this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
             this.nomDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(296, 173);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(190, 19);
-            this.bunifuCustomLabel1.TabIndex = 33;
-            this.bunifuCustomLabel1.Text = "Nom de la catogerie :";
-            // 
-            // TF_NewCategorie
-            // 
-            this.TF_NewCategorie.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TF_NewCategorie.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TF_NewCategorie.ForeColor = System.Drawing.Color.White;
-            this.TF_NewCategorie.HintForeColor = System.Drawing.Color.Empty;
-            this.TF_NewCategorie.HintText = "";
-            this.TF_NewCategorie.isPassword = false;
-            this.TF_NewCategorie.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.TF_NewCategorie.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.TF_NewCategorie.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.TF_NewCategorie.LineThickness = 3;
-            this.TF_NewCategorie.Location = new System.Drawing.Point(513, 157);
-            this.TF_NewCategorie.Margin = new System.Windows.Forms.Padding(4);
-            this.TF_NewCategorie.Name = "TF_NewCategorie";
-            this.TF_NewCategorie.Size = new System.Drawing.Size(314, 44);
-            this.TF_NewCategorie.TabIndex = 34;
-            this.TF_NewCategorie.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(426, 254);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(290, 19);
-            this.bunifuCustomLabel3.TabIndex = 35;
-            this.bunifuCustomLabel3.Text = "* Id sera généré automatiquement";
-            // 
-            // BTN_AjouterCategorie
-            // 
-            this.BTN_AjouterCategorie.ActiveBorderThickness = 1;
-            this.BTN_AjouterCategorie.ActiveCornerRadius = 20;
-            this.BTN_AjouterCategorie.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.BTN_AjouterCategorie.ActiveForecolor = System.Drawing.Color.White;
-            this.BTN_AjouterCategorie.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.BTN_AjouterCategorie.BackColor = System.Drawing.Color.Transparent;
-            this.BTN_AjouterCategorie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_AjouterCategorie.BackgroundImage")));
-            this.BTN_AjouterCategorie.ButtonText = "Ajouter";
-            this.BTN_AjouterCategorie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_AjouterCategorie.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_AjouterCategorie.ForeColor = System.Drawing.Color.White;
-            this.BTN_AjouterCategorie.IdleBorderThickness = 1;
-            this.BTN_AjouterCategorie.IdleCornerRadius = 20;
-            this.BTN_AjouterCategorie.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.BTN_AjouterCategorie.IdleForecolor = System.Drawing.Color.White;
-            this.BTN_AjouterCategorie.IdleLineColor = System.Drawing.Color.White;
-            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(830, 307);
-            this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BTN_AjouterCategorie.Name = "BTN_AjouterCategorie";
-            this.BTN_AjouterCategorie.Size = new System.Drawing.Size(228, 64);
-            this.BTN_AjouterCategorie.TabIndex = 36;
-            this.BTN_AjouterCategorie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BTN_AjouterCategorie.Click += new System.EventHandler(this.BTN_AjouterCategorie_Click);
-            // 
             // AjouterCategorie
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.Controls.Add(this.BTN_AjouterCategorie);
@@ -223,11 +220,12 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.DG_Categories);
             this.Controls.Add(this.bunifuCustomLabel2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AjouterCategorie";
-            this.Size = new System.Drawing.Size(1171, 785);
+            this.Size = new System.Drawing.Size(878, 638);
             ((System.ComponentModel.ISupportInitialize)(this.DG_Categories)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stockbdDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stockbdDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,8 +235,6 @@
 
         private ns1.BunifuCustomLabel bunifuCustomLabel2;
         private ns1.BunifuCustomDataGrid DG_Categories;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource categorieBindingSource;
         private stockbdDataSet stockbdDataSet;
         private stockbdDataSetTableAdapters.categorieTableAdapter categorieTableAdapter;
@@ -246,5 +242,7 @@
         private ns1.BunifuMaterialTextbox TF_NewCategorie;
         private ns1.BunifuCustomLabel bunifuCustomLabel3;
         private ns1.BunifuThinButton2 BTN_AjouterCategorie;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
     }
 }
