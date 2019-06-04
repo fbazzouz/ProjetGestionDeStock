@@ -74,16 +74,17 @@ namespace ProjetGestionDeStock
 
         }
 
-        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
-            if (!Main.Controls.Contains(Admin_UC.ModifierCategorie.Instance))
-            {
-                Main.Controls.Add(Admin_UC.ModifierCategorie.Instance);
-                Admin_UC.ModifierCategorie.Instance.Dock = DockStyle.Fill;
-                Admin_UC.ModifierCategorie.Instance.BringToFront();
-            }
-            else
-                Admin_UC.ModifierCategorie.Instance.BringToFront();
+            dashboard2.Show();
+            ajouterCategorie1.Hide();
+        }
+
+        private void bunifuFlatButton3_Click_2(object sender, EventArgs e)
+        {
+            ajouterCategorie1.Show();
+            dashboard2.Hide();
+            
         }
     }
 }

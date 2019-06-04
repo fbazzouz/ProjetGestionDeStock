@@ -38,6 +38,7 @@
             this.Connecter = new ns1.BunifuThinButton2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.bunifuDragControl2 = new ns1.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(0, 0);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(800, 28);
+            this.Header.Size = new System.Drawing.Size(800, 35);
             this.Header.TabIndex = 2;
             // 
             // Tb_login
@@ -112,23 +113,23 @@
             // Connecter
             // 
             this.Connecter.ActiveBorderThickness = 1;
-            this.Connecter.ActiveCornerRadius = 20;
-            this.Connecter.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.Connecter.ActiveCornerRadius = 1;
+            this.Connecter.ActiveFillColor = System.Drawing.Color.Brown;
             this.Connecter.ActiveForecolor = System.Drawing.Color.White;
-            this.Connecter.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Connecter.BackColor = System.Drawing.SystemColors.Control;
-            this.Connecter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Connecter.BackgroundImage")));
+            this.Connecter.ActiveLineColor = System.Drawing.Color.Brown;
+            this.Connecter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.Connecter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Connecter.ButtonText = "Se Connecter";
             this.Connecter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Connecter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Connecter.ForeColor = System.Drawing.Color.SeaGreen;
             this.Connecter.IdleBorderThickness = 1;
-            this.Connecter.IdleCornerRadius = 20;
+            this.Connecter.IdleCornerRadius = 1;
             this.Connecter.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Connecter.IdleForecolor = System.Drawing.Color.White;
-            this.Connecter.IdleLineColor = System.Drawing.Color.White;
+            this.Connecter.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Connecter.Location = new System.Drawing.Point(322, 336);
-            this.Connecter.Margin = new System.Windows.Forms.Padding(4);
+            this.Connecter.Margin = new System.Windows.Forms.Padding(0);
             this.Connecter.Name = "Connecter";
             this.Connecter.Size = new System.Drawing.Size(179, 53);
             this.Connecter.TabIndex = 14;
@@ -159,19 +160,26 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // bunifuDragControl2
+            // 
+            this.bunifuDragControl2.Fixed = true;
+            this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = this.Header;
+            this.bunifuDragControl2.Vertical = true;
+            // 
             // Authentification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 478);
+            this.Controls.Add(this.Header);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.Tb_mdp);
             this.Controls.Add(this.Connecter);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Tb_login);
-            this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Authentification";
@@ -193,5 +201,6 @@
         private ns1.BunifuMaterialTextbox Tb_login;
         private ns1.BunifuMaterialTextbox Tb_mdp;
         private ns1.BunifuCustomLabel bunifuCustomLabel1;
+        private ns1.BunifuDragControl bunifuDragControl2;
     }
 }
