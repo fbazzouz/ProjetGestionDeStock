@@ -1,6 +1,6 @@
 ﻿namespace ProjetGestionDeStock.Admin_UC
 {
-    partial class ajouterPerso
+    partial class dashboard
     {
         /// <summary> 
         /// Required designer variable.

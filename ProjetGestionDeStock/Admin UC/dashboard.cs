@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetGestionDeStock.Admin_UC
 {
-    public partial class ajouterPerso : UserControl
+    public partial class dashboard : UserControl
     {
-        public ajouterPerso()
+        public dashboard()
         {
             InitializeComponent();
           
@@ -28,7 +28,7 @@ namespace ProjetGestionDeStock.Admin_UC
             int totalvendu = DatabaseOperations.totatVendre();
             produitsVendu.Text = totalvendu.ToString() + "Dh";
             circleVendu.MaxValue = DatabaseOperations.totatDisponible() + totalvendu;
-            circleVendu.Value = totalvendu;
+            circleVendu.Value = totalvendu; 
         }
 
         private void bunifuSlider1_ValueChanged(object sender, EventArgs e)
