@@ -110,20 +110,61 @@ namespace ProjetGestionDeStock
         public static void AjouterNewCategorie(string NewCategorie)
         {
             SqlCommand cmd = new SqlCommand();
+            cmd.Connection = getcon();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "insert into categorie (Nom) values('"+NewCategorie+"')";
-            cmd.Connection = getcon();
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        //------------------------ Modifier une categorie ----------------------------
+        public static void ModifierCategorie(int id,string nom)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = getcon();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "update [categorie] set Nom = '" + nom + "' where Id = '" + id + "'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+        //------------------------ Supprimer une categorie ----------------------------
+        public static void SupprimerCategorie(int id)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = getcon();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "delete from [categorie] where Id = '" + id + "'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+        //------------------------ Rechercher une categorie par nom ----------------------------
+        public static void RechercherCategorieNom(string text)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = getcon();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from [categorie] where Nom like'" + text + "%'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+        //------------------------ Rechercher une categorie par id ----------------------------
+        public static void RechercherCategorieId(string text)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = getcon();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from [categorie] where Id like'" + text + "%'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
         //------------------------ Lister les categories ----------------------------
 
         public static DataTable Categories()
         {
             SqlCommand cmd = new SqlCommand();
+            cmd.Connection = getcon();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select Id,Nom from categorie";
-            cmd.Connection = getcon();
             SqlDataReader sdr;
             DataTable dt = new DataTable();
             sdr = cmd.ExecuteReader();
