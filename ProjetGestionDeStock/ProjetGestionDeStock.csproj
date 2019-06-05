@@ -81,6 +81,12 @@
     <Compile Include="Admin UC\AjouterCategorie.Designer.cs">
       <DependentUpon>AjouterCategorie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Agent UC\A_liver.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agent UC\A_liver.Designer.cs">
+      <DependentUpon>A_liver.cs</DependentUpon>
+    </Compile>
     <Compile Include="Authentification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,11 +125,17 @@
     <EmbeddedResource Include="Admin UC\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Agent UC\A_liver.resx">
+      <DependentUpon>A_liver.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Authentification.resx">
       <DependentUpon>Authentification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainAgent.resx">
+      <DependentUpon>MainAgent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
