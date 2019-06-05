@@ -118,16 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="categorieBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>181, 17</value>
+    <value>189, 17</value>
   </metadata>
-  <metadata name="stockbdDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="stockbdDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="stockbdDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="categorieTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>400, 17</value>
+    <value>408, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BTN_AjouterCategorie.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BTN_ModifierCategorie.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAOQAAABACAYAAAAK2tt1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMqSURBVHhe7d3PS9NxHMfx/phu3bp5yUt5EIOwqEE/Dq5D
+        IygDKSjEpLSSCUUYmBhZqIVRQV5aRrNIKRdkBQtCBytLLApCobq86/UdrYafosyt9+H5gsfts6+nJ/t+
+        vzu4ompNjQHwgSABRwgScIQgAUcIEnCEIAFHfhtk9do6a25tt1Q6bZmnkzYzN2uMsb+bulE/6bH7dvRY
+        0tbV1gd7k18Gua/pYHSh4cej1nilw7b2HbTqU3Fb2boewF9QN+oncbnNrj4asZm3s3bkeDLY3aIgVe+N
+        VMruZTNW1bkj+AcALN3qEzG7mhmxscyE1W3YUtJfSZCK8Xluyg5cOxm8EIDl09DfYpMvsla/eXs4SH0z
+        EiNQObqV1fPloiD1zKjb1NCHAJRP9+iQdfWc+xGk3qbqBQ7PjEDlrWrbaNmXUxbbFi8EqVexevsTOgyg
+        /JK3+qxv4FIhSP0+oleyoYMAym99997ohWoUZO5V3mq6EsGDAMpPt62fvnwuBPlxYT76bSR0EEBlaFGQ
+        WugAgMrRCBJwQiNIwAmNIAEnNIIEnNAIEnBCI0jACY0gASc0ggSc0AgScEIjSMAJjSABJzSCBJzQCBJw
+        QiNIwAmNIAEnNIIEnNAIEnBCI0jACY0gASc0ggSc0AgScEIjSMAJjSABJzSCBJzQCBJwQiNIwAmNIAEn
+        NIIEnNAIEnBCI0jACS0KUv8oUv8wMnQIQGUUg5yZm7XqU/HgIQCVUQxyLDNhDf0twUMAyq+mK2G5V/lC
+        kGfO9lr33aHgQQDlt//6SRu+mSoEWb95u02/eclzJPCfjDwbtwOHDheClJ4LF+307YHgYQDl0zjUYTdH
+        01GHxSCr19ZZ5tmkbeptCn4IwPKr6txh06/ztq62vjRIiW2LWzY/FT1ghj4MYPkoxocvntjuPU3FBkuC
+        lJ279trz3JQlU+eDFwHw7xKDbdE3488xyqIgRbevfYOX7MG3evX2RyWHLgrgz60+EbPGKx02/HjU7oyP
+        FW9TfxYM8jvVq1ex7z68j360ZIwtfR8X5i2VTltza3uwN/ltkAAqiyABRwgScIQgAUcIEnCjxr4CgwXH
+        4KIXeMQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BTN_SupprimerCategorie.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOQAAABACAYAAAAK2tt1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMoSURBVHhe7d3NS1RhGIbx/qRWQYty4cdCXIgLdaGbFAyT
@@ -147,4 +170,7 @@
         1zuIAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>32</value>
+  </metadata>
 </root>

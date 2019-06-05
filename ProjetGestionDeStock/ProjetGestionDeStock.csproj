@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin UC\ajouterPerso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin UC\ajouterPerso.Designer.cs">
+      <DependentUpon>ajouterPerso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin UC\dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,11 +87,11 @@
     <Compile Include="Admin UC\AjouterCategorie.Designer.cs">
       <DependentUpon>AjouterCategorie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Agent UC\A_liver.cs">
+    <Compile Include="Admin UC\ModifierCategorie.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Agent UC\A_liver.Designer.cs">
-      <DependentUpon>A_liver.cs</DependentUpon>
+    <Compile Include="Admin UC\ModifierCategorie.Designer.cs">
+      <DependentUpon>ModifierCategorie.cs</DependentUpon>
     </Compile>
     <Compile Include="Authentification.cs">
       <SubType>Form</SubType>
@@ -119,23 +125,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>stockbdDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="stockbdDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stockbdDataSet11.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin UC\AjouterCategorie.resx">
       <DependentUpon>AjouterCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin UC\ajouterPerso.resx">
+      <DependentUpon>ajouterPerso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin UC\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Agent UC\A_liver.resx">
-      <DependentUpon>A_liver.cs</DependentUpon>
+    <EmbeddedResource Include="Admin UC\ModifierCategorie.resx">
+      <DependentUpon>ModifierCategorie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Authentification.resx">
       <DependentUpon>Authentification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainAgent.resx">
-      <DependentUpon>MainAgent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,6 +177,17 @@
     </None>
     <None Include="stockbdDataSet1.xss">
       <DependentUpon>stockbdDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="stockbdDataSet11.xsc">
+      <DependentUpon>stockbdDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="stockbdDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stockbdDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stockbdDataSet11.xss">
+      <DependentUpon>stockbdDataSet11.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -222,8 +244,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="stockbd_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>stockbd.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

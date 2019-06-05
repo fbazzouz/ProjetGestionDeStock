@@ -48,10 +48,10 @@
             this.LogoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Main = new System.Windows.Forms.Panel();
             this.dashboard2 = new ProjetGestionDeStock.Admin_UC.dashboard();
-            this.ajouterCategorie1 = new ProjetGestionDeStock.Admin_UC.AjouterCategorie();
             this.PanelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.PanelAnimator2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
+            this.ajouterCategorie1 = new ProjetGestionDeStock.Admin_UC.AjouterCategorie();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Slider)).BeginInit();
             this.Main.SuspendLayout();
@@ -426,8 +426,8 @@
             // Main
             // 
             this.Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.Main.Controls.Add(this.ajouterCategorie1);
             this.Main.Controls.Add(this.dashboard2);
+            this.Main.Controls.Add(this.ajouterCategorie1);
             this.LogoAnimator.SetDecoration(this.Main, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator.SetDecoration(this.Main, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator2.SetDecoration(this.Main, BunifuAnimatorNS.DecorationType.None);
@@ -449,20 +449,6 @@
             this.dashboard2.Name = "dashboard2";
             this.dashboard2.Size = new System.Drawing.Size(917, 610);
             this.dashboard2.TabIndex = 0;
-            // 
-            // ajouterCategorie1
-            // 
-            this.ajouterCategorie1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.PanelAnimator2.SetDecoration(this.ajouterCategorie1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.ajouterCategorie1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoAnimator.SetDecoration(this.ajouterCategorie1, BunifuAnimatorNS.DecorationType.None);
-            this.ajouterCategorie1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ajouterCategorie1.Location = new System.Drawing.Point(0, 0);
-            this.ajouterCategorie1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ajouterCategorie1.Name = "ajouterCategorie1";
-            this.ajouterCategorie1.Size = new System.Drawing.Size(917, 610);
-            this.ajouterCategorie1.TabIndex = 1;
-            this.ajouterCategorie1.Visible = false;
             // 
             // PanelAnimator
             // 
@@ -512,6 +498,19 @@
             this.bunifuDragControl1.Horizontal = true;
             this.bunifuDragControl1.TargetControl = this.Header;
             this.bunifuDragControl1.Vertical = true;
+            // 
+            // ajouterCategorie1
+            // 
+            this.ajouterCategorie1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.PanelAnimator2.SetDecoration(this.ajouterCategorie1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.ajouterCategorie1, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimator.SetDecoration(this.ajouterCategorie1, BunifuAnimatorNS.DecorationType.None);
+            this.ajouterCategorie1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ajouterCategorie1.Location = new System.Drawing.Point(0, 0);
+            this.ajouterCategorie1.Margin = new System.Windows.Forms.Padding(2);
+            this.ajouterCategorie1.Name = "ajouterCategorie1";
+            this.ajouterCategorie1.Size = new System.Drawing.Size(917, 610);
+            this.ajouterCategorie1.TabIndex = 1;
             // 
             // MainAdmin
             // 
