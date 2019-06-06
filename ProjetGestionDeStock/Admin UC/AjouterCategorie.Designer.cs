@@ -103,7 +103,7 @@
             this.DG_Categories.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.DG_Categories.HeaderForeColor = System.Drawing.Color.White;
             this.DG_Categories.Location = new System.Drawing.Point(171, 433);
-            this.DG_Categories.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DG_Categories.Margin = new System.Windows.Forms.Padding(4);
             this.DG_Categories.Name = "DG_Categories";
             this.DG_Categories.ReadOnly = true;
             this.DG_Categories.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -171,7 +171,7 @@
             this.TF_NewCategorie.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.TF_NewCategorie.LineThickness = 3;
             this.TF_NewCategorie.Location = new System.Drawing.Point(513, 158);
-            this.TF_NewCategorie.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TF_NewCategorie.Margin = new System.Windows.Forms.Padding(5);
             this.TF_NewCategorie.Name = "TF_NewCategorie";
             this.TF_NewCategorie.Size = new System.Drawing.Size(315, 44);
             this.TF_NewCategorie.TabIndex = 34;
@@ -208,7 +208,7 @@
             this.BTN_AjouterCategorie.IdleForecolor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.IdleLineColor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.Location = new System.Drawing.Point(829, 306);
-            this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(5);
             this.BTN_AjouterCategorie.Name = "BTN_AjouterCategorie";
             this.BTN_AjouterCategorie.Size = new System.Drawing.Size(228, 64);
             this.BTN_AjouterCategorie.TabIndex = 36;
@@ -229,6 +229,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AjouterCategorie";
             this.Size = new System.Drawing.Size(1171, 785);
+            this.Load += new System.EventHandler(this.AjouterCategorie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DG_Categories)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockbdDataSet)).EndInit();

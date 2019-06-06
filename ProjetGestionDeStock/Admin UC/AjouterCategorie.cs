@@ -38,5 +38,10 @@ namespace ProjetGestionDeStock.Admin_UC
             TF_NewCategorie.Text = "";
 
         }
+
+        private void AjouterCategorie_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

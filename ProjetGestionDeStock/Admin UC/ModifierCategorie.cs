@@ -66,5 +66,10 @@ namespace ProjetGestionDeStock.Admin_UC
 
             }
         }
+
+        private void ModifierCategorie_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

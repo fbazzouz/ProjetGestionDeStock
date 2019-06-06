@@ -84,5 +84,15 @@ namespace ProjetGestionDeStock
             ajouterCategorie1.BringToFront();
             
         }
+        private void ajouterCategorie_load(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void dashboard2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

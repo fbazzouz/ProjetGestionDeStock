@@ -52,7 +52,7 @@
       <HintPath>..\..\..\..\..\Desktop\Ensak S8\DotNet\TD,CC,EXAMS\Impot_Calculator\Impot_Calculator\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework">
-      <HintPath>..\..\..\..\..\Desktop\Ensak S8\DotNet\TD,CC,EXAMS\Etudiant\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <HintPath>..\..\..\WindowsFormsApp1\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -92,6 +92,18 @@
     </Compile>
     <Compile Include="Admin UC\ModifierCategorie.Designer.cs">
       <DependentUpon>ModifierCategorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agent  UC\confirmer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agent  UC\confirmer.Designer.cs">
+      <DependentUpon>confirmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agent  UC\Livrer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agent  UC\Livrer.Designer.cs">
+      <DependentUpon>Livrer.cs</DependentUpon>
     </Compile>
     <Compile Include="Authentification.cs">
       <SubType>Form</SubType>
@@ -142,11 +154,20 @@
     <EmbeddedResource Include="Admin UC\ModifierCategorie.resx">
       <DependentUpon>ModifierCategorie.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Agent  UC\confirmer.resx">
+      <DependentUpon>confirmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent  UC\Livrer.resx">
+      <DependentUpon>Livrer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Authentification.resx">
       <DependentUpon>Authentification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainAgent.resx">
+      <DependentUpon>MainAgent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

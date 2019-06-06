@@ -19,6 +19,7 @@ namespace ProjetGestionDeStock
         public MainAgent()
         {
             InitializeComponent();
+            Agent__UC.Livrer.Instance.BringToFront();
         }
 
         private void Slider_Click(object sender, EventArgs e)
@@ -45,22 +46,32 @@ namespace ProjetGestionDeStock
         
         }
 
-        private void bunifuFlatButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            if (!Main.Controls.Contains(Agent__UC.Livrer.Instance))
+            {
+                Main.Controls.Add(Agent__UC.Livrer.Instance);
+                Agent__UC.Livrer.Instance.Dock = DockStyle.Fill;
+                Agent__UC.Livrer.Instance.BringToFront();
+            }
+            else
+                Agent__UC.Livrer.Instance.BringToFront();
+        }
+        
 
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            if (!Main.Controls.Contains(Agent__UC.confirmer.Instance))
+            {
+                Main.Controls.Add(Agent__UC.confirmer.Instance);
+                Agent__UC.confirmer.Instance.Dock = DockStyle.Fill;
+                Agent__UC.confirmer.Instance.BringToFront();
+            }
+            else
+                Agent__UC.confirmer.Instance.BringToFront();
         }
 
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        private void Main_Paint(object sender, PaintEventArgs e)
         {
 
         }
