@@ -211,7 +211,7 @@ namespace ProjetGestionDeStock
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = getcon();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update personnel set Nom,Prenom,Email,CIN,login,mdp,role) values(@nom,@prenom,@email,@cin,@login,@mdp,@role)";
+            cmd.CommandText = "update personnel set Nom=@nom,Prenom=@prenom,Email=@email,CIN=@cin,login=@login,mdp=@mdp,role=@role where id=@id";
             cmd.Parameters.AddWithValue("id", id);
             cmd.Parameters.AddWithValue("@nom", nom);
             cmd.Parameters.AddWithValue("@prenom", prenom);
@@ -224,7 +224,18 @@ namespace ProjetGestionDeStock
             con.Close();
             return i;
         }
-
+        //------------------------ Delete un personel ----------------------------
+        public static int deletePerso(int id)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = getcon();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "delete from personnel where id=@id";
+            cmd.Parameters.AddWithValue("id", id);
+            int i = cmd.ExecuteNonQuery();
+            con.Close();
+            return i;
+        }
         //------------------------ Lister les produits  a livrer ----------------------------
 
         public static DataTable produitsAlivrer()
