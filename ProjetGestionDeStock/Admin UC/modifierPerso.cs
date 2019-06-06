@@ -65,5 +65,10 @@ namespace ProjetGestionDeStock.Admin_UC
             BTN_Modifier.Visible= true;
 
         }
+
+        private void DG_personnel_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

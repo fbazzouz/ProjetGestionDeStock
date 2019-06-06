@@ -250,7 +250,21 @@ namespace ProjetGestionDeStock
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        //------------------------ modification ----------------------------
 
+        public static DataTable produitslivre()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select livre,adresse ,CIN,quantite,reference,prix from client c,produit p,facture f,facture_produit fp where p.id_produit=fp.id_produit and f.id_facture=fp.id_facture and c.Id=f.id_client and fp.livre=1 ";
+            cmd.Connection = getcon();
+            SqlDataReader sdr;
+            DataTable dt = new DataTable();
+            sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+            return dt;
+        }
 
     }
 }

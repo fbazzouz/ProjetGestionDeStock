@@ -75,5 +75,10 @@ namespace ProjetGestionDeStock
         {
 
         }
+
+        private void PanelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
