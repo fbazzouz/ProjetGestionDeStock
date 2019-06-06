@@ -35,7 +35,7 @@ namespace ProjetGestionDeStock
             DataTable dta = new DataTable();
             SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection);
             dataadp.Fill(dta);
-            bunifuCustomDataGrid1.DataSource = dta;
+            bunifuCustomDataGrid12.DataSource = dta;
             connection.Close();
         }
 
@@ -52,7 +52,7 @@ namespace ProjetGestionDeStock
                 DataTable dt = new DataTable();
                 SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection);
                 dataadp.Fill(dt);
-                bunifuCustomDataGrid1.DataSource = dt;
+                bunifuCustomDataGrid12.DataSource = dt;
                 connection.Close();
             }
             if (CB_recherche.Text == "Marque")
@@ -64,7 +64,7 @@ namespace ProjetGestionDeStock
                 DataTable dt = new DataTable();
                 SqlDataAdapter dataadp = new SqlDataAdapter(cmd.CommandText, connection);
                 dataadp.Fill(dt);
-                bunifuCustomDataGrid1.DataSource = dt;
+                bunifuCustomDataGrid12.DataSource = dt;
                 connection.Close();
             }
         }
@@ -84,11 +84,11 @@ namespace ProjetGestionDeStock
             worksheet.Cells[1, 4] = "Prix";
             worksheet.Cells[1, 5] = "Marque";
             worksheet.Cells[1, 6] = "Description";
-            for (int j = 2; j <= bunifuCustomDataGrid1.Rows.Count; j++)
+            for (int j = 2; j <= bunifuCustomDataGrid12.Rows.Count; j++)
             {
                 for (int i = 2; i <= 6; i++)
                 {
-                    worksheet.Cells[j, i].Value= bunifuCustomDataGrid1.Rows[j - 2].Cells[i - 1].Value;
+                    worksheet.Cells[j, i].Value= bunifuCustomDataGrid12.Rows[j - 2].Cells[i - 1].Value;
                     worksheet.Columns.AutoFit();
                 }
 
