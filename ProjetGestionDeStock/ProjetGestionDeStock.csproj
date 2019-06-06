@@ -49,21 +49,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\Package\Bunifu_UI_v1.52.dll</HintPath>
+      <HintPath>..\Packages\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Office.Interop.Access.Dao, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Access.Dao\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Access.Dao.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\Desktop\Ensak S8\DotNet\TD,CC,EXAMS\Etudiant\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -75,29 +69,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin UC\ajouterPerso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin UC\ajouterPerso.Designer.cs">
+      <DependentUpon>ajouterPerso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin UC\dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Admin UC\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ajouterCommande.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ajouterCommande.Designer.cs">
-      <DependentUpon>ajouterCommande.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ajouterproduit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ajouterproduit.designer.cs">
-      <DependentUpon>ajouterproduit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="lister.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="lister.Designer.cs">
-      <DependentUpon>lister.cs</DependentUpon>
     </Compile>
     <Compile Include="MainAgent.cs">
       <SubType>Form</SubType>
@@ -125,17 +107,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stockbdDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stockbdDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stockbdDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stockbdDataSet11.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin UC\AjouterCategorie.resx">
+      <DependentUpon>AjouterCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin UC\ajouterPerso.resx">
+      <DependentUpon>ajouterPerso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin UC\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ajouterCommande.resx">
-      <DependentUpon>ajouterCommande.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ajouterproduit.resx">
-      <DependentUpon>ajouterproduit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="lister.resx">
-      <DependentUpon>lister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
@@ -165,6 +154,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="stockbdDataSet1.xsc">
+      <DependentUpon>stockbdDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="stockbdDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stockbdDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stockbdDataSet1.xss">
+      <DependentUpon>stockbdDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="stockbdDataSet11.xsc">
+      <DependentUpon>stockbdDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="stockbdDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stockbdDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stockbdDataSet11.xss">
+      <DependentUpon>stockbdDataSet11.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -213,14 +224,12 @@
     <None Include="Resources\Small Business_96px.png" />
     <None Include="Resources\Update User_96px.png" />
     <None Include="Resources\Update_96px.png" />
-    <None Include="Resources\Bill_52px.png" />
-    <None Include="Resources\List_50px.png" />
     <Content Include="stockbd.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="stockbd_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>stockbd.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
