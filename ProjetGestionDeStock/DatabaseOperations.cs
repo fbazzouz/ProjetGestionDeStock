@@ -205,7 +205,7 @@ namespace ProjetGestionDeStock
             con.Close();
             return dt;
         }
-        //------------------------ Ajouter un personel ----------------------------
+        //------------------------ Modifier un personel ----------------------------
         public static int updatePerso(int id,string nom, string prenom, string email, string cin, string login, string mdp, string role)
         {
             SqlCommand cmd = new SqlCommand();
