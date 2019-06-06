@@ -36,6 +36,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AjouterCategorie));
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.DG_Categories = new ns1.BunifuCustomDataGrid();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categorieBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stockbdDataSet = new ProjetGestionDeStock.stockbdDataSet();
             this.categorieTableAdapter = new ProjetGestionDeStock.stockbdDataSetTableAdapters.categorieTableAdapter();
@@ -43,8 +45,6 @@
             this.TF_NewCategorie = new ns1.BunifuMaterialTextbox();
             this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
             this.BTN_AjouterCategorie = new ns1.BunifuThinButton2();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Categories)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockbdDataSet)).BeginInit();
@@ -116,6 +116,20 @@
             this.DG_Categories.Size = new System.Drawing.Size(610, 216);
             this.DG_Categories.TabIndex = 32;
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomDataGridViewTextBoxColumn
+            // 
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom du categorie";
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            this.nomDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // categorieBindingSource
             // 
             this.categorieBindingSource.DataMember = "categorie";
@@ -154,6 +168,7 @@
             this.TF_NewCategorie.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.TF_NewCategorie.LineThickness = 3;
             this.TF_NewCategorie.Location = new System.Drawing.Point(385, 128);
+            this.TF_NewCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.TF_NewCategorie.Name = "TF_NewCategorie";
             this.TF_NewCategorie.Size = new System.Drawing.Size(236, 36);
             this.TF_NewCategorie.TabIndex = 34;
@@ -189,25 +204,12 @@
             this.BTN_AjouterCategorie.IdleForecolor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.IdleLineColor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.Location = new System.Drawing.Point(622, 249);
+            this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_AjouterCategorie.Name = "BTN_AjouterCategorie";
             this.BTN_AjouterCategorie.Size = new System.Drawing.Size(171, 52);
             this.BTN_AjouterCategorie.TabIndex = 36;
             this.BTN_AjouterCategorie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BTN_AjouterCategorie.Click += new System.EventHandler(this.BTN_AjouterCategorie_Click);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomDataGridViewTextBoxColumn
-            // 
-            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
-            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom du categorie";
-            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
-            this.nomDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // AjouterCategorie
             // 
@@ -220,9 +222,10 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.DG_Categories);
             this.Controls.Add(this.bunifuCustomLabel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AjouterCategorie";
             this.Size = new System.Drawing.Size(878, 638);
+            this.Load += new System.EventHandler(this.AjouterCategorie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DG_Categories)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockbdDataSet)).EndInit();

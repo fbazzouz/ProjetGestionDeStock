@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin UC\modifierPerso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin UC\modifierPerso.Designer.cs">
+      <DependentUpon>modifierPerso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin UC\ajouterPerso.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </Compile>
     <EmbeddedResource Include="Admin UC\AjouterCategorie.resx">
       <DependentUpon>AjouterCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin UC\modifierPerso.resx">
+      <DependentUpon>modifierPerso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin UC\ajouterPerso.resx">
       <DependentUpon>ajouterPerso.cs</DependentUpon>

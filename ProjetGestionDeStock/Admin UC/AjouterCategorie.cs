@@ -13,21 +13,11 @@ namespace ProjetGestionDeStock.Admin_UC
 
     public partial class AjouterCategorie : UserControl
     {
-        private static AjouterCategorie _instance;
-        public static AjouterCategorie Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new AjouterCategorie();
-                return _instance;
-            }
-        }
+       
         public AjouterCategorie()
         {
           InitializeComponent();
-            DataTable dta = DatabaseOperations.Categories();
-            DG_Categories.DataSource = dta;
+          
         }
 
         private void BTN_AjouterCategorie_Click(object sender, EventArgs e)
@@ -37,6 +27,15 @@ namespace ProjetGestionDeStock.Admin_UC
             DG_Categories.DataSource = dta;
             TF_NewCategorie.Text = "";
 
+        }
+
+        private void AjouterCategorie_Load(object sender, EventArgs e)
+        {
+            if (!DesignMode)
+            {
+                DataTable dta = DatabaseOperations.Categories();
+                DG_Categories.DataSource = dta;
+            }
         }
     }
 }

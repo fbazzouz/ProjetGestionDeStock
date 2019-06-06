@@ -12,21 +12,11 @@ namespace ProjetGestionDeStock.Admin_UC
 {
     public partial class ModifierCategorie : UserControl
     {
-        private static ModifierCategorie _instance;
-        public static ModifierCategorie Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new ModifierCategorie();
-                return _instance;
-            }
-        }
+        
         public ModifierCategorie()
         {
             InitializeComponent();
-            DataTable dta = DatabaseOperations.Categories();
-            DG_CategoriesM.DataSource = dta;
+           
         }
 
         private void BTN_ModifierCategorie_Click(object sender, EventArgs e)
@@ -34,7 +24,6 @@ namespace ProjetGestionDeStock.Admin_UC
             int SelectedIndex = DG_CategoriesM.SelectedRows[0].Index;
             int rowID = int.Parse(DG_CategoriesM.Rows[SelectedIndex].Cells["IdC"].Value.ToString());
             DatabaseOperations.ModifierCategorie(rowID,TF_ModifiedCategorie.Text);
-
             DataTable dta = DatabaseOperations.Categories();
             DG_CategoriesM.DataSource = dta;
             TF_ModifiedCategorie.Text = "";
@@ -45,7 +34,7 @@ namespace ProjetGestionDeStock.Admin_UC
             int SelectedIndex = DG_CategoriesM.SelectedRows[0].Index;
             int rowID = int.Parse(DG_CategoriesM.Rows[SelectedIndex].Cells["IdC"].Value.ToString());
             DatabaseOperations.SupprimerCategorie(rowID);
-
+      
             DataTable dta = DatabaseOperations.Categories();
             DG_CategoriesM.DataSource = dta;
         }
@@ -64,7 +53,26 @@ namespace ProjetGestionDeStock.Admin_UC
                 DataTable dta = DatabaseOperations.Categories();
                 DG_CategoriesM.DataSource = dta;
 
+
             }
+        }
+
+        internal void ModifierCategorie_Load(object sender, EventArgs e)
+        {
+            if (!DesignMode)
+            {
+                DataTable dta = DatabaseOperations.Categories();
+                DG_CategoriesM.DataSource = dta;
+            }
+        }
+
+
+
+        private void DG_CategoriesM_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int SelectedIndex = DG_CategoriesM.SelectedRows[0].Index;
+            TF_ModifiedCategorie.Text = DG_CategoriesM.Rows[SelectedIndex].Cells["Nom"].Value.ToString();
+            TB_ID.Text = DG_CategoriesM.Rows[SelectedIndex].Cells["IdC"].Value.ToString();
         }
     }
 }

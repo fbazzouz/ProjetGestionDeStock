@@ -12,7 +12,7 @@ namespace ProjetGestionDeStock
     class DatabaseOperations
     {
         
-        public static SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = |DataDirectory|stockbd.mdf;Integrated Security = True
+        public static SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = |DataDirectory|\stockbd.mdf;Integrated Security = True
 ");
         //------------------------ opeeen conncetion ----------------------------
         private static SqlConnection getcon()
@@ -171,6 +171,58 @@ namespace ProjetGestionDeStock
             dt.Load(sdr);
             con.Close();
             return dt;
+        }
+        //------------------------ Ajouter un personel ----------------------------
+        public static int AjouterNewPerso(string nom,string prenom,string email,string cin,string login,string mdp,string role)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = getcon();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into personnel (Nom,Prenom,Email,CIN,login,mdp,role) values(@nom,@prenom,@email,@cin,@login,@mdp,@role)";
+            cmd.Parameters.AddWithValue("@nom", nom);
+            cmd.Parameters.AddWithValue("@prenom", prenom);
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@cin", cin);
+            cmd.Parameters.AddWithValue("@mdp", mdp);
+            cmd.Parameters.AddWithValue("@login", login);
+            cmd.Parameters.AddWithValue("@role", role);
+            int i=cmd.ExecuteNonQuery();
+            con.Close();
+            return i;
+        }
+        //----------------------- lister les personnels ----------------------------
+
+        public static DataTable listerPerso()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from personnel";
+            cmd.Connection = getcon();
+            SqlDataReader sdr;
+            DataTable dt = new DataTable();
+            sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+            return dt;
+        }
+        //------------------------ Ajouter un personel ----------------------------
+        public static int updatePerso(int id,string nom, string prenom, string email, string cin, string login, string mdp, string role)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = getcon();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "update personnel set Nom,Prenom,Email,CIN,login,mdp,role) values(@nom,@prenom,@email,@cin,@login,@mdp,@role)";
+            cmd.Parameters.AddWithValue("id", id);
+            cmd.Parameters.AddWithValue("@nom", nom);
+            cmd.Parameters.AddWithValue("@prenom", prenom);
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@cin", cin);
+            cmd.Parameters.AddWithValue("@mdp", mdp);
+            cmd.Parameters.AddWithValue("@login", login);
+            cmd.Parameters.AddWithValue("@role", role);
+            int i = cmd.ExecuteNonQuery();
+            con.Close();
+            return i;
         }
 
 
