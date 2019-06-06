@@ -61,5 +61,14 @@ namespace ProjetGestionDeStock.Agent_UC
 
            
         }
+
+        private void BTN_AjouterCategorie_Click_1(object sender, EventArgs e)
+        {
+            if (!DesignMode)
+            {
+                DataTable dta = DatabaseOperations.produitsAlivrer();
+                DG_livrer.DataSource = dta;
+            }
+        }
     }
 }

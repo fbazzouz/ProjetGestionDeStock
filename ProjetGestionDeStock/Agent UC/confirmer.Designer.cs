@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(confirmer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
             this.etat = new ns1.BunifuMaterialTextbox();
-            this.BTN_AjouterCategorie = new ns1.BunifuThinButton2();
             this.DG_livrer = new ns1.BunifuCustomDataGrid();
+            this.BTN_AjouterCategorie = new ns1.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.DG_livrer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,11 +79,62 @@
             this.etat.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.etat.LineThickness = 8;
             this.etat.Location = new System.Drawing.Point(298, 322);
-            this.etat.Margin = new System.Windows.Forms.Padding(6);
+            this.etat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.etat.Name = "etat";
             this.etat.Size = new System.Drawing.Size(366, 43);
             this.etat.TabIndex = 43;
             this.etat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // DG_livrer
+            // 
+            this.DG_livrer.AllowUserToAddRows = false;
+            this.DG_livrer.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DG_livrer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DG_livrer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DG_livrer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DG_livrer.BackgroundColor = System.Drawing.Color.White;
+            this.DG_livrer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DG_livrer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DG_livrer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DG_livrer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DG_livrer.ColumnHeadersHeight = 50;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Coral;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DG_livrer.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DG_livrer.DoubleBuffered = true;
+            this.DG_livrer.EnableHeadersVisualStyles = false;
+            this.DG_livrer.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.DG_livrer.HeaderForeColor = System.Drawing.Color.White;
+            this.DG_livrer.Location = new System.Drawing.Point(75, 49);
+            this.DG_livrer.Margin = new System.Windows.Forms.Padding(4);
+            this.DG_livrer.Name = "DG_livrer";
+            this.DG_livrer.ReadOnly = true;
+            this.DG_livrer.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DG_livrer.RowHeadersVisible = false;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.DG_livrer.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DG_livrer.RowTemplate.DividerHeight = 1;
+            this.DG_livrer.RowTemplate.Height = 40;
+            this.DG_livrer.RowTemplate.ReadOnly = true;
+            this.DG_livrer.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.DG_livrer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DG_livrer.Size = new System.Drawing.Size(723, 263);
+            this.DG_livrer.TabIndex = 48;
             // 
             // BTN_AjouterCategorie
             // 
@@ -109,57 +160,7 @@
             this.BTN_AjouterCategorie.Size = new System.Drawing.Size(199, 52);
             this.BTN_AjouterCategorie.TabIndex = 47;
             this.BTN_AjouterCategorie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DG_livrer
-            // 
-            this.DG_livrer.AllowUserToAddRows = false;
-            this.DG_livrer.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.DG_livrer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.DG_livrer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DG_livrer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DG_livrer.BackgroundColor = System.Drawing.Color.White;
-            this.DG_livrer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DG_livrer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.DG_livrer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DG_livrer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.DG_livrer.ColumnHeadersHeight = 50;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Coral;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DG_livrer.DefaultCellStyle = dataGridViewCellStyle7;
-            this.DG_livrer.DoubleBuffered = true;
-            this.DG_livrer.EnableHeadersVisualStyles = false;
-            this.DG_livrer.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.DG_livrer.HeaderForeColor = System.Drawing.Color.White;
-            this.DG_livrer.Location = new System.Drawing.Point(75, 49);
-            this.DG_livrer.Margin = new System.Windows.Forms.Padding(4);
-            this.DG_livrer.Name = "DG_livrer";
-            this.DG_livrer.ReadOnly = true;
-            this.DG_livrer.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DG_livrer.RowHeadersVisible = false;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            this.DG_livrer.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.DG_livrer.RowTemplate.DividerHeight = 1;
-            this.DG_livrer.RowTemplate.Height = 40;
-            this.DG_livrer.RowTemplate.ReadOnly = true;
-            this.DG_livrer.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.DG_livrer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DG_livrer.Size = new System.Drawing.Size(723, 263);
-            this.DG_livrer.TabIndex = 48;
+            this.BTN_AjouterCategorie.Click += new System.EventHandler(this.BTN_AjouterCategorie_Click);
             // 
             // confirmer
             // 

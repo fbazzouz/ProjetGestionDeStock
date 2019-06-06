@@ -48,5 +48,12 @@ namespace ProjetGestionDeStock.Agent_UC
             int SelectedIndex = DG_livrer.SelectedRows[0].Index;
             etat.Text = DG_livrer.Rows[SelectedIndex].Cells[3].Value.ToString();
         }
+
+        private void BTN_AjouterCategorie_Click(object sender, EventArgs e)
+        {
+            int SelectedIndex = DG_livrer.SelectedRows[0].Index;
+            etat.Text = DG_livrer.Rows[SelectedIndex].Cells[3].Value.ToString();
+            DatabaseOperations.ModifierCategorie(SelectedIndex, etat.Text);
+        }
     }
 }

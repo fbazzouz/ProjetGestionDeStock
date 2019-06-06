@@ -102,7 +102,7 @@
             this.TB_total.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_total.LineThickness = 3;
             this.TB_total.Location = new System.Drawing.Point(809, 0);
-            this.TB_total.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_total.Margin = new System.Windows.Forms.Padding(5);
             this.TB_total.Name = "TB_total";
             this.TB_total.Size = new System.Drawing.Size(241, 41);
             this.TB_total.TabIndex = 15;
@@ -122,7 +122,7 @@
             this.TB_facture_N.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_facture_N.LineThickness = 3;
             this.TB_facture_N.Location = new System.Drawing.Point(408, 0);
-            this.TB_facture_N.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_facture_N.Margin = new System.Windows.Forms.Padding(5);
             this.TB_facture_N.Name = "TB_facture_N";
             this.TB_facture_N.Size = new System.Drawing.Size(241, 41);
             this.TB_facture_N.TabIndex = 14;
@@ -178,7 +178,7 @@
             this.TB_nom.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_nom.LineThickness = 3;
             this.TB_nom.Location = new System.Drawing.Point(104, 139);
-            this.TB_nom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_nom.Margin = new System.Windows.Forms.Padding(5);
             this.TB_nom.Name = "TB_nom";
             this.TB_nom.Size = new System.Drawing.Size(241, 41);
             this.TB_nom.TabIndex = 20;
@@ -201,7 +201,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.label1.Location = new System.Drawing.Point(4, 112);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -222,7 +222,7 @@
             this.TB_prenom.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_prenom.LineThickness = 3;
             this.TB_prenom.Location = new System.Drawing.Point(507, 139);
-            this.TB_prenom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_prenom.Margin = new System.Windows.Forms.Padding(5);
             this.TB_prenom.Name = "TB_prenom";
             this.TB_prenom.Size = new System.Drawing.Size(241, 41);
             this.TB_prenom.TabIndex = 23;
@@ -254,7 +254,7 @@
             this.TB_Email.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_Email.LineThickness = 3;
             this.TB_Email.Location = new System.Drawing.Point(104, 177);
-            this.TB_Email.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_Email.Margin = new System.Windows.Forms.Padding(5);
             this.TB_Email.Name = "TB_Email";
             this.TB_Email.Size = new System.Drawing.Size(241, 41);
             this.TB_Email.TabIndex = 25;
@@ -286,7 +286,7 @@
             this.TB_CIN.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_CIN.LineThickness = 3;
             this.TB_CIN.Location = new System.Drawing.Point(507, 177);
-            this.TB_CIN.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_CIN.Margin = new System.Windows.Forms.Padding(5);
             this.TB_CIN.Name = "TB_CIN";
             this.TB_CIN.Size = new System.Drawing.Size(241, 41);
             this.TB_CIN.TabIndex = 27;
@@ -318,7 +318,7 @@
             this.TB_Adresse.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_Adresse.LineThickness = 3;
             this.TB_Adresse.Location = new System.Drawing.Point(864, 156);
-            this.TB_Adresse.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_Adresse.Margin = new System.Windows.Forms.Padding(5);
             this.TB_Adresse.Name = "TB_Adresse";
             this.TB_Adresse.Size = new System.Drawing.Size(241, 62);
             this.TB_Adresse.TabIndex = 29;
@@ -341,7 +341,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.label2.Location = new System.Drawing.Point(12, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -353,7 +353,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.label3.Location = new System.Drawing.Point(12, 274);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -363,13 +363,13 @@
             // 
             // DP
             // 
-            this.DP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.DP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.DP.BorderRadius = 0;
             this.DP.ForeColor = System.Drawing.Color.White;
             this.DP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DP.FormatCustom = null;
             this.DP.Location = new System.Drawing.Point(408, 57);
-            this.DP.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.DP.Margin = new System.Windows.Forms.Padding(5);
             this.DP.Name = "DP";
             this.DP.Size = new System.Drawing.Size(241, 44);
             this.DP.TabIndex = 33;
@@ -382,7 +382,7 @@
             "Payée",
             "Impayée"});
             this.CB_status.Location = new System.Drawing.Point(809, 64);
-            this.CB_status.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_status.Margin = new System.Windows.Forms.Padding(4);
             this.CB_status.Name = "CB_status";
             this.CB_status.Size = new System.Drawing.Size(240, 24);
             this.CB_status.TabIndex = 34;
@@ -391,7 +391,7 @@
             // 
             this.CB_reference.FormattingEnabled = true;
             this.CB_reference.Location = new System.Drawing.Point(155, 310);
-            this.CB_reference.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_reference.Margin = new System.Windows.Forms.Padding(4);
             this.CB_reference.Name = "CB_reference";
             this.CB_reference.Size = new System.Drawing.Size(240, 24);
             this.CB_reference.TabIndex = 35;
@@ -422,7 +422,7 @@
             this.TB_quantite.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_quantite.LineThickness = 3;
             this.TB_quantite.Location = new System.Drawing.Point(556, 293);
-            this.TB_quantite.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_quantite.Margin = new System.Windows.Forms.Padding(5);
             this.TB_quantite.Name = "TB_quantite";
             this.TB_quantite.Size = new System.Drawing.Size(241, 41);
             this.TB_quantite.TabIndex = 38;
@@ -454,7 +454,7 @@
             this.TB_marque.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_marque.LineThickness = 3;
             this.TB_marque.Location = new System.Drawing.Point(556, 353);
-            this.TB_marque.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_marque.Margin = new System.Windows.Forms.Padding(5);
             this.TB_marque.Name = "TB_marque";
             this.TB_marque.Size = new System.Drawing.Size(241, 41);
             this.TB_marque.TabIndex = 40;
@@ -486,7 +486,7 @@
             this.TB_prix.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_prix.LineThickness = 3;
             this.TB_prix.Location = new System.Drawing.Point(156, 353);
-            this.TB_prix.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TB_prix.Margin = new System.Windows.Forms.Padding(5);
             this.TB_prix.Name = "TB_prix";
             this.TB_prix.Size = new System.Drawing.Size(241, 41);
             this.TB_prix.TabIndex = 42;
@@ -507,10 +507,10 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(864, 293);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(241, 28);
             this.button2.TabIndex = 43;
@@ -520,10 +520,10 @@
             // 
             // button_validerCommande
             // 
-            this.button_validerCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button_validerCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.button_validerCommande.ForeColor = System.Drawing.Color.White;
             this.button_validerCommande.Location = new System.Drawing.Point(864, 353);
-            this.button_validerCommande.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_validerCommande.Margin = new System.Windows.Forms.Padding(4);
             this.button_validerCommande.Name = "button_validerCommande";
             this.button_validerCommande.Size = new System.Drawing.Size(241, 28);
             this.button_validerCommande.TabIndex = 44;
@@ -535,7 +535,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.label4.Location = new System.Drawing.Point(24, 439);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -545,10 +545,10 @@
             // 
             // button_ajouterProduit
             // 
-            this.button_ajouterProduit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button_ajouterProduit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.button_ajouterProduit.ForeColor = System.Drawing.Color.White;
             this.button_ajouterProduit.Location = new System.Drawing.Point(428, 415);
-            this.button_ajouterProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouterProduit.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouterProduit.Name = "button_ajouterProduit";
             this.button_ajouterProduit.Size = new System.Drawing.Size(241, 28);
             this.button_ajouterProduit.TabIndex = 47;
@@ -558,10 +558,10 @@
             // 
             // button_ajouterClient
             // 
-            this.button_ajouterClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button_ajouterClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.button_ajouterClient.ForeColor = System.Drawing.Color.White;
             this.button_ajouterClient.Location = new System.Drawing.Point(428, 241);
-            this.button_ajouterClient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouterClient.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouterClient.Name = "button_ajouterClient";
             this.button_ajouterClient.Size = new System.Drawing.Size(241, 33);
             this.button_ajouterClient.TabIndex = 48;
@@ -573,7 +573,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.label5.Location = new System.Drawing.Point(32, 608);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -603,7 +603,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeight = 50;
+            this.bunifuCustomDataGrid1.ColumnHeadersHeight = 20;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -616,7 +616,7 @@
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(29, 479);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(29, 468);
             this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.ReadOnly = true;
@@ -625,11 +625,11 @@
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.bunifuCustomDataGrid1.RowTemplate.DividerHeight = 1;
-            this.bunifuCustomDataGrid1.RowTemplate.Height = 40;
+            this.bunifuCustomDataGrid1.RowTemplate.Height = 10;
             this.bunifuCustomDataGrid1.RowTemplate.ReadOnly = true;
             this.bunifuCustomDataGrid1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1076, 123);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1076, 134);
             this.bunifuCustomDataGrid1.TabIndex = 51;
             // 
             // bunifuCustomDataGrid2
@@ -725,7 +725,7 @@
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ajouterCommande";
             this.Size = new System.Drawing.Size(1171, 785);
             this.Load += new System.EventHandler(this.ajouterCommande_Load);
