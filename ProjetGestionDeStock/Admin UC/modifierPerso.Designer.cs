@@ -72,7 +72,7 @@
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(36, 21);
             this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(152, 17);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(186, 19);
             this.bunifuCustomLabel2.TabIndex = 2;
             this.bunifuCustomLabel2.Text = "MODIFIER PERSONNEL";
             // 
@@ -206,7 +206,7 @@
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(34, 356);
             this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(140, 17);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(171, 19);
             this.bunifuCustomLabel3.TabIndex = 34;
             this.bunifuCustomLabel3.Text = "Liste des Personnels";
             // 
@@ -220,7 +220,7 @@
             this.bunifuCustomLabel7.Location = new System.Drawing.Point(49, 90);
             this.bunifuCustomLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(108, 17);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(138, 22);
             this.bunifuCustomLabel7.TabIndex = 22;
             this.bunifuCustomLabel7.Text = "Nom Complete :";
             // 
@@ -276,7 +276,7 @@
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(491, 152);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(50, 17);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(64, 22);
             this.bunifuCustomLabel1.TabIndex = 38;
             this.bunifuCustomLabel1.Text = "Email :";
             // 
@@ -311,7 +311,7 @@
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(53, 152);
             this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(38, 17);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(50, 22);
             this.bunifuCustomLabel4.TabIndex = 39;
             this.bunifuCustomLabel4.Text = "CIN :";
             // 
@@ -346,7 +346,7 @@
             this.LB_login.Location = new System.Drawing.Point(49, 222);
             this.LB_login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_login.Name = "LB_login";
-            this.LB_login.Size = new System.Drawing.Size(51, 17);
+            this.LB_login.Size = new System.Drawing.Size(64, 22);
             this.LB_login.TabIndex = 43;
             this.LB_login.Text = "Login :";
             // 
@@ -360,7 +360,7 @@
             this.bunifuCustomLabel6.Location = new System.Drawing.Point(487, 222);
             this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(77, 17);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(99, 22);
             this.bunifuCustomLabel6.TabIndex = 42;
             this.bunifuCustomLabel6.Text = "Password :";
             // 
@@ -435,7 +435,7 @@
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(54, 279);
             this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(45, 17);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(57, 22);
             this.bunifuCustomLabel5.TabIndex = 47;
             this.bunifuCustomLabel5.Text = "Role :";
             // 
@@ -493,7 +493,7 @@
             // 
             // modifierPerso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.Controls.Add(this.Btn_Supprimer);

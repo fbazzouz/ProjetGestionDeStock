@@ -29,8 +29,11 @@ namespace ProjetGestionDeStock.Agent_UC
         }
         private void Livrer_Load(object sender, EventArgs e)
         {
-            DataTable dta = DatabaseOperations.produitsAlivrer();
-            DG_livrer.DataSource = dta;
+            if (!DesignMode)
+            {
+                DataTable dta = DatabaseOperations.produitsAlivrer();
+                DG_livrer.DataSource = dta;
+            }
         }
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -41,6 +44,22 @@ namespace ProjetGestionDeStock.Agent_UC
         private void DG_lastproduit_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void bunifuCustomLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTN_AjouterCategorie_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void DG_lastproduit_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int SelectedIndex = DG_livrer.SelectedRows[0].Index;
+
+           
         }
     }
 }

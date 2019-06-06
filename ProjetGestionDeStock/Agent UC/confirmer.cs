@@ -31,7 +31,22 @@ namespace ProjetGestionDeStock.Agent_UC
 
         private void confirmer_Load(object sender, EventArgs e)
         {
+            if (!DesignMode)
+            {
+                DataTable dta = DatabaseOperations.produitslivre();
+                DG_livrer.DataSource = dta;
+                
+            }
+        }
 
+        private void DG_livrer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void DG_livrer_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int SelectedIndex = DG_livrer.SelectedRows[0].Index;
+            etat.Text = DG_livrer.Rows[SelectedIndex].Cells[3].Value.ToString();
         }
     }
 }
