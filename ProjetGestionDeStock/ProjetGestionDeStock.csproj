@@ -99,11 +99,17 @@
     <Compile Include="Admin UC\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Agent UC\A_liver.cs">
+    <Compile Include="Agent UC\confirmer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Agent UC\A_liver.Designer.cs">
-      <DependentUpon>A_liver.cs</DependentUpon>
+    <Compile Include="Agent UC\confirmer.Designer.cs">
+      <DependentUpon>confirmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agent UC\Livrer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agent UC\Livrer.Designer.cs">
+      <DependentUpon>Livrer.cs</DependentUpon>
     </Compile>
     <Compile Include="Caissier UC\ajouterCommande.cs">
       <SubType>UserControl</SubType>
@@ -175,8 +181,11 @@
     <EmbeddedResource Include="Admin UC\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Agent UC\A_liver.resx">
-      <DependentUpon>A_liver.cs</DependentUpon>
+    <EmbeddedResource Include="Agent UC\confirmer.resx">
+      <DependentUpon>confirmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent UC\Livrer.resx">
+      <DependentUpon>Livrer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Caissier UC\ajouterCommande.resx">
       <DependentUpon>ajouterCommande.cs</DependentUpon>
@@ -342,5 +351,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

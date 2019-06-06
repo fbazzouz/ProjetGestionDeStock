@@ -231,7 +231,7 @@ namespace ProjetGestionDeStock
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select date,CIN,quantite,reference,prix,adresse from client c,produit p,facture f,facture_produit fp where p.id_produit=fp.id_produit and f.id_facture=fp.id_facture and c.Id=f.id_client and fp.livre=1 ";
+            cmd.CommandText = "select date,adresse ,CIN,quantite,reference,prix from client c,produit p,facture f,facture_produit fp where p.id_produit=fp.id_produit and f.id_facture=fp.id_facture and c.Id=f.id_client and fp.livre=1 ";
             cmd.Connection = getcon();
             SqlDataReader sdr;
             DataTable dt = new DataTable();
@@ -240,7 +240,7 @@ namespace ProjetGestionDeStock
             con.Close();
             return dt;
         }
-        //------------------------ Modifier une categorie ----------------------------
+        //------------------------  confirmer la livraison ----------------------------
         public static void livrer(int id_p,int id_c)
         {
             SqlCommand cmd = new SqlCommand();

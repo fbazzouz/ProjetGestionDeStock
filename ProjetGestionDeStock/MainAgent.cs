@@ -19,7 +19,7 @@ namespace ProjetGestionDeStock
         public MainAgent()
         {
             InitializeComponent();
-            Agent__UC.Livrer.Instance.BringToFront();
+            Agent_UC.Livrer.Instance.BringToFront();
         }
 
         private void Slider_Click(object sender, EventArgs e)
@@ -48,27 +48,27 @@ namespace ProjetGestionDeStock
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            if (!Main.Controls.Contains(Agent__UC.Livrer.Instance))
+            if (!Main.Controls.Contains(Agent_UC.Livrer.Instance))
             {
-                Main.Controls.Add(Agent__UC.Livrer.Instance);
-                Agent__UC.Livrer.Instance.Dock = DockStyle.Fill;
-                Agent__UC.Livrer.Instance.BringToFront();
+                Main.Controls.Add(Agent_UC.Livrer.Instance);
+                Agent_UC.Livrer.Instance.Dock = DockStyle.Fill;
+                Agent_UC.Livrer.Instance.BringToFront();
             }
             else
-                Agent__UC.Livrer.Instance.BringToFront();
+                Agent_UC.Livrer.Instance.BringToFront();
         }
         
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (!Main.Controls.Contains(Agent__UC.confirmer.Instance))
+            if (!Main.Controls.Contains(Agent_UC.confirmer.Instance))
             {
-                Main.Controls.Add(Agent__UC.confirmer.Instance);
-                Agent__UC.confirmer.Instance.Dock = DockStyle.Fill;
-                Agent__UC.confirmer.Instance.BringToFront();
+                Main.Controls.Add(Agent_UC.confirmer.Instance);
+                Agent_UC.confirmer.Instance.Dock = DockStyle.Fill;
+                Agent_UC.confirmer.Instance.BringToFront();
             }
             else
-                Agent__UC.confirmer.Instance.BringToFront();
+                Agent_UC.confirmer.Instance.BringToFront();
         }
 
         private void Main_Paint(object sender, PaintEventArgs e)
