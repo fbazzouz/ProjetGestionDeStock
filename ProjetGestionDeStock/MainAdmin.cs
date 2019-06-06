@@ -63,15 +63,7 @@ namespace ProjetGestionDeStock
 
         private void bunifuFlatButton3_Click_1(object sender, EventArgs e) //Ajouterunecategorie
         {
-            if(!Main.Controls.Contains(Admin_UC.AjouterCategorie.Instance))
-            {
-                Main.Controls.Add(Admin_UC.AjouterCategorie.Instance);
-                Admin_UC.AjouterCategorie.Instance.Dock = DockStyle.Fill;
-                Admin_UC.AjouterCategorie.Instance.BringToFront();
-            }
-            else
-                Admin_UC.AjouterCategorie.Instance.BringToFront();
-
+          
         }
 
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
@@ -82,7 +74,22 @@ namespace ProjetGestionDeStock
         private void bunifuFlatButton3_Click_2(object sender, EventArgs e)
         {
             ajouterCategorie1.BringToFront();
-            
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            modifierCategorie1.ModifierCategorie_Load(null, null);
+            modifierCategorie1.BringToFront();
+        }
+
+        private void bunifuFlatButton6_Click_1(object sender, EventArgs e)
+        {
+            ajouterPerso1.BringToFront();
+        }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+            modifierPerso1.BringToFront();
         }
         private void ajouterCategorie_load(object sender, EventArgs e)
         {

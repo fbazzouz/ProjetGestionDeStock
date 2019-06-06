@@ -118,41 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Borrow_Book_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Borrow Book_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Add_Shopping_Cart_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Shopping Cart_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_User_Female_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add User Female_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AuthentificationBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AuthentificationBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="berkman_library_banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\berkman-library-banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bill_52px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bill_52px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Book_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Book_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EdmentumCoursewareAlgebra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EdmentumCoursewareAlgebra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Show_Property_104px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Show Property_104px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Combo Chart_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Combo Chart_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Replace_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Replace_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add User Female_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add User Female_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EdmentumCoursewareAlgebra1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EdmentumCoursewareAlgebra1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Return_Book_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Return Book_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mdp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mdp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu_alt_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu-alt-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add Shopping Cart_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add Shopping Cart_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Book_Shelf_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Book Shelf_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,25 +142,52 @@
   <data name="book_with_add_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\book-with-add-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="berkman_library_banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\berkman-library-banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Borrow_Book_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Borrow Book_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Clear Shopping Cart_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Clear_Shopping_Cart_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Clear Shopping Cart_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Small Business_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Small Business_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Combo_Chart_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Combo Chart_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Update User_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Update User_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EdmentumCoursewareAlgebra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EdmentumCoursewareAlgebra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Update_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Update_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EdmentumCoursewareAlgebra1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EdmentumCoursewareAlgebra1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="List_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\List_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AuthentificationBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AuthentificationBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mdp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mdp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_alt_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-alt-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Replace_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Replace_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Return_Book_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Return Book_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Show_Property_104px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Show Property_104px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Small_Business_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Small Business_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Update_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Update_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Update_User_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Update User_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

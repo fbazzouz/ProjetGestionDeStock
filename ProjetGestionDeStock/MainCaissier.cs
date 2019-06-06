@@ -14,6 +14,7 @@ namespace ProjetGestionDeStock
     
     public partial class MainCaissier : Form
     {
+        
        
 
         public MainCaissier()
@@ -28,11 +29,12 @@ namespace ProjetGestionDeStock
                 PanelMenu.Visible = false;
                 PanelMenu.Width = 230;
                 PanelAnimator2.ShowSync(PanelMenu);
-                LogoAnimator.ShowSync(PB_logo);
+             //   LogoAnimator.ShowSync(PB_logo);
+                
             }
             else
             {
-                LogoAnimator.HideSync(PB_logo);
+             //   LogoAnimator.HideSync(PB_logo);
                 PanelMenu.Visible = false;
                 PanelMenu.Width = 50;
                 PanelAnimator.ShowSync(PanelMenu);
@@ -55,9 +57,36 @@ namespace ProjetGestionDeStock
 
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        private void ajouterproduit1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            ajouterproduit1.BringToFront();
+
+        }
+
+        private void modifierproduit1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+
+            modifierproduit1.BringToFront();
+        }
+
+        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        {
+            lister1.BringToFront();
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            ajouterCommande1.BringToFront();
         }
     }
 }
