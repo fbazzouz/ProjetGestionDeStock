@@ -238,11 +238,11 @@ namespace ProjetGestionDeStock
             foreach (var tb in this.Controls.OfType<ns1.BunifuMaterialTextbox>())
             {
                 if (tb.Enabled == false) {
-                    tb.BackColor = Color.OrangeRed;
+                    tb.LineIdleColor = Color.OrangeRed;
                 }
                 else
                 {
-                    tb.BackColor = Color.White;
+                    tb.LineIdleColor = Color.White;
                 }
             }
         }

@@ -418,7 +418,7 @@
             this.TB_quantite.HintText = "";
             this.TB_quantite.isPassword = false;
             this.TB_quantite.LineFocusedColor = System.Drawing.Color.White;
-            this.TB_quantite.LineIdleColor = System.Drawing.Color.Gray;
+            this.TB_quantite.LineIdleColor = System.Drawing.SystemColors.GrayText;
             this.TB_quantite.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_quantite.LineThickness = 3;
             this.TB_quantite.Location = new System.Drawing.Point(556, 293);
