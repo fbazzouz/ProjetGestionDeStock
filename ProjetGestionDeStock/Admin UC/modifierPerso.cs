@@ -33,6 +33,16 @@ namespace ProjetGestionDeStock.Admin_UC
         }
         private void BTN_AjouterCategorie_Click(object sender, EventArgs e)
         {
+            foreach (var tb in this.Controls.OfType<ns1.BunifuMaterialTextbox>())
+            {
+                if (tb.Text == "")
+                {
+                    tb.Focus();
+                
+                    MetroMessageBox.Show(tb, "Le champ ne doit pas etre vide ex : "+tb.HintText);
+                    return;
+                }
+            }
             if (DatabaseOperations.updatePerso(id,TB_nom.Text, TB_prenom.Text, TB_email.Text, TB_cin.Text, TB_login.Text, TB_password.Text, DD_role.selectedValue.ToString().ToLower()) == 1)
             {
                 MetroMessageBox.Show(this,"le Personnel est modifié");

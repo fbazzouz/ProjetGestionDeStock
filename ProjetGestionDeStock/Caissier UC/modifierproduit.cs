@@ -47,6 +47,12 @@ namespace ProjetGestionDeStock
             int SelectedRow = e.RowIndex;
             if (SelectedRow != -1)
             {
+                foreach (var tb in this.Controls.OfType<ns1.BunifuMaterialTextbox>())
+                {
+                    tb.Enabled = true;
+                    tb.LineIdleColor = Color.FromArgb(225, 155, 45);
+                    tb.LineMouseHoverColor = Color.FromArgb(225, 155, 45);
+                }
                 DataGridViewRow row = bunifuCustomDataGrid1.Rows[SelectedRow];
                 TB_Reference.Text = row.Cells["reference"].Value.ToString();
                 TB_Quantite.Text = row.Cells["quantite"].Value.ToString();
@@ -147,6 +153,11 @@ namespace ProjetGestionDeStock
             
             connection.Close();
             display_data();
+        }
+
+        private void bunifuCustomDataGrid1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

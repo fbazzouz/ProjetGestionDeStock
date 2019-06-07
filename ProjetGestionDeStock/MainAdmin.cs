@@ -101,5 +101,15 @@ namespace ProjetGestionDeStock
         {
 
         }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            ajouterproduit1.BringToFront();
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            modifierproduit1.BringToFront();
+        }
     }
 }
