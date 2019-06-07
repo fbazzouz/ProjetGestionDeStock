@@ -137,24 +137,32 @@ namespace ProjetGestionDeStock
             con.Close();
         }
         //------------------------ Rechercher une categorie par nom ----------------------------
-        public static void RechercherCategorieNom(string text)
+        public static DataTable RechercherCategorieNom(string text)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = getcon();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select * from [categorie] where Nom like'" + text + "%'";
-            cmd.ExecuteNonQuery();
+            SqlDataReader sdr;
+            DataTable dt = new DataTable();
+            sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
             con.Close();
+            return dt;
         }
         //------------------------ Rechercher une categorie par id ----------------------------
-        public static void RechercherCategorieId(string text)
+        public static DataTable RechercherCategorieId(string text)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = getcon();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select * from [categorie] where Id like'" + text + "%'";
-            cmd.ExecuteNonQuery();
+            SqlDataReader sdr;
+            DataTable dt = new DataTable();
+            sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
             con.Close();
+            return dt;
         }
 
         //------------------------ Lister les categories ----------------------------

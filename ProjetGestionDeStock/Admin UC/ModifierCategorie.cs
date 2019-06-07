@@ -41,19 +41,15 @@ namespace ProjetGestionDeStock.Admin_UC
 
         private void TF_Recherche_OnValueChanged(object sender, EventArgs e)
         {
-            if(DD_Recherche.selectedIndex == 0)
-            {
-                DatabaseOperations.RechercherCategorieId(TF_Recherche.Text);
-                DataTable dta = DatabaseOperations.Categories();
+            if (DD_Recherche.selectedValue == "Id")
+            {  
+                DataTable dta = DatabaseOperations.RechercherCategorieId(TF_Recherche.Text);
                 DG_CategoriesM.DataSource = dta;
             }
-            else if(DD_Recherche.selectedIndex == 1)
+            else if (DD_Recherche.selectedValue == "Nom")
             {
-                DatabaseOperations.RechercherCategorieNom(TF_Recherche.Text);
-                DataTable dta = DatabaseOperations.Categories();
+                DataTable dta = DatabaseOperations.RechercherCategorieNom(TF_Recherche.Text);
                 DG_CategoriesM.DataSource = dta;
-
-
             }
         }
 
@@ -74,5 +70,6 @@ namespace ProjetGestionDeStock.Admin_UC
             TF_ModifiedCategorie.Text = DG_CategoriesM.Rows[SelectedIndex].Cells["Nom"].Value.ToString();
             TB_ID.Text = DG_CategoriesM.Rows[SelectedIndex].Cells["IdC"].Value.ToString();
         }
+
     }
 }
