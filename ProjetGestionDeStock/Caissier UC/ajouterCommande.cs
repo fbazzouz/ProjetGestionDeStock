@@ -21,11 +21,11 @@ namespace ProjetGestionDeStock
             TB_quantite.Enabled = false;
             TB_prix.Enabled = false;
             TB_facture_N.Enabled = false;
-            button_ajouterClient.Enabled = false;
-            button_validerCommande.Enabled = false;
+            button_ajouterClient.Visible = false;
+            button_validerCommande.Visible = false;
             TB_nom.Enabled = false;
             CB_reference.Enabled = false;
-            button_ajouterProduit.Enabled = false;
+            button_ajouterProduit.Visible = false;
             TB_prenom.Enabled = false;
             TB_Adresse.Enabled = false;
             TB_CIN.Enabled = false;
@@ -87,14 +87,13 @@ namespace ProjetGestionDeStock
         private void button2_Click(object sender, EventArgs e)
         {
            
-            button2.Enabled = false;
+            button2.Visible = false;
             TB_nom.Enabled = true;
             TB_prenom.Enabled = true;
             TB_Email.Enabled = true;
-            
             TB_CIN.Enabled = true;
             TB_Adresse.Enabled = true;
-            button_ajouterClient.Enabled = true;
+            button_ajouterClient.Visible = true;
             MessageBox.Show("La facture est créée, Veuillez ajouter votre client");
             TB_total.Enabled = false;
             DP.Enabled = false;
@@ -105,7 +104,25 @@ namespace ProjetGestionDeStock
 
         private void button_ajouterClient_Click(object sender, EventArgs e)
         {
-           
+
+            //Pour verifier si les champs textes sont vides 
+            ns1.BunifuMaterialTextbox[] TBtable = new ns1.BunifuMaterialTextbox[5];
+            TBtable[0] = TB_nom;
+            TBtable[1] = TB_prenom;
+            TBtable[2] = TB_Email;
+            TBtable[3] = TB_Adresse;
+            TBtable[4] = TB_CIN;
+            foreach (var tb in TBtable)
+            {
+                if (tb.Text == "")
+                {
+                    tb.Focus();
+
+                    MessageBox.Show(tb, "Le champ ne doit pas etre vide ex : " + tb.HintText);
+                    return;
+                }
+            }
+            ////////////////////////////////////////////////
             string nom = TB_nom.Text;
             string prenom = TB_prenom.Text;
             string Email = TB_Email.Text;
@@ -118,7 +135,7 @@ namespace ProjetGestionDeStock
             cmd.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("votre client est créé, Veuillez ajouter vos produits");
-            button_ajouterProduit.Enabled = true;
+            button_ajouterProduit.Visible = true;
             TB_marque.Enabled = true;
             TB_quantite.Enabled = true;
             TB_prix.Enabled = true;
@@ -148,7 +165,7 @@ namespace ProjetGestionDeStock
             TB_CIN.Text = "";
             TB_Adresse.Text = "";
             TB_Email.Text = "";
-            button_ajouterClient.Enabled = false;
+            button_ajouterClient.Visible = false;
             TB_nom.Enabled = false;
             TB_prenom.Enabled = false;
             TB_Email.Enabled = false;
@@ -159,7 +176,23 @@ namespace ProjetGestionDeStock
 
         private void button_ajouterProduit_Click(object sender, EventArgs e)
         {
-           
+            //Pour verifier si les champs textes sont vides 
+            ns1.BunifuMaterialTextbox[] TBtable = new ns1.BunifuMaterialTextbox[3];
+            TBtable[0] = TB_marque;
+            TBtable[1] = TB_quantite;
+            TBtable[2] = TB_prix;
+            foreach (var tb in TBtable)
+            {
+                if (tb.Text == "")
+                {
+                    tb.Focus();
+
+                    MessageBox.Show(tb, "Le champ ne doit pas etre vide ex : " + tb.HintText);
+                    return;
+                }
+            }
+            ////////////////////////////////////////////////
+
             connection.Open();
             string reference = CB_reference.Text;
             int id_produit = 0;
@@ -185,7 +218,7 @@ namespace ProjetGestionDeStock
             cmd2.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("Vous pouvez ajouter tant de produit que vous voulez et cliquez sur valider commande");
-            button_validerCommande.Enabled = true;
+            button_validerCommande.Visible = true;
             CB_reference.Text = "";
             TB_marque.Text = "";
             TB_quantite.Text = "";
@@ -199,7 +232,7 @@ namespace ProjetGestionDeStock
         {
             MessageBox.Show("Vous avez effectué votre commande");
             color();
-            button_validerCommande.Enabled = false;
+            button_validerCommande.Visible = false;
         }
 
         private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -238,11 +271,12 @@ namespace ProjetGestionDeStock
             foreach (var tb in this.Controls.OfType<ns1.BunifuMaterialTextbox>())
             {
                 if (tb.Enabled == false) {
-                    tb.LineIdleColor = Color.OrangeRed;
+                    tb.LineIdleColor = Color.Silver;
                 }
                 else
                 {
-                    tb.LineIdleColor = Color.White;
+                    tb.LineIdleColor = Color.FromArgb(225, 155, 45);
+                    tb.LineMouseHoverColor = Color.FromArgb(225, 155, 45);
                 }
             }
         }

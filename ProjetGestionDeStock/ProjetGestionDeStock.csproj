@@ -120,6 +120,12 @@
     <Compile Include="Agent UC\Livrer.Designer.cs">
       <DependentUpon>Livrer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Caissier UC\ajouterCommande.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Agent UC\Livrer.resx">
       <DependentUpon>Livrer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Caissier UC\ajouterCommande.resx">
       <DependentUpon>ajouterCommande.cs</DependentUpon>

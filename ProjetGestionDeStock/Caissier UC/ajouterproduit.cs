@@ -43,6 +43,18 @@ namespace ProjetGestionDeStock
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            //Pour verifier si les champs textes sont vides 
+            foreach (var tb in this.Controls.OfType<ns1.BunifuMaterialTextbox>())
+            {
+                if (tb.Text == "")
+                {
+                    tb.Focus();
+
+                    MessageBox.Show(tb, "Le champ ne doit pas etre vide ex : " + tb.HintText);
+                    return;
+                }
+            }
+            ////////////////////////////////////////////////
             connection.Open();
             string reference = TB_Reference.Text;
             int quantite = int.Parse(TB_Quantite.Text);

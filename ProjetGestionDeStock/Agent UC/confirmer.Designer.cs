@@ -67,7 +67,7 @@
             // 
             // etat
             // 
-            this.etat.BackColor = System.Drawing.Color.White;
+            this.etat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.etat.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.etat.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.etat.ForeColor = System.Drawing.Color.Black;
