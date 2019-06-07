@@ -47,6 +47,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\LoGo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\..\TD,CC,EXAMS\Impot_Calculator\Impot_Calculator\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
@@ -308,6 +311,7 @@
     <Content Include="Resources\Bill_52px.png" />
     <None Include="Resources\List_50px.png" />
     <Content Include="Resources\login.png" />
+    <None Include="Resources\LoGo.ico" />
     <Content Include="Resources\mdp.png" />
     <Content Include="stockbd.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

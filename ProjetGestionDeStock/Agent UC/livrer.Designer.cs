@@ -101,7 +101,7 @@
             this.DG_livrer.RowTemplate.ReadOnly = true;
             this.DG_livrer.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.DG_livrer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DG_livrer.Size = new System.Drawing.Size(809, 158);
+            this.DG_livrer.Size = new System.Drawing.Size(1062, 324);
             this.DG_livrer.TabIndex = 32;
             this.DG_livrer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_lastproduit_CellContentClick);
             // 
@@ -177,7 +177,7 @@
             this.BTN_AjouterCategorie.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.BTN_AjouterCategorie.IdleForecolor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.IdleLineColor = System.Drawing.Color.White;
-            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(614, 391);
+            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(845, 519);
             this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(6);
             this.BTN_AjouterCategorie.Name = "BTN_AjouterCategorie";
             this.BTN_AjouterCategorie.Size = new System.Drawing.Size(199, 52);
@@ -208,7 +208,7 @@
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.DG_livrer);
             this.Name = "Livrer";
-            this.Size = new System.Drawing.Size(836, 511);
+            this.Size = new System.Drawing.Size(1089, 677);
             this.Load += new System.EventHandler(this.Livrer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DG_livrer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
