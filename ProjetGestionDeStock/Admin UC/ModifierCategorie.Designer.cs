@@ -84,7 +84,7 @@
             this.DG_CategoriesM.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DG_CategoriesM.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -100,13 +100,13 @@
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightCoral;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DG_CategoriesM.DefaultCellStyle = dataGridViewCellStyle3;
             this.DG_CategoriesM.DoubleBuffered = true;
             this.DG_CategoriesM.EnableHeadersVisualStyles = false;
-            this.DG_CategoriesM.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.DG_CategoriesM.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
             this.DG_CategoriesM.HeaderForeColor = System.Drawing.Color.White;
             this.DG_CategoriesM.Location = new System.Drawing.Point(27, 119);
             this.DG_CategoriesM.Margin = new System.Windows.Forms.Padding(4);
@@ -168,7 +168,7 @@
             this.BTN_ModifierCategorie.ForeColor = System.Drawing.Color.White;
             this.BTN_ModifierCategorie.IdleBorderThickness = 1;
             this.BTN_ModifierCategorie.IdleCornerRadius = 20;
-            this.BTN_ModifierCategorie.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.BTN_ModifierCategorie.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.BTN_ModifierCategorie.IdleForecolor = System.Drawing.Color.White;
             this.BTN_ModifierCategorie.IdleLineColor = System.Drawing.Color.White;
             this.BTN_ModifierCategorie.Location = new System.Drawing.Point(857, 639);
@@ -225,9 +225,9 @@
             this.TF_ModifiedCategorie.HintForeColor = System.Drawing.Color.White;
             this.TF_ModifiedCategorie.HintText = "";
             this.TF_ModifiedCategorie.isPassword = false;
-            this.TF_ModifiedCategorie.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.TF_ModifiedCategorie.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.TF_ModifiedCategorie.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.TF_ModifiedCategorie.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.TF_ModifiedCategorie.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.TF_ModifiedCategorie.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.TF_ModifiedCategorie.LineThickness = 6;
             this.TF_ModifiedCategorie.Location = new System.Drawing.Point(504, 658);
             this.TF_ModifiedCategorie.Margin = new System.Windows.Forms.Padding(5);
@@ -257,11 +257,11 @@
             this.DD_Recherche.Items = new string[] {
         "Id",
         "Nom"};
-            this.DD_Recherche.Location = new System.Drawing.Point(364, 517);
+            this.DD_Recherche.Location = new System.Drawing.Point(351, 517);
             this.DD_Recherche.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.DD_Recherche.Name = "DD_Recherche";
-            this.DD_Recherche.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.DD_Recherche.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.DD_Recherche.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.DD_Recherche.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.DD_Recherche.selectedIndex = 0;
             this.DD_Recherche.Size = new System.Drawing.Size(228, 46);
             this.DD_Recherche.TabIndex = 42;
@@ -274,9 +274,9 @@
             this.TF_Recherche.HintForeColor = System.Drawing.Color.White;
             this.TF_Recherche.HintText = "";
             this.TF_Recherche.isPassword = false;
-            this.TF_Recherche.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.TF_Recherche.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.TF_Recherche.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.TF_Recherche.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.TF_Recherche.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.TF_Recherche.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
             this.TF_Recherche.LineThickness = 5;
             this.TF_Recherche.Location = new System.Drawing.Point(613, 518);
             this.TF_Recherche.Margin = new System.Windows.Forms.Padding(5);
@@ -307,9 +307,9 @@
             this.TB_ID.HintForeColor = System.Drawing.Color.White;
             this.TB_ID.HintText = "";
             this.TB_ID.isPassword = false;
-            this.TB_ID.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.TB_ID.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.TB_ID.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.TB_ID.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.TB_ID.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.TB_ID.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.TB_ID.LineThickness = 6;
             this.TB_ID.Location = new System.Drawing.Point(504, 617);
             this.TB_ID.Margin = new System.Windows.Forms.Padding(5);
