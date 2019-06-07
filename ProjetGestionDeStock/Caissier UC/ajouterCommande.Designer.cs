@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ajouterCommande));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -37,6 +36,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ajouterCommande));
             this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
             this.TB_total = new ns1.BunifuMaterialTextbox();
             this.TB_facture_N = new ns1.BunifuMaterialTextbox();
@@ -66,14 +66,14 @@
             this.bunifuCustomLabel12 = new ns1.BunifuCustomLabel();
             this.TB_prix = new ns1.BunifuMaterialTextbox();
             this.bunifuCustomLabel13 = new ns1.BunifuCustomLabel();
-            this.button2 = new ns1.BunifuThinButton2();
-            this.button_validerCommande = new ns1.BunifuThinButton2();
             this.label4 = new System.Windows.Forms.Label();
-            this.button_ajouterProduit = new ns1.BunifuThinButton2();
-            this.button_ajouterClient = new ns1.BunifuThinButton2();
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid1 = new ns1.BunifuCustomDataGrid();
             this.bunifuCustomDataGrid2 = new ns1.BunifuCustomDataGrid();
+            this.button_ajouterClient = new ns1.BunifuThinButton2();
+            this.button_ajouterProduit = new ns1.BunifuThinButton2();
+            this.button_validerCommande = new ns1.BunifuThinButton2();
+            this.button2 = new ns1.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.SuspendLayout();
@@ -344,7 +344,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.label3.Location = new System.Drawing.Point(22, 220);
+            this.label3.Location = new System.Drawing.Point(20, 188);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 17);
             this.label3.TabIndex = 32;
@@ -378,7 +378,7 @@
             // CB_reference
             // 
             this.CB_reference.FormattingEnabled = true;
-            this.CB_reference.Location = new System.Drawing.Point(116, 252);
+            this.CB_reference.Location = new System.Drawing.Point(114, 220);
             this.CB_reference.Name = "CB_reference";
             this.CB_reference.Size = new System.Drawing.Size(181, 21);
             this.CB_reference.TabIndex = 35;
@@ -389,7 +389,7 @@
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(24, 252);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(22, 220);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(87, 19);
             this.bunifuCustomLabel10.TabIndex = 36;
@@ -407,7 +407,7 @@
             this.TB_quantite.LineIdleColor = System.Drawing.SystemColors.GrayText;
             this.TB_quantite.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_quantite.LineThickness = 3;
-            this.TB_quantite.Location = new System.Drawing.Point(417, 238);
+            this.TB_quantite.Location = new System.Drawing.Point(415, 206);
             this.TB_quantite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TB_quantite.Name = "TB_quantite";
             this.TB_quantite.Size = new System.Drawing.Size(181, 33);
@@ -420,7 +420,7 @@
             this.bunifuCustomLabel11.AutoSize = true;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(320, 252);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(318, 220);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
             this.bunifuCustomLabel11.Size = new System.Drawing.Size(78, 19);
             this.bunifuCustomLabel11.TabIndex = 37;
@@ -438,7 +438,7 @@
             this.TB_marque.LineIdleColor = System.Drawing.Color.Gray;
             this.TB_marque.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_marque.LineThickness = 3;
-            this.TB_marque.Location = new System.Drawing.Point(417, 287);
+            this.TB_marque.Location = new System.Drawing.Point(415, 255);
             this.TB_marque.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TB_marque.Name = "TB_marque";
             this.TB_marque.Size = new System.Drawing.Size(181, 33);
@@ -451,7 +451,7 @@
             this.bunifuCustomLabel12.AutoSize = true;
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(320, 301);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(318, 269);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
             this.bunifuCustomLabel12.Size = new System.Drawing.Size(71, 19);
             this.bunifuCustomLabel12.TabIndex = 39;
@@ -469,7 +469,7 @@
             this.TB_prix.LineIdleColor = System.Drawing.Color.Gray;
             this.TB_prix.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_prix.LineThickness = 3;
-            this.TB_prix.Location = new System.Drawing.Point(117, 287);
+            this.TB_prix.Location = new System.Drawing.Point(115, 255);
             this.TB_prix.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TB_prix.Name = "TB_prix";
             this.TB_prix.Size = new System.Drawing.Size(181, 33);
@@ -482,61 +482,11 @@
             this.bunifuCustomLabel13.AutoSize = true;
             this.bunifuCustomLabel13.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(28, 301);
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(26, 269);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
             this.bunifuCustomLabel13.Size = new System.Drawing.Size(44, 19);
             this.bunifuCustomLabel13.TabIndex = 41;
             this.bunifuCustomLabel13.Text = "Prix :";
-            // 
-            // button2
-            // 
-            this.button2.ActiveBorderThickness = 1;
-            this.button2.ActiveCornerRadius = 20;
-            this.button2.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.button2.ActiveForecolor = System.Drawing.Color.White;
-            this.button2.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.ButtonText = "Enregistrer commande";
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.IdleBorderThickness = 1;
-            this.button2.IdleCornerRadius = 20;
-            this.button2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.button2.IdleForecolor = System.Drawing.Color.White;
-            this.button2.IdleLineColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(572, 43);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 49);
-            this.button2.TabIndex = 43;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button_validerCommande
-            // 
-            this.button_validerCommande.ActiveBorderThickness = 1;
-            this.button_validerCommande.ActiveCornerRadius = 20;
-            this.button_validerCommande.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.button_validerCommande.ActiveForecolor = System.Drawing.Color.White;
-            this.button_validerCommande.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
-            this.button_validerCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.button_validerCommande.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_validerCommande.BackgroundImage")));
-            this.button_validerCommande.ButtonText = "Valider commande";
-            this.button_validerCommande.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_validerCommande.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button_validerCommande.ForeColor = System.Drawing.Color.White;
-            this.button_validerCommande.IdleBorderThickness = 1;
-            this.button_validerCommande.IdleCornerRadius = 20;
-            this.button_validerCommande.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.button_validerCommande.IdleForecolor = System.Drawing.Color.White;
-            this.button_validerCommande.IdleLineColor = System.Drawing.Color.White;
-            this.button_validerCommande.Location = new System.Drawing.Point(636, 316);
-            this.button_validerCommande.Name = "button_validerCommande";
-            this.button_validerCommande.Size = new System.Drawing.Size(193, 58);
-            this.button_validerCommande.TabIndex = 44;
-            this.button_validerCommande.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.button_validerCommande.Click += new System.EventHandler(this.button_validerCommande_Click);
             // 
             // label4
             // 
@@ -549,62 +499,12 @@
             this.label4.TabIndex = 46;
             this.label4.Text = "Liste des factures :";
             // 
-            // button_ajouterProduit
-            // 
-            this.button_ajouterProduit.ActiveBorderThickness = 1;
-            this.button_ajouterProduit.ActiveCornerRadius = 20;
-            this.button_ajouterProduit.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.button_ajouterProduit.ActiveForecolor = System.Drawing.Color.White;
-            this.button_ajouterProduit.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
-            this.button_ajouterProduit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.button_ajouterProduit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ajouterProduit.BackgroundImage")));
-            this.button_ajouterProduit.ButtonText = "Ajouter produit";
-            this.button_ajouterProduit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_ajouterProduit.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button_ajouterProduit.ForeColor = System.Drawing.Color.White;
-            this.button_ajouterProduit.IdleBorderThickness = 1;
-            this.button_ajouterProduit.IdleCornerRadius = 20;
-            this.button_ajouterProduit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.button_ajouterProduit.IdleForecolor = System.Drawing.Color.White;
-            this.button_ajouterProduit.IdleLineColor = System.Drawing.Color.White;
-            this.button_ajouterProduit.Location = new System.Drawing.Point(321, 323);
-            this.button_ajouterProduit.Name = "button_ajouterProduit";
-            this.button_ajouterProduit.Size = new System.Drawing.Size(181, 54);
-            this.button_ajouterProduit.TabIndex = 47;
-            this.button_ajouterProduit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.button_ajouterProduit.Click += new System.EventHandler(this.button_ajouterProduit_Click);
-            // 
-            // button_ajouterClient
-            // 
-            this.button_ajouterClient.ActiveBorderThickness = 1;
-            this.button_ajouterClient.ActiveCornerRadius = 20;
-            this.button_ajouterClient.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.button_ajouterClient.ActiveForecolor = System.Drawing.Color.White;
-            this.button_ajouterClient.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
-            this.button_ajouterClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.button_ajouterClient.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ajouterClient.BackgroundImage")));
-            this.button_ajouterClient.ButtonText = "Ajouter client";
-            this.button_ajouterClient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_ajouterClient.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button_ajouterClient.ForeColor = System.Drawing.Color.White;
-            this.button_ajouterClient.IdleBorderThickness = 1;
-            this.button_ajouterClient.IdleCornerRadius = 20;
-            this.button_ajouterClient.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
-            this.button_ajouterClient.IdleForecolor = System.Drawing.Color.White;
-            this.button_ajouterClient.IdleLineColor = System.Drawing.Color.White;
-            this.button_ajouterClient.Location = new System.Drawing.Point(572, 143);
-            this.button_ajouterClient.Name = "button_ajouterClient";
-            this.button_ajouterClient.Size = new System.Drawing.Size(181, 47);
-            this.button_ajouterClient.TabIndex = 48;
-            this.button_ajouterClient.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.button_ajouterClient.Click += new System.EventHandler(this.button_ajouterClient_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.label5.Location = new System.Drawing.Point(24, 494);
+            this.label5.Location = new System.Drawing.Point(22, 438);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(378, 20);
             this.label5.TabIndex = 49;
@@ -645,7 +545,7 @@
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(22, 380);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(23, 295);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.ReadOnly = true;
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -657,8 +557,9 @@
             this.bunifuCustomDataGrid1.RowTemplate.ReadOnly = true;
             this.bunifuCustomDataGrid1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(807, 109);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(605, 140);
             this.bunifuCustomDataGrid1.TabIndex = 51;
+            this.bunifuCustomDataGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellClick);
             // 
             // bunifuCustomDataGrid2
             // 
@@ -695,7 +596,7 @@
             this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(19, 518);
+            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(20, 461);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.ReadOnly = true;
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -707,8 +608,112 @@
             this.bunifuCustomDataGrid2.RowTemplate.ReadOnly = true;
             this.bunifuCustomDataGrid2.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.bunifuCustomDataGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(807, 105);
+            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(807, 161);
             this.bunifuCustomDataGrid2.TabIndex = 52;
+            // 
+            // button_ajouterClient
+            // 
+            this.button_ajouterClient.ActiveBorderThickness = 1;
+            this.button_ajouterClient.ActiveCornerRadius = 20;
+            this.button_ajouterClient.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button_ajouterClient.ActiveForecolor = System.Drawing.Color.White;
+            this.button_ajouterClient.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.button_ajouterClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.button_ajouterClient.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ajouterClient.BackgroundImage")));
+            this.button_ajouterClient.ButtonText = "Ajouter client";
+            this.button_ajouterClient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_ajouterClient.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button_ajouterClient.ForeColor = System.Drawing.Color.White;
+            this.button_ajouterClient.IdleBorderThickness = 1;
+            this.button_ajouterClient.IdleCornerRadius = 20;
+            this.button_ajouterClient.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button_ajouterClient.IdleForecolor = System.Drawing.Color.White;
+            this.button_ajouterClient.IdleLineColor = System.Drawing.Color.White;
+            this.button_ajouterClient.Location = new System.Drawing.Point(621, 144);
+            this.button_ajouterClient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouterClient.Name = "button_ajouterClient";
+            this.button_ajouterClient.Size = new System.Drawing.Size(181, 47);
+            this.button_ajouterClient.TabIndex = 48;
+            this.button_ajouterClient.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button_ajouterClient.Click += new System.EventHandler(this.button_ajouterClient_Click);
+            // 
+            // button_ajouterProduit
+            // 
+            this.button_ajouterProduit.ActiveBorderThickness = 1;
+            this.button_ajouterProduit.ActiveCornerRadius = 20;
+            this.button_ajouterProduit.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button_ajouterProduit.ActiveForecolor = System.Drawing.Color.White;
+            this.button_ajouterProduit.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.button_ajouterProduit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.button_ajouterProduit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ajouterProduit.BackgroundImage")));
+            this.button_ajouterProduit.ButtonText = "Ajouter produit";
+            this.button_ajouterProduit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_ajouterProduit.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button_ajouterProduit.ForeColor = System.Drawing.Color.White;
+            this.button_ajouterProduit.IdleBorderThickness = 1;
+            this.button_ajouterProduit.IdleCornerRadius = 20;
+            this.button_ajouterProduit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button_ajouterProduit.IdleForecolor = System.Drawing.Color.White;
+            this.button_ajouterProduit.IdleLineColor = System.Drawing.Color.White;
+            this.button_ajouterProduit.Location = new System.Drawing.Point(621, 234);
+            this.button_ajouterProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouterProduit.Name = "button_ajouterProduit";
+            this.button_ajouterProduit.Size = new System.Drawing.Size(181, 54);
+            this.button_ajouterProduit.TabIndex = 47;
+            this.button_ajouterProduit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button_ajouterProduit.Click += new System.EventHandler(this.button_ajouterProduit_Click);
+            // 
+            // button_validerCommande
+            // 
+            this.button_validerCommande.ActiveBorderThickness = 1;
+            this.button_validerCommande.ActiveCornerRadius = 20;
+            this.button_validerCommande.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button_validerCommande.ActiveForecolor = System.Drawing.Color.White;
+            this.button_validerCommande.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.button_validerCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.button_validerCommande.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_validerCommande.BackgroundImage")));
+            this.button_validerCommande.ButtonText = "Valider commande";
+            this.button_validerCommande.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_validerCommande.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button_validerCommande.ForeColor = System.Drawing.Color.White;
+            this.button_validerCommande.IdleBorderThickness = 1;
+            this.button_validerCommande.IdleCornerRadius = 20;
+            this.button_validerCommande.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button_validerCommande.IdleForecolor = System.Drawing.Color.White;
+            this.button_validerCommande.IdleLineColor = System.Drawing.Color.White;
+            this.button_validerCommande.Location = new System.Drawing.Point(666, 334);
+            this.button_validerCommande.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_validerCommande.Name = "button_validerCommande";
+            this.button_validerCommande.Size = new System.Drawing.Size(193, 58);
+            this.button_validerCommande.TabIndex = 44;
+            this.button_validerCommande.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button_validerCommande.Click += new System.EventHandler(this.button_validerCommande_Click);
+            // 
+            // button2
+            // 
+            this.button2.ActiveBorderThickness = 1;
+            this.button2.ActiveCornerRadius = 20;
+            this.button2.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button2.ActiveForecolor = System.Drawing.Color.White;
+            this.button2.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.ButtonText = "Enregistrer commande";
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.IdleBorderThickness = 1;
+            this.button2.IdleCornerRadius = 20;
+            this.button2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
+            this.button2.IdleForecolor = System.Drawing.Color.White;
+            this.button2.IdleLineColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(609, 46);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(193, 49);
+            this.button2.TabIndex = 43;
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ajouterCommande
             // 
