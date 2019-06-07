@@ -51,6 +51,7 @@
             this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
             this.TB_ID = new ns1.BunifuMaterialTextbox();
             this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel6 = new ns1.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.DG_CategoriesM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorieBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockbdDataSet1)).BeginInit();
@@ -330,11 +331,24 @@
             this.bunifuCustomLabel5.TabIndex = 45;
             this.bunifuCustomLabel5.Text = "ID :";
             // 
+            // bunifuCustomLabel6
+            // 
+            this.bunifuCustomLabel6.AutoSize = true;
+            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.Silver;
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(777, 85);
+            this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(366, 21);
+            this.bunifuCustomLabel6.TabIndex = 47;
+            this.bunifuCustomLabel6.Text = "* Double cliques sur la ligne pour la modifier";
+            // 
             // ModifierCategorie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.Controls.Add(this.bunifuCustomLabel6);
             this.Controls.Add(this.TB_ID);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.bunifuCustomLabel4);
@@ -378,5 +392,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
         private ns1.BunifuMaterialTextbox TB_ID;
         private ns1.BunifuCustomLabel bunifuCustomLabel5;
+        private ns1.BunifuCustomLabel bunifuCustomLabel6;
     }
 }

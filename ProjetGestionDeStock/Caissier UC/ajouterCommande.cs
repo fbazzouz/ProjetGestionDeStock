@@ -104,7 +104,25 @@ namespace ProjetGestionDeStock
 
         private void button_ajouterClient_Click(object sender, EventArgs e)
         {
-           
+
+            //Pour verifier si les champs textes sont vides 
+            ns1.BunifuMaterialTextbox[] TBtable = new ns1.BunifuMaterialTextbox[5];
+            TBtable[0] = TB_nom;
+            TBtable[1] = TB_prenom;
+            TBtable[2] = TB_Email;
+            TBtable[3] = TB_Adresse;
+            TBtable[4] = TB_CIN;
+            foreach (var tb in TBtable)
+            {
+                if (tb.Text == "")
+                {
+                    tb.Focus();
+
+                    MessageBox.Show(tb, "Le champ ne doit pas etre vide ex : " + tb.HintText);
+                    return;
+                }
+            }
+            ////////////////////////////////////////////////
             string nom = TB_nom.Text;
             string prenom = TB_prenom.Text;
             string Email = TB_Email.Text;
@@ -158,7 +176,23 @@ namespace ProjetGestionDeStock
 
         private void button_ajouterProduit_Click(object sender, EventArgs e)
         {
-           
+            //Pour verifier si les champs textes sont vides 
+            ns1.BunifuMaterialTextbox[] TBtable = new ns1.BunifuMaterialTextbox[3];
+            TBtable[0] = TB_marque;
+            TBtable[1] = TB_quantite;
+            TBtable[2] = TB_prix;
+            foreach (var tb in TBtable)
+            {
+                if (tb.Text == "")
+                {
+                    tb.Focus();
+
+                    MessageBox.Show(tb, "Le champ ne doit pas etre vide ex : " + tb.HintText);
+                    return;
+                }
+            }
+            ////////////////////////////////////////////////
+
             connection.Open();
             string reference = CB_reference.Text;
             int id_produit = 0;

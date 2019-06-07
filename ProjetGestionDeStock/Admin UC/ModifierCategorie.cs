@@ -23,6 +23,18 @@ namespace ProjetGestionDeStock.Admin_UC
         {
             int SelectedIndex = DG_CategoriesM.SelectedRows[0].Index;
             int rowID = int.Parse(DG_CategoriesM.Rows[SelectedIndex].Cells["IdC"].Value.ToString());
+            //Pour verifier si les champs textes sont vides 
+            foreach (var tb in this.Controls.OfType<ns1.BunifuMaterialTextbox>())
+            {
+                if (tb.Text == "" && tb != TF_Recherche)
+                {
+                    tb.Focus();
+
+                    MessageBox.Show(tb, "Le champ ne doit pas etre vide ex : " + tb.HintText);
+                    return;
+                }
+            }
+            ////////////////////////////////////////////////
             DatabaseOperations.ModifierCategorie(rowID,TF_ModifiedCategorie.Text);
             DataTable dta = DatabaseOperations.Categories();
             DG_CategoriesM.DataSource = dta;
