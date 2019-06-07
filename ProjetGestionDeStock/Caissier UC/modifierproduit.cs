@@ -20,7 +20,7 @@ namespace ProjetGestionDeStock
             InitializeComponent();
         }
 
-        private void modifierproduit_Load(object sender, EventArgs e)
+        internal void modifierproduit_Load(object sender, EventArgs e)
         {
             if (!DesignMode)
             {

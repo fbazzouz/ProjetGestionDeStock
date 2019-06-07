@@ -68,6 +68,7 @@ namespace ProjetGestionDeStock
 
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
+            dashboard2.dashboard_Load(null, null);
             dashboard2.BringToFront();
         }
 
@@ -85,11 +86,13 @@ namespace ProjetGestionDeStock
 
         private void bunifuFlatButton6_Click_1(object sender, EventArgs e)
         {
+            ajouterPerso1.dashboard_Load(null, null);
             ajouterPerso1.BringToFront();
         }
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
+            modifierPerso1.dashboard_Load(null, null);
             modifierPerso1.BringToFront();
         }
         private void ajouterCategorie_load(object sender, EventArgs e)
@@ -105,13 +108,13 @@ namespace ProjetGestionDeStock
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-           
+            ajouterproduit1.ajouterproduit_Load_1(null, null);
             ajouterproduit1.BringToFront();
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-            
+            modifierproduit1.modifierproduit_Load(null, null);
             modifierproduit1.BringToFront();
         }
 
