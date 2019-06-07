@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
 
 namespace ProjetGestionDeStock.Admin_UC
 {
     public partial class modifierPerso : UserControl
     {
+        int id;
         public modifierPerso()
         {
             InitializeComponent();
@@ -31,9 +33,9 @@ namespace ProjetGestionDeStock.Admin_UC
         }
         private void BTN_AjouterCategorie_Click(object sender, EventArgs e)
         {
-            if (DatabaseOperations.AjouterNewPerso(TB_nom.Text, TB_prenom.Text, TB_email.Text, TB_cin.Text, TB_login.Text, TB_password.Text, DD_role.selectedValue.ToString().ToLower()) == 1)
+            if (DatabaseOperations.updatePerso(id,TB_nom.Text, TB_prenom.Text, TB_email.Text, TB_cin.Text, TB_login.Text, TB_password.Text, DD_role.selectedValue.ToString().ToLower()) == 1)
             {
-                MessageBox.Show("le Personnel est Ajouté");
+                MetroMessageBox.Show(this,"le Personnel est modifié");
                 DG_personnel.DataSource = null;
                 DataTable dta = DatabaseOperations.listerPerso();
                 DG_personnel.DataSource = dta;
@@ -43,6 +45,7 @@ namespace ProjetGestionDeStock.Admin_UC
         private void DG_personnel_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int SelectedIndex = DG_personnel.SelectedRows[0].Index;
+            id = int.Parse(DG_personnel.Rows[SelectedIndex].Cells[0].Value.ToString());
             TB_nom.Text = DG_personnel.Rows[SelectedIndex].Cells[1].Value.ToString();
             TB_prenom.Text = DG_personnel.Rows[SelectedIndex].Cells[2].Value.ToString();
             TB_email.Text = DG_personnel.Rows[SelectedIndex].Cells[3].Value.ToString();
@@ -69,6 +72,17 @@ namespace ProjetGestionDeStock.Admin_UC
         private void DG_personnel_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Btn_Supprimer_Click(object sender, EventArgs e)
+        {
+            if (DatabaseOperations.deletePerso(id) == 1)
+            {
+                MetroMessageBox.Show(this, "le Personnel est Supprimé");
+                DG_personnel.DataSource = null;
+                DataTable dta = DatabaseOperations.listerPerso();
+                DG_personnel.DataSource = dta;
+            }
         }
     }
 }

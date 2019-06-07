@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
 
 namespace ProjetGestionDeStock.Admin_UC
 {
@@ -31,7 +32,7 @@ namespace ProjetGestionDeStock.Admin_UC
         {
             if (DatabaseOperations.AjouterNewPerso(TB_nom.Text, TB_prenom.Text, TB_email.Text, TB_cin.Text, TB_login.Text, TB_password.Text, DD_role.selectedValue.ToString().ToLower()) == 1)
             {
-                MessageBox.Show("le Personnel est Ajouté");
+                MetroMessageBox.Show(this,"le Personnel est Ajouté");
                 DG_personnel.DataSource = null;
                 DataTable dta = DatabaseOperations.listerPerso();
                 DG_personnel.DataSource = dta;
