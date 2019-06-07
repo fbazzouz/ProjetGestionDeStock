@@ -177,7 +177,7 @@
             this.TB_nom.LineIdleColor = System.Drawing.Color.Gray;
             this.TB_nom.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_nom.LineThickness = 3;
-            this.TB_nom.Location = new System.Drawing.Point(104, 139);
+            this.TB_nom.Location = new System.Drawing.Point(104, 134);
             this.TB_nom.Margin = new System.Windows.Forms.Padding(5);
             this.TB_nom.Name = "TB_nom";
             this.TB_nom.Size = new System.Drawing.Size(241, 41);
@@ -221,7 +221,7 @@
             this.TB_prenom.LineIdleColor = System.Drawing.Color.Gray;
             this.TB_prenom.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_prenom.LineThickness = 3;
-            this.TB_prenom.Location = new System.Drawing.Point(507, 139);
+            this.TB_prenom.Location = new System.Drawing.Point(507, 136);
             this.TB_prenom.Margin = new System.Windows.Forms.Padding(5);
             this.TB_prenom.Name = "TB_prenom";
             this.TB_prenom.Size = new System.Drawing.Size(241, 41);
@@ -317,7 +317,7 @@
             this.TB_Adresse.LineIdleColor = System.Drawing.Color.Gray;
             this.TB_Adresse.LineMouseHoverColor = System.Drawing.Color.White;
             this.TB_Adresse.LineThickness = 3;
-            this.TB_Adresse.Location = new System.Drawing.Point(864, 156);
+            this.TB_Adresse.Location = new System.Drawing.Point(864, 122);
             this.TB_Adresse.Margin = new System.Windows.Forms.Padding(5);
             this.TB_Adresse.Name = "TB_Adresse";
             this.TB_Adresse.Size = new System.Drawing.Size(241, 62);

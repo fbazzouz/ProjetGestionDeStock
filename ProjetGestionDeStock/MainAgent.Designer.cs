@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainAgent));
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.Slider = new ns1.BunifuImageButton();
@@ -76,10 +76,9 @@
             this.PanelAnimator.SetDecoration(this.PanelMenu, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator2.SetDecoration(this.PanelMenu, BunifuAnimatorNS.DecorationType.None);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelMenu.Location = new System.Drawing.Point(0, 34);
-            this.PanelMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.PanelMenu.Location = new System.Drawing.Point(0, 28);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(247, 520);
+            this.PanelMenu.Size = new System.Drawing.Size(185, 422);
             this.PanelMenu.TabIndex = 0;
             this.PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMenu_Paint);
             // 
@@ -93,10 +92,9 @@
             this.Slider.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Slider.ErrorImage")));
             this.Slider.Image = ((System.Drawing.Image)(resources.GetObject("Slider.Image")));
             this.Slider.ImageActive = null;
-            this.Slider.Location = new System.Drawing.Point(201, 7);
-            this.Slider.Margin = new System.Windows.Forms.Padding(4);
+            this.Slider.Location = new System.Drawing.Point(151, 6);
             this.Slider.Name = "Slider";
-            this.Slider.Size = new System.Drawing.Size(27, 32);
+            this.Slider.Size = new System.Drawing.Size(20, 26);
             this.Slider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Slider.TabIndex = 1;
             this.Slider.TabStop = false;
@@ -128,14 +126,14 @@
             this.btn2.IconVisible = true;
             this.btn2.IconZoom = 40D;
             this.btn2.IsTab = true;
-            this.btn2.Location = new System.Drawing.Point(-2, 196);
-            this.btn2.Margin = new System.Windows.Forms.Padding(5);
+            this.btn2.Location = new System.Drawing.Point(-7, 159);
+            this.btn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn2.Name = "btn2";
             this.btn2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.btn2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.btn2.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.btn2.selected = false;
-            this.btn2.Size = new System.Drawing.Size(307, 59);
+            this.btn2.Size = new System.Drawing.Size(230, 48);
             this.btn2.TabIndex = 4;
             this.btn2.Text = "confirmer livraison";
             this.btn2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,14 +166,14 @@
             this.btn1.IconVisible = true;
             this.btn1.IconZoom = 40D;
             this.btn1.IsTab = true;
-            this.btn1.Location = new System.Drawing.Point(0, 140);
-            this.btn1.Margin = new System.Windows.Forms.Padding(5);
+            this.btn1.Location = new System.Drawing.Point(-5, 114);
+            this.btn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn1.Name = "btn1";
             this.btn1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.btn1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.btn1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.btn1.selected = true;
-            this.btn1.Size = new System.Drawing.Size(307, 59);
+            this.btn1.Size = new System.Drawing.Size(230, 48);
             this.btn1.TabIndex = 2;
             this.btn1.Text = "produits a livrer";
             this.btn1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -188,10 +186,9 @@
             this.PanelAnimator2.SetDecoration(this.PB_logo, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator.SetDecoration(this.PB_logo, BunifuAnimatorNS.DecorationType.None);
             this.LogoAnimator.SetDecoration(this.PB_logo, BunifuAnimatorNS.DecorationType.None);
-            this.PB_logo.Location = new System.Drawing.Point(4, 7);
-            this.PB_logo.Margin = new System.Windows.Forms.Padding(4);
+            this.PB_logo.Location = new System.Drawing.Point(3, 6);
             this.PB_logo.Name = "PB_logo";
-            this.PB_logo.Size = new System.Drawing.Size(249, 126);
+            this.PB_logo.Size = new System.Drawing.Size(187, 102);
             this.PB_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_logo.TabIndex = 0;
             this.PB_logo.TabStop = false;
@@ -205,31 +202,30 @@
             this.PanelAnimator2.SetDecoration(this.Header, BunifuAnimatorNS.DecorationType.None);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(0, 0);
-            this.Header.Margin = new System.Windows.Forms.Padding(4);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1067, 34);
+            this.Header.Size = new System.Drawing.Size(800, 28);
             this.Header.TabIndex = 1;
             // 
             // LogoAnimator
             // 
             this.LogoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndHorizSlide;
             this.LogoAnimator.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 0F;
-            this.LogoAnimator.DefaultAnimation = animation6;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.LogoAnimator.DefaultAnimation = animation1;
             // 
             // Main
             // 
@@ -244,10 +240,9 @@
             this.PanelAnimator2.SetDecoration(this.Main, BunifuAnimatorNS.DecorationType.None);
             this.Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Main.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Main.Location = new System.Drawing.Point(247, 34);
-            this.Main.Margin = new System.Windows.Forms.Padding(4);
+            this.Main.Location = new System.Drawing.Point(185, 28);
             this.Main.Name = "Main";
-            this.Main.Size = new System.Drawing.Size(820, 520);
+            this.Main.Size = new System.Drawing.Size(615, 422);
             this.Main.TabIndex = 2;
             this.Main.Paint += new System.Windows.Forms.PaintEventHandler(this.Main_Paint);
             // 
@@ -266,13 +261,13 @@
             this.bunifuCircleProgressbar1.LabelVisible = true;
             this.bunifuCircleProgressbar1.LineProgressThickness = 8;
             this.bunifuCircleProgressbar1.LineThickness = 5;
-            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(584, 171);
-            this.bunifuCircleProgressbar1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(438, 139);
+            this.bunifuCircleProgressbar1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.bunifuCircleProgressbar1.MaxValue = 100;
             this.bunifuCircleProgressbar1.Name = "bunifuCircleProgressbar1";
             this.bunifuCircleProgressbar1.ProgressBackColor = System.Drawing.Color.Gainsboro;
             this.bunifuCircleProgressbar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.bunifuCircleProgressbar1.Size = new System.Drawing.Size(201, 201);
+            this.bunifuCircleProgressbar1.Size = new System.Drawing.Size(163, 163);
             this.bunifuCircleProgressbar1.TabIndex = 45;
             this.bunifuCircleProgressbar1.Value = 50;
             // 
@@ -284,10 +279,9 @@
             this.LogoAnimator.SetDecoration(this.bunifuCustomLabel6, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(601, 124);
-            this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(451, 101);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(184, 21);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(149, 17);
             this.bunifuCustomLabel6.TabIndex = 44;
             this.bunifuCustomLabel6.Text = "taux de produit livrer";
             // 
@@ -300,9 +294,10 @@
             this.LogoAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator2.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Location = new System.Drawing.Point(31, 161);
+            this.panel1.Location = new System.Drawing.Point(23, 131);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(531, 222);
+            this.panel1.Size = new System.Drawing.Size(398, 180);
             this.panel1.TabIndex = 42;
             // 
             // bunifuCustomLabel5
@@ -314,10 +309,9 @@
             this.bunifuCustomLabel5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.SeaShell;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(171, 141);
-            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(128, 115);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(221, 34);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(176, 26);
             this.bunifuCustomLabel5.TabIndex = 43;
             this.bunifuCustomLabel5.Text = "de leurs achats";
             this.bunifuCustomLabel5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -331,10 +325,9 @@
             this.bunifuCustomLabel4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.SeaShell;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(57, 89);
-            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(43, 72);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(422, 34);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(333, 26);
             this.bunifuCustomLabel4.TabIndex = 42;
             this.bunifuCustomLabel4.Text = "avant la fin de deux semaines";
             this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -348,10 +341,9 @@
             this.bunifuCustomLabel3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.SeaShell;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(26, 35);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(20, 28);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(483, 34);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(379, 26);
             this.bunifuCustomLabel3.TabIndex = 41;
             this.bunifuCustomLabel3.Text = "tous les produits doivent etre livrer ";
             this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -364,10 +356,9 @@
             this.LogoAnimator.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(108, 49);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(81, 40);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(254, 21);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(207, 17);
             this.bunifuCustomLabel1.TabIndex = 41;
             this.bunifuCustomLabel1.Text = "welcome to your application";
             // 
@@ -379,10 +370,9 @@
             this.LogoAnimator.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(35, 22);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(26, 18);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(58, 19);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(48, 17);
             this.bunifuCustomLabel2.TabIndex = 40;
             this.bunifuCustomLabel2.Text = "Agent";
             // 
@@ -390,43 +380,43 @@
             // 
             this.PanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.PanelAnimator.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 1;
-            animation5.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 2F;
-            animation5.TransparencyCoeff = 0F;
-            this.PanelAnimator.DefaultAnimation = animation5;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 1;
+            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 2F;
+            animation2.TransparencyCoeff = 0F;
+            this.PanelAnimator.DefaultAnimation = animation2;
             // 
             // PanelAnimator2
             // 
             this.PanelAnimator2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.PanelAnimator2.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.PanelAnimator2.DefaultAnimation = animation4;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.PanelAnimator2.DefaultAnimation = animation3;
             // 
             // bunifuDragControl1
             // 
@@ -437,10 +427,10 @@
             // 
             // MainAgent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Main);
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.Header);
@@ -448,7 +438,6 @@
             this.LogoAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator2.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainAgent";
             this.Text = "Form1";
             this.PanelMenu.ResumeLayout(false);

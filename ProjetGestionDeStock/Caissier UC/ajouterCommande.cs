@@ -30,6 +30,7 @@ namespace ProjetGestionDeStock
             TB_Adresse.Enabled = false;
             TB_CIN.Enabled = false;
             TB_Email.Enabled = false;
+            color();
         }
 
         private void ajouterCommande_Load(object sender, EventArgs e)
@@ -98,10 +99,13 @@ namespace ProjetGestionDeStock
             TB_total.Enabled = false;
             DP.Enabled = false;
             CB_status.Enabled = false;
+            color();
+           
         }
 
         private void button_ajouterClient_Click(object sender, EventArgs e)
         {
+           
             string nom = TB_nom.Text;
             string prenom = TB_prenom.Text;
             string Email = TB_Email.Text;
@@ -150,10 +154,12 @@ namespace ProjetGestionDeStock
             TB_Email.Enabled = false;
             TB_CIN.Enabled = false;
             TB_Adresse.Enabled = false;
+            color();
         }
 
         private void button_ajouterProduit_Click(object sender, EventArgs e)
         {
+           
             connection.Open();
             string reference = CB_reference.Text;
             int id_produit = 0;
@@ -184,18 +190,21 @@ namespace ProjetGestionDeStock
             TB_marque.Text = "";
             TB_quantite.Text = "";
             TB_prix.Text = "";
+            color();
 
         }
-        
+
 
         private void button_validerCommande_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Vous avez effectué votre commande");
+            color();
             button_validerCommande.Enabled = false;
         }
 
         private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            color();
             connection.Open();
             int id_produit = 0;
         
@@ -222,7 +231,20 @@ namespace ProjetGestionDeStock
                 bunifuCustomDataGrid2.DataSource = dta;
                 connection.Close();
             }
-                
+
         }
-    }
+        private void color()
+        {
+            foreach (var tb in this.Controls.OfType<ns1.BunifuMaterialTextbox>())
+            {
+                if (tb.Enabled == false) {
+                    tb.BackColor = Color.OrangeRed;
+                }
+                else
+                {
+                    tb.BackColor = Color.White;
+                }
+            }
+        }
+}
 }
