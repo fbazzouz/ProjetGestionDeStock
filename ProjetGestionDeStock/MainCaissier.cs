@@ -78,6 +78,7 @@ namespace ProjetGestionDeStock
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
+
             ajouterCommande1.BringToFront();
         }
 

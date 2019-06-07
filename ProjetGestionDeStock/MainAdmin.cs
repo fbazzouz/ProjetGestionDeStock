@@ -73,6 +73,7 @@ namespace ProjetGestionDeStock
 
         private void bunifuFlatButton3_Click_2(object sender, EventArgs e)
         {
+            ajouterCategorie1.AjouterCategorie_Load(null, null);
             ajouterCategorie1.BringToFront();
         }
 
@@ -104,11 +105,13 @@ namespace ProjetGestionDeStock
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+           
             ajouterproduit1.BringToFront();
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
+            
             modifierproduit1.BringToFront();
         }
 
