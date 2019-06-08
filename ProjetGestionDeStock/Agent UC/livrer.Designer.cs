@@ -101,7 +101,7 @@
             this.DG_livrer.RowTemplate.ReadOnly = true;
             this.DG_livrer.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.DG_livrer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DG_livrer.Size = new System.Drawing.Size(1062, 324);
+            this.DG_livrer.Size = new System.Drawing.Size(1019, 324);
             this.DG_livrer.TabIndex = 32;
             this.DG_livrer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_lastproduit_CellContentClick);
             // 

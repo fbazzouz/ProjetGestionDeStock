@@ -109,7 +109,7 @@
             this.DG_CategoriesM.EnableHeadersVisualStyles = false;
             this.DG_CategoriesM.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
             this.DG_CategoriesM.HeaderForeColor = System.Drawing.Color.White;
-            this.DG_CategoriesM.Location = new System.Drawing.Point(27, 119);
+            this.DG_CategoriesM.Location = new System.Drawing.Point(36, 110);
             this.DG_CategoriesM.Margin = new System.Windows.Forms.Padding(4);
             this.DG_CategoriesM.Name = "DG_CategoriesM";
             this.DG_CategoriesM.ReadOnly = true;
@@ -122,7 +122,7 @@
             this.DG_CategoriesM.RowTemplate.ReadOnly = true;
             this.DG_CategoriesM.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.DG_CategoriesM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DG_CategoriesM.Size = new System.Drawing.Size(1116, 389);
+            this.DG_CategoriesM.Size = new System.Drawing.Size(639, 172);
             this.DG_CategoriesM.TabIndex = 33;
             this.DG_CategoriesM.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_CategoriesM_CellDoubleClick);
             // 

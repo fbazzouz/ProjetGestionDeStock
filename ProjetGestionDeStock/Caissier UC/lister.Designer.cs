@@ -60,7 +60,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.label2.Location = new System.Drawing.Point(24, 395);
+            this.label2.Location = new System.Drawing.Point(36, 580);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 25);
@@ -69,7 +69,7 @@
             // 
             // TB_recherche
             // 
-            this.TB_recherche.Location = new System.Drawing.Point(436, 439);
+            this.TB_recherche.Location = new System.Drawing.Point(448, 624);
             this.TB_recherche.Margin = new System.Windows.Forms.Padding(4);
             this.TB_recherche.Name = "TB_recherche";
             this.TB_recherche.Size = new System.Drawing.Size(191, 22);
@@ -83,7 +83,7 @@
             "Référence",
             "Marque",
             "Description"});
-            this.CB_recherche.Location = new System.Drawing.Point(200, 439);
+            this.CB_recherche.Location = new System.Drawing.Point(212, 624);
             this.CB_recherche.Margin = new System.Windows.Forms.Padding(4);
             this.CB_recherche.Name = "CB_recherche";
             this.CB_recherche.Size = new System.Drawing.Size(191, 24);
@@ -137,7 +137,7 @@
             this.bunifuCustomDataGrid12.RowTemplate.ReadOnly = true;
             this.bunifuCustomDataGrid12.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.bunifuCustomDataGrid12.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid12.Size = new System.Drawing.Size(1019, 297);
+            this.bunifuCustomDataGrid12.Size = new System.Drawing.Size(996, 297);
             this.bunifuCustomDataGrid12.TabIndex = 52;
             // 
             // button1
@@ -158,7 +158,7 @@
             this.button1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.button1.IdleForecolor = System.Drawing.Color.White;
             this.button1.IdleLineColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(742, 425);
+            this.button1.Location = new System.Drawing.Point(754, 610);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 52);
@@ -171,7 +171,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(12, 444);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(24, 629);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(141, 19);
