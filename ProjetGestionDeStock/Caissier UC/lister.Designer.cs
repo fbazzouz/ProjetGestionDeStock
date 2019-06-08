@@ -124,7 +124,7 @@
             this.bunifuCustomDataGrid12.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid12.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.bunifuCustomDataGrid12.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid12.Location = new System.Drawing.Point(16, 71);
+            this.bunifuCustomDataGrid12.Location = new System.Drawing.Point(19, 50);
             this.bunifuCustomDataGrid12.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuCustomDataGrid12.Name = "bunifuCustomDataGrid12";
             this.bunifuCustomDataGrid12.ReadOnly = true;
@@ -137,7 +137,7 @@
             this.bunifuCustomDataGrid12.RowTemplate.ReadOnly = true;
             this.bunifuCustomDataGrid12.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.bunifuCustomDataGrid12.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid12.Size = new System.Drawing.Size(996, 297);
+            this.bunifuCustomDataGrid12.Size = new System.Drawing.Size(655, 322);
             this.bunifuCustomDataGrid12.TabIndex = 52;
             // 
             // button1
