@@ -40,6 +40,9 @@ namespace ProjetGestionDeStock
             
             if (!DesignMode)
             {
+                TB_total.Enabled = false;
+
+                TB_facture_N.Text = "F2019-" + DatabaseOperations.maxId();
                 display_data();
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
