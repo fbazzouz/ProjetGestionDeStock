@@ -80,5 +80,10 @@ namespace ProjetGestionDeStock
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

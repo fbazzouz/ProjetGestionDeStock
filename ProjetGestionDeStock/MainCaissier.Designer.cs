@@ -41,17 +41,20 @@
             this.bunifuFlatButton2 = new ns1.BunifuFlatButton();
             this.bunifuFlatButton1 = new ns1.BunifuFlatButton();
             this.Header = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LogoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.v = new System.Windows.Forms.Panel();
-            this.ajouterCommande1 = new ProjetGestionDeStock.ajouterCommande();
-            this.lister1 = new ProjetGestionDeStock.lister();
-            this.modifierproduit1 = new ProjetGestionDeStock.modifierproduit();
-            this.ajouterproduit1 = new ProjetGestionDeStock.ajouterproduit();
             this.PanelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.PanelAnimator2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
+            this.ajouterproduit1 = new ProjetGestionDeStock.ajouterproduit();
+            this.ajouterCommande1 = new ProjetGestionDeStock.ajouterCommande();
+            this.lister1 = new ProjetGestionDeStock.lister();
+            this.modifierproduit1 = new ProjetGestionDeStock.modifierproduit();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Slider)).BeginInit();
+            this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.v.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,9 +75,10 @@
             this.PanelAnimator.SetDecoration(this.PanelMenu, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator2.SetDecoration(this.PanelMenu, BunifuAnimatorNS.DecorationType.None);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelMenu.Location = new System.Drawing.Point(0, 28);
+            this.PanelMenu.Location = new System.Drawing.Point(0, 43);
+            this.PanelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(228, 610);
+            this.PanelMenu.Size = new System.Drawing.Size(295, 742);
             this.PanelMenu.TabIndex = 0;
             // 
             // bunifuFlatButton6
@@ -102,14 +106,14 @@
             this.bunifuFlatButton6.IconVisible = true;
             this.bunifuFlatButton6.IconZoom = 70D;
             this.bunifuFlatButton6.IsTab = true;
-            this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 344);
-            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 423);
+            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton6.Name = "bunifuFlatButton6";
             this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton6.selected = false;
-            this.bunifuFlatButton6.Size = new System.Drawing.Size(230, 48);
+            this.bunifuFlatButton6.Size = new System.Drawing.Size(307, 59);
             this.bunifuFlatButton6.TabIndex = 7;
             this.bunifuFlatButton6.Text = "     Lister les produits";
             this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -126,9 +130,10 @@
             this.PanelAnimator2.SetDecoration(this.Slider, BunifuAnimatorNS.DecorationType.None);
             this.Slider.Image = global::ProjetGestionDeStock.Properties.Resources.menu_alt_512;
             this.Slider.ImageActive = null;
-            this.Slider.Location = new System.Drawing.Point(176, 6);
+            this.Slider.Location = new System.Drawing.Point(226, 7);
+            this.Slider.Margin = new System.Windows.Forms.Padding(4);
             this.Slider.Name = "Slider";
-            this.Slider.Size = new System.Drawing.Size(38, 36);
+            this.Slider.Size = new System.Drawing.Size(51, 44);
             this.Slider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Slider.TabIndex = 1;
             this.Slider.TabStop = false;
@@ -160,14 +165,14 @@
             this.bunifuFlatButton4.IconVisible = true;
             this.bunifuFlatButton4.IconZoom = 70D;
             this.bunifuFlatButton4.IsTab = true;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 297);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 366);
+            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(230, 48);
+            this.bunifuFlatButton4.Size = new System.Drawing.Size(307, 59);
             this.bunifuFlatButton4.TabIndex = 5;
             this.bunifuFlatButton4.Text = "   Ajouter une commande";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -200,14 +205,14 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 70D;
             this.bunifuFlatButton2.IsTab = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 241);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 297);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(230, 48);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(307, 59);
             this.bunifuFlatButton2.TabIndex = 3;
             this.bunifuFlatButton2.Text = "     Modifier un produit";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -240,14 +245,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 70D;
             this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 194);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 239);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.bunifuFlatButton1.selected = true;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(230, 48);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(307, 59);
             this.bunifuFlatButton1.TabIndex = 2;
             this.bunifuFlatButton1.Text = "     Ajouter un produit";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -258,14 +263,32 @@
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
+            this.Header.Controls.Add(this.pictureBox1);
             this.LogoAnimator.SetDecoration(this.Header, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator.SetDecoration(this.Header, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator2.SetDecoration(this.Header, BunifuAnimatorNS.DecorationType.None);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(0, 0);
+            this.Header.Margin = new System.Windows.Forms.Padding(4);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1145, 28);
+            this.Header.Size = new System.Drawing.Size(1527, 43);
             this.Header.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.PanelAnimator2.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(1449, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // LogoAnimator
             // 
@@ -300,60 +323,11 @@
             this.PanelAnimator2.SetDecoration(this.v, BunifuAnimatorNS.DecorationType.None);
             this.v.Dock = System.Windows.Forms.DockStyle.Fill;
             this.v.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.v.Location = new System.Drawing.Point(228, 28);
+            this.v.Location = new System.Drawing.Point(295, 43);
+            this.v.Margin = new System.Windows.Forms.Padding(4);
             this.v.Name = "v";
-            this.v.Size = new System.Drawing.Size(917, 610);
+            this.v.Size = new System.Drawing.Size(1232, 742);
             this.v.TabIndex = 2;
-            // 
-            // ajouterCommande1
-            // 
-            this.ajouterCommande1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.PanelAnimator2.SetDecoration(this.ajouterCommande1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.ajouterCommande1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoAnimator.SetDecoration(this.ajouterCommande1, BunifuAnimatorNS.DecorationType.None);
-            this.ajouterCommande1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ajouterCommande1.Location = new System.Drawing.Point(0, 0);
-            this.ajouterCommande1.Name = "ajouterCommande1";
-            this.ajouterCommande1.Size = new System.Drawing.Size(917, 610);
-            this.ajouterCommande1.TabIndex = 4;
-            // 
-            // lister1
-            // 
-            this.lister1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.PanelAnimator2.SetDecoration(this.lister1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.lister1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoAnimator.SetDecoration(this.lister1, BunifuAnimatorNS.DecorationType.None);
-            this.lister1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lister1.ForeColor = System.Drawing.Color.White;
-            this.lister1.Location = new System.Drawing.Point(0, 0);
-            this.lister1.Name = "lister1";
-            this.lister1.Size = new System.Drawing.Size(917, 610);
-            this.lister1.TabIndex = 3;
-            // 
-            // modifierproduit1
-            // 
-            this.modifierproduit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.PanelAnimator2.SetDecoration(this.modifierproduit1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.modifierproduit1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoAnimator.SetDecoration(this.modifierproduit1, BunifuAnimatorNS.DecorationType.None);
-            this.modifierproduit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.modifierproduit1.Location = new System.Drawing.Point(0, 0);
-            this.modifierproduit1.Name = "modifierproduit1";
-            this.modifierproduit1.Size = new System.Drawing.Size(917, 610);
-            this.modifierproduit1.TabIndex = 2;
-            // 
-            // ajouterproduit1
-            // 
-            this.ajouterproduit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
-            this.PanelAnimator2.SetDecoration(this.ajouterproduit1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.ajouterproduit1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoAnimator.SetDecoration(this.ajouterproduit1, BunifuAnimatorNS.DecorationType.None);
-            this.ajouterproduit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ajouterproduit1.ForeColor = System.Drawing.Color.White;
-            this.ajouterproduit1.Location = new System.Drawing.Point(0, 0);
-            this.ajouterproduit1.Name = "ajouterproduit1";
-            this.ajouterproduit1.Size = new System.Drawing.Size(917, 610);
-            this.ajouterproduit1.TabIndex = 1;
             // 
             // PanelAnimator
             // 
@@ -404,12 +378,66 @@
             this.bunifuDragControl1.TargetControl = this.Header;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // ajouterproduit1
+            // 
+            this.ajouterproduit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.PanelAnimator2.SetDecoration(this.ajouterproduit1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.ajouterproduit1, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimator.SetDecoration(this.ajouterproduit1, BunifuAnimatorNS.DecorationType.None);
+            this.ajouterproduit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ajouterproduit1.ForeColor = System.Drawing.Color.White;
+            this.ajouterproduit1.Location = new System.Drawing.Point(0, 0);
+            this.ajouterproduit1.Margin = new System.Windows.Forms.Padding(5);
+            this.ajouterproduit1.Name = "ajouterproduit1";
+            this.ajouterproduit1.Size = new System.Drawing.Size(1232, 742);
+            this.ajouterproduit1.TabIndex = 1;
+            // 
+            // ajouterCommande1
+            // 
+            this.ajouterCommande1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.PanelAnimator2.SetDecoration(this.ajouterCommande1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.ajouterCommande1, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimator.SetDecoration(this.ajouterCommande1, BunifuAnimatorNS.DecorationType.None);
+            this.ajouterCommande1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ajouterCommande1.Location = new System.Drawing.Point(0, 0);
+            this.ajouterCommande1.Margin = new System.Windows.Forms.Padding(5);
+            this.ajouterCommande1.Name = "ajouterCommande1";
+            this.ajouterCommande1.Size = new System.Drawing.Size(1232, 742);
+            this.ajouterCommande1.TabIndex = 4;
+            // 
+            // lister1
+            // 
+            this.lister1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.PanelAnimator2.SetDecoration(this.lister1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.lister1, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimator.SetDecoration(this.lister1, BunifuAnimatorNS.DecorationType.None);
+            this.lister1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lister1.ForeColor = System.Drawing.Color.White;
+            this.lister1.Location = new System.Drawing.Point(0, 0);
+            this.lister1.Margin = new System.Windows.Forms.Padding(5);
+            this.lister1.Name = "lister1";
+            this.lister1.Size = new System.Drawing.Size(1232, 742);
+            this.lister1.TabIndex = 3;
+            // 
+            // modifierproduit1
+            // 
+            this.modifierproduit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.PanelAnimator2.SetDecoration(this.modifierproduit1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.modifierproduit1, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimator.SetDecoration(this.modifierproduit1, BunifuAnimatorNS.DecorationType.None);
+            this.modifierproduit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.modifierproduit1.Location = new System.Drawing.Point(0, 0);
+            this.modifierproduit1.Margin = new System.Windows.Forms.Padding(5);
+            this.modifierproduit1.Name = "modifierproduit1";
+            this.modifierproduit1.Size = new System.Drawing.Size(1232, 742);
+            this.modifierproduit1.TabIndex = 2;
+            // 
             // MainCaissier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(1145, 638);
+            this.ClientSize = new System.Drawing.Size(1527, 785);
             this.Controls.Add(this.v);
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.Header);
@@ -417,10 +445,13 @@
             this.LogoAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator2.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainCaissier";
             this.Text = "Form1";
             this.PanelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Slider)).EndInit();
+            this.Header.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.v.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -445,6 +476,7 @@
         private modifierproduit modifierproduit1;
         private lister lister1;
         private ajouterCommande ajouterCommande1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

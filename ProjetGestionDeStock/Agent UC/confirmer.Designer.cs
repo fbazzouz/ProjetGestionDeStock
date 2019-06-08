@@ -58,7 +58,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(48, 337);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(44, 609);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(136, 19);
@@ -78,7 +78,7 @@
             this.etat.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.etat.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.etat.LineThickness = 8;
-            this.etat.Location = new System.Drawing.Point(298, 322);
+            this.etat.Location = new System.Drawing.Point(294, 594);
             this.etat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.etat.Name = "etat";
             this.etat.Size = new System.Drawing.Size(366, 43);
@@ -120,7 +120,7 @@
             this.DG_livrer.EnableHeadersVisualStyles = false;
             this.DG_livrer.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.DG_livrer.HeaderForeColor = System.Drawing.Color.White;
-            this.DG_livrer.Location = new System.Drawing.Point(75, 49);
+            this.DG_livrer.Location = new System.Drawing.Point(63, 89);
             this.DG_livrer.Margin = new System.Windows.Forms.Padding(4);
             this.DG_livrer.Name = "DG_livrer";
             this.DG_livrer.ReadOnly = true;
@@ -133,7 +133,7 @@
             this.DG_livrer.RowTemplate.ReadOnly = true;
             this.DG_livrer.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.DG_livrer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DG_livrer.Size = new System.Drawing.Size(723, 263);
+            this.DG_livrer.Size = new System.Drawing.Size(909, 438);
             this.DG_livrer.TabIndex = 48;
             // 
             // BTN_AjouterCategorie
@@ -154,7 +154,7 @@
             this.BTN_AjouterCategorie.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.BTN_AjouterCategorie.IdleForecolor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.IdleLineColor = System.Drawing.Color.White;
-            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(641, 383);
+            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(773, 594);
             this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(6);
             this.BTN_AjouterCategorie.Name = "BTN_AjouterCategorie";
             this.BTN_AjouterCategorie.Size = new System.Drawing.Size(199, 52);
@@ -175,7 +175,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Coral;
             this.Name = "confirmer";
-            this.Size = new System.Drawing.Size(933, 518);
+            this.Size = new System.Drawing.Size(1041, 756);
             this.Load += new System.EventHandler(this.confirmer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DG_livrer)).EndInit();
             this.ResumeLayout(false);

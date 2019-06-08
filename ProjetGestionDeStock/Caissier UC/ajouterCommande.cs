@@ -33,7 +33,7 @@ namespace ProjetGestionDeStock
             color();
         }
 
-        private void ajouterCommande_Load(object sender, EventArgs e)
+        internal void ajouterCommande_Load(object sender, EventArgs e)
         {
             
             if (!DesignMode)
@@ -280,5 +280,10 @@ namespace ProjetGestionDeStock
                 }
             }
         }
-}
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

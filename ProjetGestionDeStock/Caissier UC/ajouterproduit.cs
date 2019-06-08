@@ -70,7 +70,7 @@ namespace ProjetGestionDeStock
             connection.Close();
         }
 
-        private void ajouterproduit_Load_1(object sender, EventArgs e)
+        internal void ajouterproduit_Load_1(object sender, EventArgs e)
         {
             if (!DesignMode)
             {

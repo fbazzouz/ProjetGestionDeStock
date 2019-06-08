@@ -71,7 +71,7 @@
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(36, 21);
             this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(146, 17);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(179, 19);
             this.bunifuCustomLabel2.TabIndex = 2;
             this.bunifuCustomLabel2.Text = "AJOUTER PERSONNEL";
             // 
@@ -125,7 +125,7 @@
             this.DG_personnel.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
             this.DG_personnel.HeaderForeColor = System.Drawing.Color.White;
             this.DG_personnel.Location = new System.Drawing.Point(27, 377);
-            this.DG_personnel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DG_personnel.Margin = new System.Windows.Forms.Padding(4);
             this.DG_personnel.Name = "DG_personnel";
             this.DG_personnel.ReadOnly = true;
             this.DG_personnel.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -137,7 +137,7 @@
             this.DG_personnel.RowTemplate.ReadOnly = true;
             this.DG_personnel.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.DG_personnel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DG_personnel.Size = new System.Drawing.Size(855, 207);
+            this.DG_personnel.Size = new System.Drawing.Size(528, 183);
             this.DG_personnel.TabIndex = 33;
             // 
             // dataGridViewTextBoxColumn1
@@ -204,7 +204,7 @@
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(34, 356);
             this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(140, 17);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(171, 19);
             this.bunifuCustomLabel3.TabIndex = 34;
             this.bunifuCustomLabel3.Text = "Liste des Personnels";
             // 
@@ -218,7 +218,7 @@
             this.bunifuCustomLabel7.Location = new System.Drawing.Point(49, 90);
             this.bunifuCustomLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(108, 17);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(138, 22);
             this.bunifuCustomLabel7.TabIndex = 22;
             this.bunifuCustomLabel7.Text = "Nom Complete :";
             // 
@@ -235,7 +235,7 @@
             this.TB_nom.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.TB_nom.LineThickness = 3;
             this.TB_nom.Location = new System.Drawing.Point(51, 108);
-            this.TB_nom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TB_nom.Margin = new System.Windows.Forms.Padding(6);
             this.TB_nom.Name = "TB_nom";
             this.TB_nom.Size = new System.Drawing.Size(366, 29);
             this.TB_nom.TabIndex = 35;
@@ -255,7 +255,7 @@
             this.TB_prenom.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.TB_prenom.LineThickness = 3;
             this.TB_prenom.Location = new System.Drawing.Point(495, 108);
-            this.TB_prenom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TB_prenom.Margin = new System.Windows.Forms.Padding(6);
             this.TB_prenom.Name = "TB_prenom";
             this.TB_prenom.Size = new System.Drawing.Size(366, 29);
             this.TB_prenom.TabIndex = 36;
@@ -272,7 +272,7 @@
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(491, 152);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(50, 17);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(64, 22);
             this.bunifuCustomLabel1.TabIndex = 38;
             this.bunifuCustomLabel1.Text = "Email :";
             // 
@@ -289,7 +289,7 @@
             this.TB_cin.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.TB_cin.LineThickness = 3;
             this.TB_cin.Location = new System.Drawing.Point(54, 170);
-            this.TB_cin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TB_cin.Margin = new System.Windows.Forms.Padding(6);
             this.TB_cin.Name = "TB_cin";
             this.TB_cin.Size = new System.Drawing.Size(366, 29);
             this.TB_cin.TabIndex = 40;
@@ -306,7 +306,7 @@
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(53, 152);
             this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(38, 17);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(50, 22);
             this.bunifuCustomLabel4.TabIndex = 39;
             this.bunifuCustomLabel4.Text = "CIN :";
             // 
@@ -323,7 +323,7 @@
             this.TB_login.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.TB_login.LineThickness = 3;
             this.TB_login.Location = new System.Drawing.Point(51, 240);
-            this.TB_login.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TB_login.Margin = new System.Windows.Forms.Padding(6);
             this.TB_login.Name = "TB_login";
             this.TB_login.Size = new System.Drawing.Size(366, 29);
             this.TB_login.TabIndex = 42;
@@ -340,7 +340,7 @@
             this.LB_login.Location = new System.Drawing.Point(49, 222);
             this.LB_login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_login.Name = "LB_login";
-            this.LB_login.Size = new System.Drawing.Size(51, 17);
+            this.LB_login.Size = new System.Drawing.Size(64, 22);
             this.LB_login.TabIndex = 43;
             this.LB_login.Text = "Login :";
             // 
@@ -354,7 +354,7 @@
             this.bunifuCustomLabel6.Location = new System.Drawing.Point(487, 222);
             this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(77, 17);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(99, 22);
             this.bunifuCustomLabel6.TabIndex = 42;
             this.bunifuCustomLabel6.Text = "Password :";
             // 
@@ -371,7 +371,7 @@
             this.TB_password.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.TB_password.LineThickness = 3;
             this.TB_password.Location = new System.Drawing.Point(492, 240);
-            this.TB_password.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TB_password.Margin = new System.Windows.Forms.Padding(6);
             this.TB_password.Name = "TB_password";
             this.TB_password.Size = new System.Drawing.Size(369, 29);
             this.TB_password.TabIndex = 43;
@@ -391,7 +391,7 @@
             this.TB_email.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.TB_email.LineThickness = 3;
             this.TB_email.Location = new System.Drawing.Point(495, 170);
-            this.TB_email.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TB_email.Margin = new System.Windows.Forms.Padding(6);
             this.TB_email.Name = "TB_email";
             this.TB_email.Size = new System.Drawing.Size(366, 29);
             this.TB_email.TabIndex = 41;
@@ -409,7 +409,7 @@
         "Agent",
         "Caissier"};
             this.DD_role.Location = new System.Drawing.Point(58, 308);
-            this.DD_role.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DD_role.Margin = new System.Windows.Forms.Padding(6);
             this.DD_role.Name = "DD_role";
             this.DD_role.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.DD_role.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(48)))), ((int)(((byte)(93)))));
@@ -427,7 +427,7 @@
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(54, 279);
             this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(45, 17);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(57, 22);
             this.bunifuCustomLabel5.TabIndex = 47;
             this.bunifuCustomLabel5.Text = "Role :";
             // 
@@ -450,7 +450,7 @@
             this.BTN_AjouterCategorie.IdleForecolor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.IdleLineColor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.Location = new System.Drawing.Point(512, 297);
-            this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(6);
             this.BTN_AjouterCategorie.Name = "BTN_AjouterCategorie";
             this.BTN_AjouterCategorie.Size = new System.Drawing.Size(199, 52);
             this.BTN_AjouterCategorie.TabIndex = 45;
@@ -459,7 +459,7 @@
             // 
             // ajouterPerso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
             this.Controls.Add(this.BTN_AjouterCategorie);
@@ -480,7 +480,7 @@
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ajouterPerso";
             this.Size = new System.Drawing.Size(917, 610);
             this.Load += new System.EventHandler(this.dashboard_Load);
