@@ -19,7 +19,7 @@ namespace ProjetGestionDeStock.Admin_UC
 
         }
 
-        private void dashboard_Load(object sender, EventArgs e)
+        internal void dashboard_Load(object sender, EventArgs e)
         {
             if (!DesignMode)
             {

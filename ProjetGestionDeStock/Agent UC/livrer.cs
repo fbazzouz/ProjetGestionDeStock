@@ -27,7 +27,7 @@ namespace ProjetGestionDeStock.Agent_UC
         {
             InitializeComponent();
         }
-        private void Livrer_Load(object sender, EventArgs e)
+        internal void Livrer_Load(object sender, EventArgs e)
         {
             if (!DesignMode)
             {

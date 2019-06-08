@@ -575,7 +575,7 @@
             dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.bunifuCustomDataGrid1.RowTemplate.DividerHeight = 1;
-            this.bunifuCustomDataGrid1.RowTemplate.Height = 10;
+            this.bunifuCustomDataGrid1.RowTemplate.Height = 30;
             this.bunifuCustomDataGrid1.RowTemplate.ReadOnly = true;
             this.bunifuCustomDataGrid1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -627,7 +627,7 @@
             dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.bunifuCustomDataGrid2.RowTemplate.DividerHeight = 1;
-            this.bunifuCustomDataGrid2.RowTemplate.Height = 40;
+            this.bunifuCustomDataGrid2.RowTemplate.Height = 30;
             this.bunifuCustomDataGrid2.RowTemplate.ReadOnly = true;
             this.bunifuCustomDataGrid2.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.bunifuCustomDataGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

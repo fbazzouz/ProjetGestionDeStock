@@ -41,7 +41,7 @@ namespace ProjetGestionDeStock.Admin_UC
 
         }
 
-        private void AjouterCategorie_Load(object sender, EventArgs e)
+        internal void AjouterCategorie_Load(object sender, EventArgs e)
         {
             if (!DesignMode)
             {

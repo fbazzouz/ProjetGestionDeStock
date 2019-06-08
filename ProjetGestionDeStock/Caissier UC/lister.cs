@@ -19,7 +19,7 @@ namespace ProjetGestionDeStock
             InitializeComponent();
         }
 
-        private void lister_Load(object sender, EventArgs e)
+        internal void lister_Load(object sender, EventArgs e)
         {
             if (!DesignMode)
             {

@@ -29,7 +29,7 @@ namespace ProjetGestionDeStock.Agent_UC
             InitializeComponent();
         }
 
-        private void confirmer_Load(object sender, EventArgs e)
+        internal void confirmer_Load(object sender, EventArgs e)
         {
             if (!DesignMode)
             {
