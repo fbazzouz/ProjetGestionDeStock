@@ -16,10 +16,10 @@ namespace ProjetGestionDeStock
     {
        
 
-        public MainAgent()
+        public MainAgent(string Nom, string Prenom)
         {
             InitializeComponent();
-            Agent_UC.Livrer.Instance.BringToFront();
+            Lb_admin.Text = Nom + " " + Prenom;
         }
 
         private void Slider_Click(object sender, EventArgs e)
@@ -29,11 +29,11 @@ namespace ProjetGestionDeStock
                 PanelMenu.Visible = false;
                 PanelMenu.Width = 230;
                 PanelAnimator2.ShowSync(PanelMenu);
-                LogoAnimator.ShowSync(PB_logo);
+                LogoAnimator.ShowSync(Lb_admin);
             }
             else
             {
-                LogoAnimator.HideSync(PB_logo);
+                LogoAnimator.HideSync(Lb_admin);
                 PanelMenu.Visible = false;
                 PanelMenu.Width = 50;
                 PanelAnimator.ShowSync(PanelMenu);
@@ -83,6 +83,7 @@ namespace ProjetGestionDeStock
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            Close();
             Environment.Exit(0);
         }
 
@@ -90,7 +91,7 @@ namespace ProjetGestionDeStock
         {
             Authentification A = new Authentification();
             A.Show();
-            Close();
+            Hide();
         }
     }
 }

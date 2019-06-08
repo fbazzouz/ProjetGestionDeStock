@@ -9,9 +9,10 @@ namespace ProjetGestionDeStock
         
        
 
-        public MainCaissier()
+        public MainCaissier(string Nom, string Prenom)
         {
             InitializeComponent();
+            Lb_admin.Text = Nom + " " + Prenom;
         }
 
         private void Slider_Click(object sender, EventArgs e)
@@ -86,6 +87,7 @@ namespace ProjetGestionDeStock
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            Close();
             Environment.Exit(0);
         }
 

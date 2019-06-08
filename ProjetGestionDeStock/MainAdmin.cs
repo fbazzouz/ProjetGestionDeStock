@@ -120,6 +120,7 @@ namespace ProjetGestionDeStock
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            Close();
             Environment.Exit(0);
         }
 
@@ -127,7 +128,12 @@ namespace ProjetGestionDeStock
         {
             Authentification A = new Authentification();
             A.Show();
-            Close();
+            Hide();
+        }
+
+        private void Lb_admin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
