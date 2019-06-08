@@ -193,6 +193,16 @@ namespace ProjetGestionDeStock.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Exit_50px {
+            get {
+                object obj = ResourceManager.GetObject("Exit_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Image1 {
             get {
                 object obj = ResourceManager.GetObject("Image1", resourceCulture);
@@ -206,6 +216,16 @@ namespace ProjetGestionDeStock.Properties {
         internal static System.Drawing.Bitmap List_50px {
             get {
                 object obj = ResourceManager.GetObject("List_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lo {
+            get {
+                object obj = ResourceManager.GetObject("lo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

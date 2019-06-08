@@ -229,7 +229,7 @@ namespace ProjetGestionDeStock
         {
             color();
             connection.Open();
-            int id_produit = 0;
+            
         
             int SelectedRow = bunifuCustomDataGrid1.SelectedRows[0].Index;
        
