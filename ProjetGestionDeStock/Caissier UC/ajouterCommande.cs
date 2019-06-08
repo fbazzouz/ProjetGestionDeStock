@@ -77,9 +77,10 @@ namespace ProjetGestionDeStock
             while (sr.Read())
             {
                 TB_prix.Text = sr["prix"].ToString();
-                TB_quantite.Text = sr["quantite_stk"].ToString();
+                TB_quantite.MaximumValue = int.Parse(sr["quantite_stk"].ToString());
                 TB_marque.Text = sr["marque"].ToString();
             }
+            TB_quantite.Value = 0;
             sr.Close();
             connection.Close();
         }
@@ -177,20 +178,7 @@ namespace ProjetGestionDeStock
         private void button_ajouterProduit_Click(object sender, EventArgs e)
         {
             //Pour verifier si les champs textes sont vides 
-            ns1.BunifuMaterialTextbox[] TBtable = new ns1.BunifuMaterialTextbox[3];
-            TBtable[0] = TB_marque;
-            TBtable[1] = TB_quantite;
-            TBtable[2] = TB_prix;
-            foreach (var tb in TBtable)
-            {
-                if (tb.Text == "")
-                {
-                    tb.Focus();
-
-                    MessageBox.Show(tb, "Le champ ne doit pas etre vide ex : " + tb.HintText);
-                    return;
-                }
-            }
+            
             ////////////////////////////////////////////////
 
             connection.Open();
@@ -214,14 +202,14 @@ namespace ProjetGestionDeStock
             id_facture = Convert.ToInt32(cmd1.ExecuteScalar());
             SqlCommand cmd2 = connection.CreateCommand();
             cmd2.CommandType = CommandType.Text;
-            cmd2.CommandText = "insert into facture_produit(id_produit,id_facture,quantite,livre) values ("+id_produit+","+id_facture+",0,0)";
+            cmd2.CommandText = "insert into facture_produit(id_produit,id_facture,quantite,livre) values ("+id_produit+","+id_facture+","+TB_quantite.Value+",0)";
             cmd2.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("Vous pouvez ajouter tant de produit que vous voulez et cliquez sur valider commande");
             button_validerCommande.Visible = true;
             CB_reference.Text = "";
             TB_marque.Text = "";
-            TB_quantite.Text = "";
+            TB_quantite.Value = 0;
             TB_prix.Text = "";
             color();
 
@@ -272,9 +260,11 @@ namespace ProjetGestionDeStock
             {
                 if (tb.Enabled == false) {
                     tb.LineIdleColor = Color.Silver;
+                    tb.BackColor = Color.Silver;
                 }
                 else
                 {
+                    tb.BackColor = Color.FromArgb(57, 62, 70);
                     tb.LineIdleColor = Color.FromArgb(225, 155, 45);
                     tb.LineMouseHoverColor = Color.FromArgb(225, 155, 45);
                 }
@@ -284,6 +274,11 @@ namespace ProjetGestionDeStock
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TB_quantite_ValueChanged(object sender, EventArgs e)
+        {
+            seuil.Text = "Quantite : " + TB_quantite.Value.ToString();
         }
     }
 }
