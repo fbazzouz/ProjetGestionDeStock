@@ -39,18 +39,41 @@ namespace ProjetGestionDeStock
             {
                 if (sdr[0].ToString() == "admin")
                 {
-                    string Nom = sdr[1].ToString(),Prenom= sdr[2].ToString();
+                    string Nom = sdr[1].ToString(), Prenom = sdr[2].ToString();
                     sdr.Close();
                     MainAdmin mainAdmin = new MainAdmin(Nom, Prenom);
                     mainAdmin.Show();
                     Hide();
                 }
+                else
+                {
+                    if (sdr[0].ToString() == "agent")
+                    {
+                        string Nom = sdr[1].ToString(), Prenom = sdr[2].ToString();
+                        sdr.Close();
+                        MainAgent mainAgent = new MainAgent(Nom, Prenom);
+                        mainAgent.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                        if (sdr[0].ToString() == "caissier")
+                        {
+                            string Nom = sdr[1].ToString(), Prenom = sdr[2].ToString();
+                            sdr.Close();
+                            MainCaissier mainCaissier = new MainCaissier(Nom, Prenom);
+                            mainCaissier.Show();
+                            Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Votre Login est inccorect");
+                            sdr.Close();
+                        }
+                    }
+                }
             }
-            else
-            {
-                MessageBox.Show("Votre Login est inccorect");
-                sdr.Close();
-            }
+           
             
             DatabaseOperations.closeCon();
         }
