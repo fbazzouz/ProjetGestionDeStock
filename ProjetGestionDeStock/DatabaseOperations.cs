@@ -284,6 +284,22 @@ namespace ProjetGestionDeStock
             con.Close();
             return dt;
         }
+            //------------------------ max id facture ----------------------------
+
+        public static int maxId()
+        {
+            int id=0;
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select max(id_facture) from facture";
+            cmd.Connection = getcon();
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            sdr.Read();
+            id = int.Parse(sdr[0].ToString())+1;
+            con.Close();
+            return id;
+        }
 
     }
 }
