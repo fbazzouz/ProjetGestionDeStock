@@ -177,7 +177,7 @@
             this.BTN_AjouterCategorie.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.BTN_AjouterCategorie.IdleForecolor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.IdleLineColor = System.Drawing.Color.White;
-            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(845, 519);
+            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(559, 537);
             this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(6);
             this.BTN_AjouterCategorie.Name = "BTN_AjouterCategorie";
             this.BTN_AjouterCategorie.Size = new System.Drawing.Size(199, 52);

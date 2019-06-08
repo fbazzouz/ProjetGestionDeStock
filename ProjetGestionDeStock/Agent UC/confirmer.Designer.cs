@@ -38,6 +38,9 @@
             this.etat = new ns1.BunifuMaterialTextbox();
             this.DG_livrer = new ns1.BunifuCustomDataGrid();
             this.BTN_AjouterCategorie = new ns1.BunifuThinButton2();
+            this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.DG_livrer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,7 +136,7 @@
             this.DG_livrer.RowTemplate.ReadOnly = true;
             this.DG_livrer.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.DG_livrer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DG_livrer.Size = new System.Drawing.Size(909, 438);
+            this.DG_livrer.Size = new System.Drawing.Size(935, 425);
             this.DG_livrer.TabIndex = 48;
             this.DG_livrer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_livrer_CellDoubleClick);
             // 
@@ -163,11 +166,50 @@
             this.BTN_AjouterCategorie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BTN_AjouterCategorie.Click += new System.EventHandler(this.BTN_AjouterCategorie_Click);
             // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Silver;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(44, 537);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(174, 19);
+            this.bunifuCustomLabel2.TabIndex = 49;
+            this.bunifuCustomLabel2.Text = "LES Etats de livraison";
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.Silver;
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(278, 537);
+            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(109, 19);
+            this.bunifuCustomLabel4.TabIndex = 50;
+            this.bunifuCustomLabel4.Text = "1 : non livrer";
+            // 
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.Silver;
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(466, 537);
+            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(73, 19);
+            this.bunifuCustomLabel5.TabIndex = 51;
+            this.bunifuCustomLabel5.Text = "2 : livrer";
+            // 
             // confirmer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.Controls.Add(this.bunifuCustomLabel5);
+            this.Controls.Add(this.bunifuCustomLabel4);
+            this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.DG_livrer);
             this.Controls.Add(this.BTN_AjouterCategorie);
             this.Controls.Add(this.etat);
@@ -190,5 +232,8 @@
         private ns1.BunifuMaterialTextbox etat;
         private ns1.BunifuThinButton2 BTN_AjouterCategorie;
         private ns1.BunifuCustomDataGrid DG_livrer;
+        private ns1.BunifuCustomLabel bunifuCustomLabel2;
+        private ns1.BunifuCustomLabel bunifuCustomLabel4;
+        private ns1.BunifuCustomLabel bunifuCustomLabel5;
     }
 }
