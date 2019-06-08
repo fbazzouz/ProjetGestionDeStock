@@ -53,9 +53,8 @@
             this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(0, 0);
-            this.Header.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1067, 43);
+            this.Header.Size = new System.Drawing.Size(800, 35);
             this.Header.TabIndex = 2;
             // 
             // Tb_login
@@ -71,10 +70,10 @@
             this.Tb_login.LineIdleColor = System.Drawing.Color.White;
             this.Tb_login.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Tb_login.LineThickness = 3;
-            this.Tb_login.Location = new System.Drawing.Point(419, 244);
-            this.Tb_login.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Tb_login.Location = new System.Drawing.Point(314, 198);
+            this.Tb_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tb_login.Name = "Tb_login";
-            this.Tb_login.Size = new System.Drawing.Size(323, 57);
+            this.Tb_login.Size = new System.Drawing.Size(242, 46);
             this.Tb_login.TabIndex = 7;
             this.Tb_login.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -91,10 +90,10 @@
             this.Tb_mdp.LineIdleColor = System.Drawing.Color.White;
             this.Tb_mdp.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Tb_mdp.LineThickness = 3;
-            this.Tb_mdp.Location = new System.Drawing.Point(419, 321);
-            this.Tb_mdp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Tb_mdp.Location = new System.Drawing.Point(314, 261);
+            this.Tb_mdp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tb_mdp.Name = "Tb_mdp";
-            this.Tb_mdp.Size = new System.Drawing.Size(323, 57);
+            this.Tb_mdp.Size = new System.Drawing.Size(242, 46);
             this.Tb_mdp.TabIndex = 15;
             this.Tb_mdp.Text = "Your Login";
             this.Tb_mdp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -104,9 +103,10 @@
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(437, 130);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(328, 106);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(265, 54);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(199, 44);
             this.bunifuCustomLabel1.TabIndex = 16;
             this.bunifuCustomLabel1.Text = "Bienvenue !";
             // 
@@ -129,10 +129,10 @@
             this.Connecter.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
             this.Connecter.IdleForecolor = System.Drawing.Color.White;
             this.Connecter.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(90)))), ((int)(((byte)(49)))));
-            this.Connecter.Location = new System.Drawing.Point(434, 414);
+            this.Connecter.Location = new System.Drawing.Point(326, 336);
             this.Connecter.Margin = new System.Windows.Forms.Padding(0);
             this.Connecter.Name = "Connecter";
-            this.Connecter.Size = new System.Drawing.Size(239, 65);
+            this.Connecter.Size = new System.Drawing.Size(179, 53);
             this.Connecter.TabIndex = 14;
             this.Connecter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Connecter.Click += new System.EventHandler(this.Connecter_Click);
@@ -141,10 +141,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(341, 321);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(256, 261);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(73, 57);
+            this.pictureBox1.Size = new System.Drawing.Size(55, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
@@ -153,10 +153,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(343, 238);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(257, 193);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(68, 62);
+            this.pictureBox2.Size = new System.Drawing.Size(51, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -170,10 +170,10 @@
             // 
             // Authentification
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1067, 588);
+            this.ClientSize = new System.Drawing.Size(800, 478);
             this.Controls.Add(this.Header);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.Tb_mdp);
@@ -182,7 +182,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Tb_login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Authentification";
             this.Text = "Authentification";
             this.Load += new System.EventHandler(this.Authentification_Load);
