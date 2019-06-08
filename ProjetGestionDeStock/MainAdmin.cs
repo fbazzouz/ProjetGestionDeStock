@@ -122,5 +122,12 @@ namespace ProjetGestionDeStock
         {
             Environment.Exit(0);
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Authentification A = new Authentification();
+            A.Show();
+            Close();
+        }
     }
 }

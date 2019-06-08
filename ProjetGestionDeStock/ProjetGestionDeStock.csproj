@@ -367,6 +367,7 @@
     <None Include="Resources\Exit_50px.png" />
     <Content Include="Resources\login.png" />
     <None Include="Resources\LoGo.ico" />
+    <None Include="Resources\logout.png" />
     <Content Include="Resources\mdp.png" />
     <Content Include="stockbd.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

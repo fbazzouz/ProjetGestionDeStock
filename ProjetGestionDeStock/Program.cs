@@ -16,7 +16,7 @@ namespace ProjetGestionDeStock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainAdmin(" "," "));
+            Application.Run(new Authentification());
         }
     }
 }
