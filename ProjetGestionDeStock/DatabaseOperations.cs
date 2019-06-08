@@ -265,7 +265,7 @@ namespace ProjetGestionDeStock
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = getcon();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update [facture_produit] set livre = 2  where id_produit = '" + id_p + "'";
+            cmd.CommandText = "update [facture_produit] set livre = '" + id_c + "' where id_produit = '" + id_p + "'";
             cmd.ExecuteNonQuery();
             con.Close();
         }
@@ -275,7 +275,7 @@ namespace ProjetGestionDeStock
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select livre,adresse ,CIN,quantite,reference,prix from client c,produit p,facture f,facture_produit fp where p.id_produit=fp.id_produit and f.id_facture=fp.id_facture and c.Id=f.id_client and fp.livre=1 ";
+            cmd.CommandText = "select livre,adresse ,CIN,quantite,reference,prix , fp.id_produit  from client c,produit p,facture f,facture_produit fp where p.id_produit=fp.id_produit and f.id_facture=fp.id_facture and c.Id=f.id_client and fp.livre=1 ";
             cmd.Connection = getcon();
             SqlDataReader sdr;
             DataTable dt = new DataTable();

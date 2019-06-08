@@ -78,7 +78,7 @@
             this.etat.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.etat.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.etat.LineThickness = 8;
-            this.etat.Location = new System.Drawing.Point(294, 594);
+            this.etat.Location = new System.Drawing.Point(237, 594);
             this.etat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.etat.Name = "etat";
             this.etat.Size = new System.Drawing.Size(366, 43);
@@ -135,6 +135,7 @@
             this.DG_livrer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DG_livrer.Size = new System.Drawing.Size(909, 438);
             this.DG_livrer.TabIndex = 48;
+            this.DG_livrer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_livrer_CellDoubleClick);
             // 
             // BTN_AjouterCategorie
             // 
@@ -154,7 +155,7 @@
             this.BTN_AjouterCategorie.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
             this.BTN_AjouterCategorie.IdleForecolor = System.Drawing.Color.White;
             this.BTN_AjouterCategorie.IdleLineColor = System.Drawing.Color.White;
-            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(773, 594);
+            this.BTN_AjouterCategorie.Location = new System.Drawing.Point(661, 594);
             this.BTN_AjouterCategorie.Margin = new System.Windows.Forms.Padding(6);
             this.BTN_AjouterCategorie.Name = "BTN_AjouterCategorie";
             this.BTN_AjouterCategorie.Size = new System.Drawing.Size(199, 52);

@@ -52,7 +52,7 @@ namespace ProjetGestionDeStock.Agent_UC
         private void BTN_AjouterCategorie_Click(object sender, EventArgs e)
         {
             int SelectedIndex = DG_livrer.SelectedRows[0].Index;
-            etat.Text = DG_livrer.Rows[SelectedIndex].Cells[3].Value.ToString();
+            int refe = DG_livrer.Rows[SelectedIndex].Cells[6].Value.GetHashCode();
             //Pour verifier si les champs textes sont vides 
             foreach (var tb in this.Controls.OfType<ns1.BunifuMaterialTextbox>())
             {
@@ -65,7 +65,8 @@ namespace ProjetGestionDeStock.Agent_UC
                 }
             }
             ////////////////////////////////////////////////
-            DatabaseOperations.ModifierCategorie(SelectedIndex, etat.Text);
+            DatabaseOperations.livrer(refe, Int32.Parse(etat.Text));
+            confirmer_Load(sender,e);
         }
     }
 }
