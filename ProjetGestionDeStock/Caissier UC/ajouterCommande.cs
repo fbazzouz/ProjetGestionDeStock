@@ -13,6 +13,8 @@ namespace ProjetGestionDeStock
 {
     public partial class ajouterCommande : UserControl
     {
+        static DataSet dsCompt = new DataSet("FactureCompt");
+        DataTable dtCompt = new DataTable("FactureCompt");
         SqlConnection connection = DatabaseOperations.con;
         public ajouterCommande()
         {
@@ -233,19 +235,10 @@ namespace ProjetGestionDeStock
        
             if (SelectedRow != -1)
             {
-                int id_facture = int.Parse(bunifuCustomDataGrid1.Rows[SelectedRow].Cells["Id_facture"].Value.ToString());
-                SqlCommand cmd = connection.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "select id_produit from facture_produit where id_facture=" + id_facture + "";
-                SqlDataReader sr = cmd.ExecuteReader();
-                while (sr.Read())
-                {
-                    id_produit = int.Parse(sr["id_produit"].ToString());
-                }
-                sr.Close();
+              
                 SqlCommand cmd1 = connection.CreateCommand();
                 cmd1.CommandType = CommandType.Text;
-                cmd1.CommandText = "select * from produit where id_produit=" + id_produit + "";
+                cmd1.CommandText = "select * from produit p,facture_produit fp where p.id_produit=fp.id_produit";
                 DataTable dta = new DataTable();
                 SqlDataAdapter dataadp = new SqlDataAdapter(cmd1.CommandText, connection);
                 dataadp.Fill(dta);
@@ -279,6 +272,73 @@ namespace ProjetGestionDeStock
         private void TB_quantite_ValueChanged(object sender, EventArgs e)
         {
             seuil.Text = "Quantite : " + TB_quantite.Value.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (bunifuCustomDataGrid2.DataSource != null)
+            {
+                dtCompt.Clear();
+                dtCompt.Columns.Clear();
+                createdsCompt();
+                Print_Form obj = new Print_Form();
+                obj.Show();
+                dsCompt.Tables.Remove(dsCompt.Tables["FactureCompt"]);
+
+            }
+            else
+            {
+                MessageBox.Show("Aucune Facture à Imprimer");
+            }
+        }
+        private void createdsCompt()
+        {
+            if (dtCompt.Rows.Count <= 0)
+            {
+                DataColumn dc1 = new DataColumn("Id_facture", typeof(string));
+                DataColumn dc2 = new DataColumn("description", typeof(string));
+                DataColumn dc3 = new DataColumn("reference", typeof(string));
+                DataColumn dc4 = new DataColumn("quantite", typeof(int));
+                DataColumn dc5 = new DataColumn("prix", typeof(decimal));
+                DataColumn dc6 = new DataColumn("total", typeof(decimal));
+                DataColumn dc7 = new DataColumn("Date", typeof(string));
+                DataColumn dc8 = new DataColumn("id_client", typeof(string));
+                DataColumn dc9 = new DataColumn("marque", typeof(string));
+                dtCompt.Columns.Add(dc1);
+                dtCompt.Columns.Add(dc2);
+                dtCompt.Columns.Add(dc3);
+                dtCompt.Columns.Add(dc4);
+                dtCompt.Columns.Add(dc5);
+                dtCompt.Columns.Add(dc6);
+                dtCompt.Columns.Add(dc7);
+                dtCompt.Columns.Add(dc8);
+                dtCompt.Columns.Add(dc9);
+                foreach (DataGridViewRow dgr in bunifuCustomDataGrid2.Rows)
+                {
+                    foreach (DataGridViewRow dgr1 in bunifuCustomDataGrid1.Rows)
+                    {
+                        dtCompt.Rows.Add(dgr1.Cells["Id_facture"], dgr.Cells["description"].Value, dgr.Cells["reference"].Value, dgr.Cells["quantite"].Value, dgr.Cells["prix"].Value, dgr1.Cells["total"].Value, DP.Value.ToString("dd/MM/yyyy"), dgr1.Cells["id_client"].Value, dgr.Cells["marque"].Value);
+                    }
+
+                }
+                dsCompt.Tables.Add(dtCompt);
+            }
+            else
+            {
+                foreach (DataGridViewRow dgr in bunifuCustomDataGrid2.Rows)
+                {
+                    foreach (DataGridViewRow dgr1 in bunifuCustomDataGrid1.Rows)
+                    {
+                        dtCompt.Rows.Add(dgr1.Cells["Id_facture"], dgr.Cells["description"].Value, dgr.Cells["reference"].Value, dgr.Cells["quantite"].Value, dgr.Cells["prix"].Value, dgr1.Cells["total"].Value, DP.Value.ToString("dd/MM/yyyy"), dgr1.Cells["id_client"].Value, dgr.Cells["marque"].Value);
+                    }
+                }
+                dsCompt.Tables.Add(dtCompt);
+            }
+        }
+        public DataSet returndata()
+        {
+            return dsCompt;
+
         }
     }
 }

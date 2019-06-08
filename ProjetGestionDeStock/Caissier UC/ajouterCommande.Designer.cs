@@ -68,16 +68,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid1 = new ns1.BunifuCustomDataGrid();
             this.bunifuCustomDataGrid2 = new ns1.BunifuCustomDataGrid();
-            this.button_ajouterClient = new ns1.BunifuThinButton2();
-            this.button_ajouterProduit = new ns1.BunifuThinButton2();
-            this.button_validerCommande = new ns1.BunifuThinButton2();
-            this.button2 = new ns1.BunifuThinButton2();
             this.seuil = new ns1.BunifuCustomLabel();
             this.TB_quantite = new ns1.BunifuSlider();
             this.bunifuCustomLabel11 = new ns1.BunifuCustomLabel();
             this.bunifuiOSSwitch1 = new ns1.BunifuiOSSwitch();
+            this.button_ajouterClient = new ns1.BunifuThinButton2();
+            this.button_ajouterProduit = new ns1.BunifuThinButton2();
+            this.button_validerCommande = new ns1.BunifuThinButton2();
+            this.button2 = new ns1.BunifuThinButton2();
+            this.bunifuImageButton1 = new ns1.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel5
@@ -585,6 +587,57 @@
             this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(818, 131);
             this.bunifuCustomDataGrid2.TabIndex = 52;
             // 
+            // seuil
+            // 
+            this.seuil.AutoSize = true;
+            this.seuil.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.seuil.ForeColor = System.Drawing.Color.White;
+            this.seuil.Location = new System.Drawing.Point(294, 221);
+            this.seuil.Name = "seuil";
+            this.seuil.Size = new System.Drawing.Size(86, 17);
+            this.seuil.TabIndex = 54;
+            this.seuil.Text = "Quantite : 0";
+            // 
+            // TB_quantite
+            // 
+            this.TB_quantite.BackColor = System.Drawing.Color.Transparent;
+            this.TB_quantite.BackgroudColor = System.Drawing.Color.DarkGray;
+            this.TB_quantite.BorderRadius = 0;
+            this.TB_quantite.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.TB_quantite.Location = new System.Drawing.Point(386, 219);
+            this.TB_quantite.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_quantite.MaximumValue = 0;
+            this.TB_quantite.Name = "TB_quantite";
+            this.TB_quantite.Size = new System.Drawing.Size(173, 30);
+            this.TB_quantite.TabIndex = 53;
+            this.TB_quantite.Value = 0;
+            this.TB_quantite.ValueChanged += new System.EventHandler(this.TB_quantite_ValueChanged);
+            // 
+            // bunifuCustomLabel11
+            // 
+            this.bunifuCustomLabel11.AutoSize = true;
+            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(585, 254);
+            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(70, 17);
+            this.bunifuCustomLabel11.TabIndex = 55;
+            this.bunifuCustomLabel11.Text = "A livré ? :";
+            // 
+            // bunifuiOSSwitch1
+            // 
+            this.bunifuiOSSwitch1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuiOSSwitch1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuiOSSwitch1.BackgroundImage")));
+            this.bunifuiOSSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuiOSSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuiOSSwitch1.Location = new System.Drawing.Point(661, 251);
+            this.bunifuiOSSwitch1.Name = "bunifuiOSSwitch1";
+            this.bunifuiOSSwitch1.OffColor = System.Drawing.Color.Gray;
+            this.bunifuiOSSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
+            this.bunifuiOSSwitch1.Size = new System.Drawing.Size(43, 25);
+            this.bunifuiOSSwitch1.TabIndex = 56;
+            this.bunifuiOSSwitch1.Value = true;
+            // 
             // button_ajouterClient
             // 
             this.button_ajouterClient.ActiveBorderThickness = 1;
@@ -689,62 +742,26 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // seuil
+            // bunifuImageButton1
             // 
-            this.seuil.AutoSize = true;
-            this.seuil.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.seuil.ForeColor = System.Drawing.Color.White;
-            this.seuil.Location = new System.Drawing.Point(294, 221);
-            this.seuil.Name = "seuil";
-            this.seuil.Size = new System.Drawing.Size(86, 17);
-            this.seuil.TabIndex = 54;
-            this.seuil.Text = "Quantite : 0";
-            // 
-            // TB_quantite
-            // 
-            this.TB_quantite.BackColor = System.Drawing.Color.Transparent;
-            this.TB_quantite.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.TB_quantite.BorderRadius = 0;
-            this.TB_quantite.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
-            this.TB_quantite.Location = new System.Drawing.Point(386, 219);
-            this.TB_quantite.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_quantite.MaximumValue = 0;
-            this.TB_quantite.Name = "TB_quantite";
-            this.TB_quantite.Size = new System.Drawing.Size(173, 30);
-            this.TB_quantite.TabIndex = 53;
-            this.TB_quantite.Value = 0;
-            this.TB_quantite.ValueChanged += new System.EventHandler(this.TB_quantite_ValueChanged);
-            // 
-            // bunifuCustomLabel11
-            // 
-            this.bunifuCustomLabel11.AutoSize = true;
-            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
-            this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(585, 254);
-            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(70, 17);
-            this.bunifuCustomLabel11.TabIndex = 55;
-            this.bunifuCustomLabel11.Text = "A livré ? :";
-            // 
-            // bunifuiOSSwitch1
-            // 
-            this.bunifuiOSSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuiOSSwitch1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuiOSSwitch1.BackgroundImage")));
-            this.bunifuiOSSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuiOSSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuiOSSwitch1.Location = new System.Drawing.Point(661, 251);
-            this.bunifuiOSSwitch1.Name = "bunifuiOSSwitch1";
-            this.bunifuiOSSwitch1.OffColor = System.Drawing.Color.Gray;
-            this.bunifuiOSSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(155)))), ((int)(((byte)(45)))));
-            this.bunifuiOSSwitch1.Size = new System.Drawing.Size(43, 25);
-            this.bunifuiOSSwitch1.TabIndex = 56;
-            this.bunifuiOSSwitch1.Value = true;
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(756, 401);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(70, 50);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 57;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ajouterCommande
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(62)))), ((int)(((byte)(70)))));
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuiOSSwitch1);
             this.Controls.Add(this.bunifuCustomLabel11);
             this.Controls.Add(this.seuil);
@@ -789,6 +806,7 @@
             this.Load += new System.EventHandler(this.ajouterCommande_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -834,5 +852,6 @@
         private ns1.BunifuSlider TB_quantite;
         private ns1.BunifuCustomLabel bunifuCustomLabel11;
         private ns1.BunifuiOSSwitch bunifuiOSSwitch1;
+        private ns1.BunifuImageButton bunifuImageButton1;
     }
 }
