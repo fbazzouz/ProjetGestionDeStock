@@ -16,10 +16,10 @@ namespace ProjetGestionDeStock
     {
        
 
-        public MainAgent()
+        public MainAgent(string Nom, string Prenom)
         {
             InitializeComponent();
-            Agent_UC.Livrer.Instance.BringToFront();
+            Lb_admin.Text = Nom + " " + Prenom;
         }
 
         private void Slider_Click(object sender, EventArgs e)
@@ -83,6 +83,7 @@ namespace ProjetGestionDeStock
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            Close();
             Environment.Exit(0);
         }
 
@@ -90,7 +91,7 @@ namespace ProjetGestionDeStock
         {
             Authentification A = new Authentification();
             A.Show();
-            Close();
+            Hide();
         }
     }
 }
