@@ -193,12 +193,16 @@ namespace ProjetGestionDeStock
             
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText="select Id_produit from produit where reference ='"+reference+"'";
+            cmd.CommandText="select Id_produit,prix from produit where reference ='"+reference+"'";
             SqlDataReader sr = cmd.ExecuteReader();
             while (sr.Read())
             {
                 id_produit = int.Parse(sr["Id_produit"].ToString());
-                
+                int prixtotal=int.Parse(TB_total.Text)+int.Parse(sr["prix"].ToString()) * TB_quantite.Value;
+                TB_total.Text = prixtotal.ToString();
+
+
+
             }
             sr.Close();
             SqlCommand cmd1 = connection.CreateCommand();
@@ -241,7 +245,7 @@ namespace ProjetGestionDeStock
               
                 SqlCommand cmd1 = connection.CreateCommand();
                 cmd1.CommandType = CommandType.Text;
-                cmd1.CommandText = "select * from produit p,facture_produit fp where p.id_produit=fp.id_produit";
+                cmd1.CommandText = "select f.id_facture,reference,marque,quantite,prix,description,id_client from produit p,facture_produit fp ,facture f where p.id_produit=fp.id_produit and fp.id_facture=f.id_facture";
                 DataTable dta = new DataTable();
                 SqlDataAdapter dataadp = new SqlDataAdapter(cmd1.CommandText, connection);
                 dataadp.Fill(dta);
@@ -303,7 +307,6 @@ namespace ProjetGestionDeStock
                 DataColumn dc3 = new DataColumn("reference", typeof(string));
                 DataColumn dc4 = new DataColumn("quantite", typeof(int));
                 DataColumn dc5 = new DataColumn("prix", typeof(decimal));
-                DataColumn dc6 = new DataColumn("total", typeof(decimal));
                 DataColumn dc7 = new DataColumn("Date", typeof(string));
                 DataColumn dc8 = new DataColumn("id_client", typeof(string));
                 DataColumn dc9 = new DataColumn("marque", typeof(string));
@@ -312,35 +315,36 @@ namespace ProjetGestionDeStock
                 dtCompt.Columns.Add(dc3);
                 dtCompt.Columns.Add(dc4);
                 dtCompt.Columns.Add(dc5);
-                dtCompt.Columns.Add(dc6);
                 dtCompt.Columns.Add(dc7);
                 dtCompt.Columns.Add(dc8);
                 dtCompt.Columns.Add(dc9);
-                foreach (DataGridViewRow dgr in bunifuCustomDataGrid2.Rows)
-                {
-                    foreach (DataGridViewRow dgr1 in bunifuCustomDataGrid1.Rows)
+                
+                    foreach (DataGridViewRow dgr1 in bunifuCustomDataGrid2.Rows)
                     {
-                        dtCompt.Rows.Add(dgr1.Cells["Id_facture"], dgr.Cells["description"].Value, dgr.Cells["reference"].Value, dgr.Cells["quantite"].Value, dgr.Cells["prix"].Value, dgr1.Cells["total"].Value, DP.Value.ToString("dd/MM/yyyy"), dgr1.Cells["id_client"].Value, dgr.Cells["marque"].Value);
+                        dtCompt.Rows.Add(dgr1.Cells["Id_facture"], dgr1.Cells["description"].Value, dgr1.Cells["reference"].Value, dgr1.Cells["quantite"].Value, dgr1.Cells["prix"].Value, DP.Value.ToString("dd/MM/yyyy"), dgr1.Cells["id_client"].Value, dgr1.Cells["marque"].Value);
                     }
 
-                }
+                
                 dsCompt.Tables.Add(dtCompt);
             }
             else
             {
-                foreach (DataGridViewRow dgr in bunifuCustomDataGrid2.Rows)
+                foreach (DataGridViewRow dgr1 in bunifuCustomDataGrid2.Rows)
                 {
-                    foreach (DataGridViewRow dgr1 in bunifuCustomDataGrid1.Rows)
-                    {
-                        dtCompt.Rows.Add(dgr1.Cells["Id_facture"], dgr.Cells["description"].Value, dgr.Cells["reference"].Value, dgr.Cells["quantite"].Value, dgr.Cells["prix"].Value, dgr1.Cells["total"].Value, DP.Value.ToString("dd/MM/yyyy"), dgr1.Cells["id_client"].Value, dgr.Cells["marque"].Value);
-                    }
+                    dtCompt.Rows.Add(dgr1.Cells["Id_facture"], dgr1.Cells["description"].Value, dgr1.Cells["reference"].Value, dgr1.Cells["quantite"].Value, dgr1.Cells["prix"].Value, DP.Value.ToString("dd/MM/yyyy"), dgr1.Cells["id_client"].Value, dgr1.Cells["marque"].Value);
                 }
+
                 dsCompt.Tables.Add(dtCompt);
             }
         }
         public DataSet returndata()
         {
             return dsCompt;
+
+        }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
